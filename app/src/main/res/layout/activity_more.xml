@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.humencheckworkattendance.ui.activity.ChangePassWordActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#58befc"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/imageView_Back"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y48"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            app:srcCompat="@drawable/historyback" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y48"
+            app:srcCompat="@drawable/historyback" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/x178"
+        android:layout_height="@dimen/y178"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y30"
+        app:srcCompat="@drawable/updateicon" />
+    <TextView
+        android:id="@+id/textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移动考勤"
+        android:textColor="#000"
+        android:textSize="@dimen/y40"
+        android:layout_marginTop="@dimen/y30"
+        app:srcCompat="@drawable/historyback"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textview_NowVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前版本：1.190926.0.1"
+        android:textColor="#000"
+        android:textSize="@dimen/y30"
+        app:srcCompat="@drawable/historyback"
+        android:layout_marginTop="@dimen/y22"
+        android:layout_below="@+id/textview_1"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textview_NewVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最新版本：1.190926.0.1"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/y22"
+        android:textSize="@dimen/y30"
+        app:srcCompat="@drawable/historyback"
+        android:layout_below="@+id/textview_NowVersion"
+        android:layout_alignLeft="@+id/textview_NowVersion"
+        android:layout_alignStart="@+id/textview_NowVersion" />
+
+    <ImageView
+        android:id="@+id/imageView_Update_Btn"
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y100"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/updateneedbtn"
+        android:layout_below="@+id/textview_NewVersion"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/x170"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/submit_humen_samll_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="姓名姓名"
+                android:textSize="@dimen/y40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/x170"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/submit_humen_samll_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="审核中"
+                android:textSize="@dimen/y40" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_not_audited"
+            android:layout_width="@dimen/x410"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/submit_humen_update"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y56"
+                android:layout_marginLeft="@dimen/x24"
+                app:srcCompat="@drawable/submithumenupdate" />
+
+            <ImageView
+                android:id="@+id/submit_humen_delete"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y56"
+                android:layout_alignTop="@+id/submit_humen_update"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toEndOf="@+id/submit_humen_update"
+                android:layout_toRightOf="@+id/submit_humen_update"
+                app:srcCompat="@drawable/submithumendelete" />
+
+            <ImageView
+                android:id="@+id/submit_humen_submit"
+                android:layout_width="@dimen/x134"
+                android:layout_height="@dimen/y56"
+                android:layout_alignTop="@+id/submit_humen_delete"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toEndOf="@+id/submit_humen_delete"
+                android:layout_toRightOf="@+id/submit_humen_delete"
+                app:srcCompat="@drawable/submithumensubmit"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/submit_humen_error"
+                android:layout_width="@dimen/x134"
+                android:layout_height="@dimen/y56"
+                android:layout_alignTop="@+id/submit_humen_delete"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toEndOf="@+id/submit_humen_delete"
+                android:layout_toRightOf="@+id/submit_humen_delete"
+                app:srcCompat="@drawable/submithumenerror"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_audited"
+            android:layout_width="@dimen/x430"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/submit_humen_rollback"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y56"
+                android:layout_marginLeft="@dimen/x24"
+                app:srcCompat="@drawable/submithumenrollback" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:background="#bfbfbf"
+        android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>

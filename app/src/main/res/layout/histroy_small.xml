@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f2f2f2"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y270"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="@dimen/x702"
+            android:layout_height="@dimen/y240"
+            android:background="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textview_Sign_Status"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/textview_Sign_Status"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/y40"
+                    app:srcCompat="@drawable/historytime" />
+
+                <TextView
+                    android:id="@+id/textview_Sign_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_weight="1"
+                    android:maxEms="18"
+                    android:singleLine="true"
+                    android:text="08-25 10:53"
+                    android:textColor="#7d7d7d"
+                    android:textSize="@dimen/y40" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/y136"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="打卡位置："
+                    android:textColor="#7d7d7d"
+                    android:textSize="@dimen/y36"/>
+
+                <com.example.humencheckworkattendance.widget.FocuseTextView
+                    android:id="@+id/textview_Sign_Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="报道成功"
+                    android:focusableInTouchMode="true"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="#7d7d7d"
+                    android:textSize="@dimen/y36" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_Sign_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/y20"
+                android:text="报道成功"
+                android:textColor="#7d7d7d"
+                android:singleLine="true"
+                android:textSize="@dimen/y48" />
+
+            <TextView
+                android:id="@+id/textview_Sign_Err"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textview_Sign_Status"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textview_Sign_Status"
+                android:layout_marginTop="@dimen/y82"
+                android:text="报道成功"
+                android:textColor="#7d7d7d"
+                android:singleLine="true"
+                android:textSize="@dimen/y36" />
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y190"
+                android:layout_alignLeft="@+id/textview_Sign_Status"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textview_Sign_Status"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目名称："
+                    android:textColor="#7d7d7d"
+                    android:textSize="@dimen/y36" />
+
+                <com.example.humencheckworkattendance.widget.FocuseTextView
+                    android:id="@+id/textview_Sign_Project_Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报道成功"
+                    android:textColor="#7d7d7d"
+                    android:singleLine="true"
+                    android:focusableInTouchMode="true"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="@dimen/y36" />
+                </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

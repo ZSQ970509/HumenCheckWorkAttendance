@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">移动考勤</string>
+
+    <!-- 加载状态相关 -->
+    <string name="view_empty">没有数据~</string>
+    <string name="view_network_error">网络异常~</string>
+    <string name="view_no_network">没有网络~</string>
+    <string name="loading">加载中</string>
+    <string name="load_success">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="title_activity_map">MapActivity</string>
+
+    <!-- 上拉刷新下拉加载 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="title_activity_submit_humen_message">SubmitHumenMessageActivity</string>
+</resources>

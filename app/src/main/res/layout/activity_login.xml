@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/loginbackground"
+    tools:context="com.example.humencheckworkattendance.ui.activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y76"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y702"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_UserName"
+                android:layout_width="@dimen/x74"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/loginusername" />
+
+            <EditText
+                android:id="@+id/editText_UserName"
+                android:layout_width="@dimen/x526"
+                android:layout_height="@dimen/y74"
+                android:layout_marginLeft="@dimen/x74"
+                android:background="@null"
+                android:ems="10"
+                android:hint="请输入账号"
+                android:inputType="textPersonName"
+                android:textColor="#58befc"
+                android:textColorHint="#a6ddff"
+                android:textSize="@dimen/y36" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y2"
+                android:layout_alignBottom="@+id/editText_UserName"
+                android:background="#58befc" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y76"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y24"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView_PassWord"
+                android:layout_width="@dimen/x74"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/loginpassword" />
+            <EditText
+                android:id="@+id/editText_PassWord"
+                android:layout_width="@dimen/x526"
+                android:layout_height="@dimen/y74"
+                android:layout_marginLeft="@dimen/x74"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:textColorHint="#a6ddff"
+                android:textSize="@dimen/y36"
+                android:textColor="#58befc"
+                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y2"
+                android:background="#58befc"
+                android:layout_alignBottom="@+id/editText_PassWord"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y24"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox_SavePassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkboxblue"
+            android:paddingLeft="@dimen/x8"
+            android:text="记住账号"
+            android:textColor="#58befc"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y80"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/y60"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView_Login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/loginlogin" />
+    </LinearLayout>
+</LinearLayout>

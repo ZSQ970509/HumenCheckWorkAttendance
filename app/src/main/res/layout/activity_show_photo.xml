@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.humencheckworkattendance.ui.activity.ShowPhotoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#58befc"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_Back"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y48"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x24"
+            app:srcCompat="@drawable/historyback" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="上传照片"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y48"
+            app:srcCompat="@drawable/historyback" />
+
+        <ImageView
+            android:id="@+id/imageView_Upload"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/y60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x135"
+            android:layout_toEndOf="@+id/textview"
+            android:layout_toRightOf="@+id/textview"
+            app:srcCompat="@drawable/uploadimagebutton" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <uk.co.senab.photoview.PhotoView
+                android:id="@+id/img_camera_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.humencheckworkattendance.ui.activity.SignInDetailsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#58befc"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_Back"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y48"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/historyback" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报到登记列表"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y48"
+            app:srcCompat="@drawable/historyback"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="#58befc"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView_Date_Right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x64"
+            app:srcCompat="@drawable/historyright" />
+
+        <ImageView
+            android:id="@+id/imageView_Date_Lift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x64"
+            app:srcCompat="@drawable/historyleft" />
+
+        <TextView
+            android:id="@+id/textview_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="2017年8月"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y48"
+            app:srcCompat="@drawable/historyback" />
+
+    </RelativeLayout>
+
+
+    <com.example.humencheckworkattendance.widget.PullToRefreshView
+            android:id="@+id/mPullToRefreshView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            >
+
+        <ListView
+            android:id="@+id/listView_Histroy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:focusable="true"
+            android:dividerHeight="0dip" />
+    </com.example.humencheckworkattendance.widget.PullToRefreshView>
+
+</LinearLayout>

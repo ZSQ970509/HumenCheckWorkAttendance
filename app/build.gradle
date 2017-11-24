@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.example.humencheckworkattendance"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 5
+        versionName "5.0"
+        multiDexEnabled true;
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+    }
+
+}
+ext {
+    okhttpVersion = "3.8.0"
+    retrofitVersion = "2.3.0"
+    supportLibraryVersion = "25.3.1"
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    /* compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'*/
+    compile "com.android.support:cardview-v7:${supportLibraryVersion}"
+    compile "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+    compile "com.android.support:design:${supportLibraryVersion}"
+    //  RxJava & RxAndroid & Retrofit & OkHttp
+    compile "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}"
+    compile "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    compile "com.squareup.retrofit2:converter-scalars:${retrofitVersion}"
+    compile "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    compile "com.squareup.okhttp3:okhttp:${okhttpVersion}"
+    compile "com.squareup.okhttp3:okhttp-urlconnection:${okhttpVersion}"
+    compile "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}"
+    //rxjava
+    //rxandroid
+    //gson
+    //Adapter
+    //图片加载
+    //view
+    //barlibrary
+    //如果使用了特殊的Header
+    compile project(':sdkproject_live')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/photoview-library-1.2.2.jar')
+
+
+
+    compile 'com.trello:rxlifecycle:1.0'
+    compile 'com.trello:rxlifecycle-android:1.0'
+    compile 'com.trello:rxlifecycle-components:1.0'
+    compile 'io.reactivex:rxjava:1.1.9'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'com.gyf.barlibrary:barlibrary:2.2.5'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.2-alpha-7'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.qianwen:update-app:3.3.8'
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'com.github.jokermonn:permissions4m:2.1.2-lib'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    annotationProcessor 'com.github.jokermonn:permissions4m:2.1.2-processor'
+}
