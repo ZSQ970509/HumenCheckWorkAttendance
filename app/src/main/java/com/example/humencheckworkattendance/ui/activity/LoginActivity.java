@@ -317,7 +317,6 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
                     super.run();
                     try {
                         pictureFile = null;
-                        //SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmm");
                         String publicFilePath = new StringBuilder(Environment.getExternalStorageDirectory().getAbsolutePath())
                                 .append(File.separator).append("ivm").append(File.separator).toString();
                         FileUtil.mkDir(publicFilePath);
