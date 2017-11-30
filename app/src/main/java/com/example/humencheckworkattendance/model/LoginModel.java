@@ -50,11 +50,11 @@ public class LoginModel extends BaseModel{
                 });
     }
     //登录
-    public void login(@NonNull String userName, @NonNull String passWord, @NonNull final loginInfoHint infoHint){
+    public void login(@NonNull String userName, @NonNull String passWord,@NonNull String imei, @NonNull final loginInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.login(passWord,userName)
+        httpService.login(passWord,userName,imei)
                 //.compose(view.<BaseHttpResult<LoginBean>>bind())
                 .compose(new CommonTransformer<LoginBean>())
                 .subscribe(new CommonSubscriber<LoginBean>(ProApplication.getmContext()) {

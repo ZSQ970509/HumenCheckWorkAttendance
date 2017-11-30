@@ -301,4 +301,6 @@
     <color name="navy">#000080</color>
     <!-- 海军色 -->
     <color name="btnColor">#58befc</color>
+
+    <color name="text_color">#595959</color>
 </resources>

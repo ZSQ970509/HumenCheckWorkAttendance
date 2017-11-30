@@ -11,7 +11,7 @@ public class UrlHelper {
     //public static String BASE_URL = "http://10.1.3.86:8056";
    public static String BASE_URL = "http://120.35.11.49:4545";
    // public static String BASE_URL = "http://10.1.3.86:7878";
-   // public static String BASE_URL = "http://ydkq.jsqqy.com";
+    //public static String BASE_URL = "http://ydkq.jsqqy.com";
    // public static String BASE_URL = "http://192.168.1.81:4545";
    // public static String BASE_URL = " http://10.1.3.222:1212";
 
@@ -73,6 +73,10 @@ public class UrlHelper {
         public static final String checkIsFrozen ="/DataService.ashx?action=checkIsFrozen";
         //获取当日打卡情况
         public static final String getDayAttendanceList ="/DataService.ashx?action=getDayAttendanceList";
+        //获取该项目下所有人员本月社保查询接口
+        public static final String getMothSocialSecurityList ="/DataService.ashx?action=getMothSocialSecurityList";
+        //添加社保信息接口
+        public static final String addSocialSecurity ="/DataService.ashx?action=addSocialSecurity";
     }
 
 

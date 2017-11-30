@@ -15,7 +15,7 @@ public class LoginContact {
     }
 
     public interface LoginPresenter {
-        void login(String userName, String passWord);
+        void login(String userName, String passWord, String imei);
         void loadHead(String imgSrc);
     }
 }

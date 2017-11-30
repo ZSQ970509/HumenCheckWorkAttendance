@@ -27,6 +27,8 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
     ImageView  homepageexamineshort;
     @BindView(R.id.home_page_play_card_today)
     ImageView  homepageplaycardtoday;
+    @BindView(R.id.home_page_month_social_security)
+    ImageView  mHomepageSocialSecurity;
     LoginBean loginBean;
     Intent intent;
     @Override
@@ -53,6 +55,7 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
            // homepagemanagerexamine.setVisibility(View.GONE);
             homepageexamineshort.setVisibility(View.GONE);
             homepageplaycardtoday.setVisibility(View.GONE);
+            mHomepageSocialSecurity.setVisibility(View.GONE);
         }
     }
 
@@ -65,7 +68,7 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
     protected void otherViewClick(View view) {
 
     }
-    @OnClick({R.id.home_page_manager_inserthumen,R.id.home_page_examine_short,R.id.home_page_play_card_today})
+    @OnClick({R.id.home_page_manager_inserthumen,R.id.home_page_examine_short,R.id.home_page_play_card_today,R.id.home_page_month_social_security})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.home_page_manager_inserthumen:
@@ -87,6 +90,10 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
                 break;
             case R.id.home_page_play_card_today:
                 intent.setClass(HomePageManageActivity.this,PlayCardTodayActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.home_page_month_social_security:
+                intent.setClass(HomePageManageActivity.this,MonthSocialSecurityActivity.class);
                 startActivity(intent);
                 break;
         }

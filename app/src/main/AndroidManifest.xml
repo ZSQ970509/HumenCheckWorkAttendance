@@ -150,6 +150,9 @@
             android:name=".ui.activity.TakeHeadCameraActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".ui.activity.TakeCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".ui.activity.ShowPhotoActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -184,7 +187,10 @@
             android:label="@string/title_activity_submit_humen_message"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Base" />
-        <activity android:name=".ui.activity.PlayCardTodayActivity"></activity>
+        <activity android:name=".ui.activity.PlayCardTodayActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ui.activity.MonthSocialSecurityActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

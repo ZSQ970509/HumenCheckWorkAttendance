@@ -8,6 +8,7 @@ import com.example.humencheckworkattendance.bean.GrouperBean;
 import com.example.humencheckworkattendance.bean.HistroyBean;
 import com.example.humencheckworkattendance.bean.IdCardBean;
 import com.example.humencheckworkattendance.bean.LoginBean;
+import com.example.humencheckworkattendance.bean.MonthSocialSecurityBean;
 import com.example.humencheckworkattendance.bean.PlayCardTodayBean;
 import com.example.humencheckworkattendance.bean.ProjectBean;
 import com.example.humencheckworkattendance.bean.SubmitHumenBean;
@@ -38,7 +39,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.Login)
-    Observable<BaseHttpResult<LoginBean>> login(@Field("password") String passWord, @Field("account") String userName);
+    Observable<BaseHttpResult<LoginBean>> login(@Field("password") String passWord, @Field("account") String userName,@Field("imei") String imei);
 
     @GET
     @Streaming
@@ -144,4 +145,14 @@ public interface HttpService {
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getDayAttendanceList)
     Observable<BaseHttpResult<PlayCardTodayBean>> getDayAttendanceList(@Field("projId") String projId, @Field("page") String page);
+
+
+    @FormUrlEncoded
+    @POST(UrlHelper.API.API+UrlHelper.API.getMothSocialSecurityList)
+    Observable<BaseHttpResult<MonthSocialSecurityBean>> getMonthSocialSecurityList(@Field("projId") String projId, @Field("page") String page);
+
+    @FormUrlEncoded
+    @POST(UrlHelper.API.API+UrlHelper.API.addSocialSecurity)
+    Observable<BaseHttpResult>addSocialSecurity(@Field("projId") String projId, @Field("userId") String userId, @Field("imgUrl") String imgUrl);
+
 }
