@@ -274,7 +274,6 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
                 }
                 showProgressDialogWithText("登录中，请稍候...");
                 TelephonyManager tm = (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
-                Log.e("11111111111111",tm.getDeviceId());
                 mPresenter.login(editTextUserName.getText().toString(),editTextPassWord.getText().toString(),tm.getDeviceId());
                 break;
         }
