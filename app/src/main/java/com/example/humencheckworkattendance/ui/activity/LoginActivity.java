@@ -69,6 +69,8 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
     private final int SDK_PERMISSION_REQUEST = 127;
     private String permissionInfo;
     AlertDialog dialog = null;
+
+    //11111111111111111111111111111111111111111111111111111111111111111111111
     Handler myHandler = new Handler() {
         public void handleMessage(Message msg) {
             switch (msg.what) {
