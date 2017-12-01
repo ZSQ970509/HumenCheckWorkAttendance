@@ -49,8 +49,8 @@ public class InserHumenPresenter extends BasePresenter<InsertHumenActivity> impl
     }
 
     @Override
-    public void insertHumen(String userId, String idCard, String streamName, String mobile, String headImage, String iDCardPathImage,String iDCardBackPathImage, String emtpId, String rolesId,String gender, String projId, String validateCode, String streamTitle ,String statusType,String userTypeId) {
-        ((InsertHumenModel) getiModelMap().get("InsertHumen")).insertHumen(userId,idCard,streamName,mobile,headImage,iDCardPathImage,iDCardBackPathImage,emtpId,rolesId,gender,projId,validateCode,streamTitle,statusType,userTypeId,new InsertHumenModel.InsertHumenInfoHint() {
+    public void insertHumen(String userId, String idCard, String streamName, String mobile, String headImage, String iDCardPathImage,String iDCardBackPathImage, String emtpId, String rolesId,String gender, String projId, String validateCode, String streamTitle ,String statusType,String userTypeId,String admUserId,String admUserName) {
+        ((InsertHumenModel) getiModelMap().get("InsertHumen")).insertHumen(userId,idCard,streamName,mobile,headImage,iDCardPathImage,iDCardBackPathImage,emtpId,rolesId,gender,projId,validateCode,streamTitle,statusType,userTypeId,admUserId,admUserName,new InsertHumenModel.InsertHumenInfoHint() {
 
             @Override
             public void successInfo(String str) {

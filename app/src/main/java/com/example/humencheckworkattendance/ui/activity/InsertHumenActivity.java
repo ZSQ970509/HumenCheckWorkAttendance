@@ -283,15 +283,15 @@ public class InsertHumenActivity extends BaseActivity<InserHumenPresenter> imple
                 if(userBean != null && IdNum.equals(editTextInsertIdNum.getText().toString())&& Moblie.equals(editTextInsertPhone.getText().toString())){
                     if(userBean!=null){
                         if(selectProject== null){
-                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,loginBean.getProjId(),editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,loginBean.getProjId(),editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }else{
-                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,selectProject,editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,selectProject,editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }
                     }else{
                         if(selectProject== null) {
-                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, loginBean.getProjId(), editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, loginBean.getProjId(), editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }else {
-                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, selectProject, editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, selectProject, editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }
                     }
                 }else if(userBean != null && IdNum.equals(editTextInsertIdNum.getText().toString()) ){
@@ -361,15 +361,15 @@ public class InsertHumenActivity extends BaseActivity<InserHumenPresenter> imple
                 if(userBean != null && IdNum.equals(editTextInsertIdNum.getText().toString())&& Moblie.equals(editTextInsertPhone.getText().toString())){
                     if(userBean!=null){
                         if(selectProject== null){
-                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,loginBean.getProjId(),editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,loginBean.getProjId(),editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }else{
-                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,selectProject,editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,selectProject,editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }
                     }else{
                         if(selectProject== null) {
-                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, loginBean.getProjId(), editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, loginBean.getProjId(), editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }else {
-                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, selectProject, editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId());
+                            mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, selectProject, editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
                         }
                     }
                 }else if(userBean != null && IdNum.equals(editTextInsertIdNum.getText().toString())){
@@ -550,15 +550,15 @@ public class InsertHumenActivity extends BaseActivity<InserHumenPresenter> imple
         //添加背面
         if(userBean!=null){
             if(selectProject== null){
-                mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,loginBean.getProjId(),editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId());
+                mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,loginBean.getProjId(),editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
             }else{
-                mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,selectProject,editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId());
+                mPresenter.insertHumen(userBean.getStreamId()+"",editTextInsertIdNum.getText().toString(),editTextInsertUserName.getText().toString(),editTextInsertPhone.getText().toString(),headImgSrc,idNumImgSrc,idNumBackImgSrc,EmtpId,EmtpRolesId,sex,selectProject,editTextInsertValidateCode.getText().toString(),streamTitle,statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
             }
         }else{
             if(selectProject== null) {
-                mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, loginBean.getProjId(), editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId());
+                mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, loginBean.getProjId(), editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
             }else {
-                mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, selectProject, editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId());
+                mPresenter.insertHumen("0", editTextInsertIdNum.getText().toString(), editTextInsertUserName.getText().toString(), editTextInsertPhone.getText().toString(), headImgSrc, idNumImgSrc, idNumBackImgSrc, EmtpId, EmtpRolesId, sex, selectProject, editTextInsertValidateCode.getText().toString(), streamTitle, statusType,loginBean.getUserTypeId(),loginBean.getMemberId()+"",loginBean.getUserName());
             }
         }
         /*if(userBean!=null){

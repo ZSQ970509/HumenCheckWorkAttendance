@@ -34,7 +34,7 @@ public class InsertHumenContact {
 
     public interface InsertHumenPresenter {
         void getTeam(String projId);
-        void insertHumen(String userId, String idCard, String streamName, String mobile, String headImage, String iDCardPathImage,String iDCardBackPathImage, String emtpId, String rolesId,String gender, String projId,String validateCode, String streamTitle ,String statusType,String userTypeId);
+        void insertHumen(String userId, String idCard, String streamName, String mobile, String headImage, String iDCardPathImage,String iDCardBackPathImage, String emtpId, String rolesId,String gender, String projId,String validateCode, String streamTitle ,String statusType,String userTypeId,String admUserId,String admUserName);
         void checkHumenIsExist(String phone,String idcard);
         void getEmtp();
         void getEmtpRoles(String emtpId);

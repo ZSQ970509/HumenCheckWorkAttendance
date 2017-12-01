@@ -140,11 +140,11 @@ public class InsertHumenModel extends BaseModel{
                 });
     }
     //添加人员
-    public void insertHumen(@NonNull String userId,@NonNull String idCard,@NonNull String streamName,@NonNull String mobile,@NonNull String headImage,@NonNull String iDCardPathImage,@NonNull String iDCardBackPathImage,@NonNull String emtpId,@NonNull String rolesId,@NonNull String gender,@NonNull String projId,@NonNull String validateCode,@NonNull String streamTitle,@NonNull String statusType,@NonNull String userTypeId,@NonNull final InsertHumenModel.InsertHumenInfoHint infoHint){
+    public void insertHumen(@NonNull String userId,@NonNull String idCard,@NonNull String streamName,@NonNull String mobile,@NonNull String headImage,@NonNull String iDCardPathImage,@NonNull String iDCardBackPathImage,@NonNull String emtpId,@NonNull String rolesId,@NonNull String gender,@NonNull String projId,@NonNull String validateCode,@NonNull String streamTitle,@NonNull String statusType,@NonNull String userTypeId,@NonNull String admUserId,@NonNull String admUserName,@NonNull final InsertHumenModel.InsertHumenInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.insertHumen(userId,idCard,streamName,mobile,headImage,iDCardPathImage,iDCardBackPathImage,"123456",emtpId,rolesId,gender,projId,validateCode,streamTitle,statusType,userTypeId)
+        httpService.insertHumen(userId,idCard,streamName,mobile,headImage,iDCardPathImage,iDCardBackPathImage,"123456",emtpId,rolesId,gender,projId,validateCode,streamTitle,statusType,userTypeId,admUserId,admUserName)
                // .compose(view.<BaseHttpResult>bind())
                 .compose(new CommonTransformer())
                 .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {
