@@ -81,6 +81,7 @@ public class TakeCameraActivity extends BaseActivity<TakeCameraPresenter> implem
         switch (view.getId()){
             case R.id.imageView_TakePhote:
                 try {
+                    mySurfaceView.setPhotoSize(1440,1080);
                     mySurfaceView.takePicture();
                     mTakePhote.setClickable(false);
 //                    LogUtil.logE("点击了照相按钮");

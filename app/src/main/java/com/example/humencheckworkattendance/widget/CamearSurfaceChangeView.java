@@ -60,6 +60,8 @@ public class CamearSurfaceChangeView extends SurfaceView
     ImageView mImgMuban;
     ImageView mImgAuxiliary;
     boolean isBack = true;
+    private int mPhotoWidth = 640;
+    private int mPhotoHeight = 480;
     public CamearSurfaceChangeView(Context context) {
         this(context, null);
     }
@@ -74,7 +76,6 @@ public class CamearSurfaceChangeView extends SurfaceView
         getScreenMetrix(context);
         initView();
     }
-
     private void getScreenMetrix(Context context) {
         WindowManager WM = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics outMetrics = new DisplayMetrics();
@@ -228,7 +229,8 @@ public class CamearSurfaceChangeView extends SurfaceView
 
                 }
                 bm = Bitmap.createBitmap(bm, 0, 0, bm.getWidth(), bm.getHeight(), m, true);
-                bm = zoomImg(bm,640,480);
+//                bm = zoomImg(bm,640,480);
+                bm = zoomImg(bm,mPhotoWidth,mPhotoHeight);
                 if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
                     Log.i(TAG,
                             "Environment.getExternalStorageDirectory()=" + Environment.getExternalStorageDirectory());
@@ -697,5 +699,15 @@ public class CamearSurfaceChangeView extends SurfaceView
         mLastX = x;
         mLastY = y;
         mLastZ = z;
+    }
+
+    /**
+     * 设置照片的分辨率
+     * @param height
+     * @param width
+     */
+    public void setPhotoSize(int height,int width){
+        mPhotoHeight = height;
+        mPhotoWidth = width;
     }
 }
