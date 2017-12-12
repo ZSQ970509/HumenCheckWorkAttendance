@@ -11,8 +11,8 @@ import cn.cloudwalk.libproject.util.HttpUtil;
  */
 
 public class NetworkApi {
-    public static String BASE_URL = "http://120.35.11.49:4545";
-    //public static String BASE_URL = "http://ydkq.jsqqy.com";
+    //public static String BASE_URL = "http://120.35.11.49:4545";
+    public static String BASE_URL = "http://ydkq.jsqqy.com";
     public static final String API ="/Services";
     public static final String upLoadImage64 ="/DataService.ashx?action=upLoadPhoto";
     public static final String saveStreamInVivoDetection ="/DataService.ashx?action=saveStreamInVivoDetection";

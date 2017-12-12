@@ -106,58 +106,58 @@
         <activity
             android:name=".FaceMatchingDemoActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+            />
         <!-- 活体相关activity -->
         <activity
             android:name="cn.cloudwalk.libproject.LiveActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name="cn.cloudwalk.libproject.LiveStartActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name="cn.cloudwalk.libproject.LiveResultActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.LoginActivity"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".ui.activity.SignInDetailsActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.HomePageActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.MapActivity"
             android:label="@string/title_activity_map"
-            android:screenOrientation="portrait"
+
             android:theme="@style/AppTheme.Base" />
         <activity
             android:name=".ui.activity.InsertHumenActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.InsertHumenManagerActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.TakeIdNumCameraActivity"
-            android:screenOrientation="portrait" />
+           />
         <activity
             android:name=".ui.activity.TakeIdNumBackCameraActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.TakeHeadCameraActivity"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".ui.activity.TakeCameraActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.ShowPhotoActivity"
-            android:screenOrientation="portrait" />
+            />
         <activity
             android:name=".ui.activity.InsertGroupActivity"
-            android:screenOrientation="portrait" />
+             />
         <activity
             android:name=".ui.activity.InsertGrouperActivity"
             android:screenOrientation="portrait" />
