@@ -1,6 +1,8 @@
 package com.example.humencheckworkattendance.ui.activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -9,6 +11,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -150,6 +153,13 @@ public class InsertHumenManagerActivity extends BaseActivity<InserHumenManagerPr
                 }
             }
         });
+    }
+
+    @Override
+    protected void changeScreen() {
+        if (null != mPopWindow && mPopWindow.isShowing()) {
+            mPopWindow.dismiss();
+        }
     }
 
     @Override
@@ -321,12 +331,25 @@ public class InsertHumenManagerActivity extends BaseActivity<InserHumenManagerPr
         }
     }
     private void showThirdPopupWindow() {
-        View contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview, null);
+//        backgroundAlpha(0.5f);
+        View contentView;
+        if (mScreenOrientation) {
+            contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview_land, null);
+        } else {
+            contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview, null);
+        }
         mPopWindow = new PopupWindow(contentView);
         mPopWindow.setWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
-        mPopWindow.setHeight(ViewGroup.LayoutParams.FILL_PARENT);
+        mPopWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
+        mPopWindow.setBackgroundDrawable(new BitmapDrawable());
         mPopWindow.setOutsideTouchable(true);
         mPopWindow.setFocusable(true);
+//        mPopWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+//            @Override
+//            public void onDismiss() {
+//                backgroundAlpha(1);
+//            }
+//        });
         LinearLayout pop_LinearLayout = (LinearLayout) contentView.findViewById(R.id.pop_LinearLayout);
         pop_LinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -348,21 +371,39 @@ public class InsertHumenManagerActivity extends BaseActivity<InserHumenManagerPr
         if (Build.VERSION.SDK_INT < 24) {
             mPopWindow.showAsDropDown(linearLayoutStreamTitle);
         } else {
-            int[] a = new int[2];
-            linearLayoutStreamTitle.getLocationInWindow(a);
-          //  Log.e(" a[0]",a[0]+"");
-            mPopWindow.showAtLocation(linearLayoutStreamTitle, Gravity.NO_GRAVITY, a[0], linearLayoutStreamTitle.getHeight() + a[1]);
-            mPopWindow.update();
+            int[] location = new int[2];
+            linearLayoutStreamTitle.getLocationOnScreen(location);
+            int x = location[0];
+            int y = location[1];
+            if (Build.VERSION.SDK_INT == 25) {
+                WindowManager wm = (WindowManager) mPopWindow.getContentView().getContext().getSystemService(Context.WINDOW_SERVICE);
+                int screenHeight = wm.getDefaultDisplay().getHeight();
+                mPopWindow.setHeight(screenHeight - location[1] - linearLayoutStreamTitle.getHeight());
+            }
+            mPopWindow.showAtLocation(linearLayoutStreamTitle, Gravity.NO_GRAVITY, x, linearLayoutStreamTitle.getHeight() + y);
         }
 
     }
     private void showSecondPopupWindow() {
-        View contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview, null);
+//        backgroundAlpha(0.5f);
+        View contentView ;
+        if (mScreenOrientation) {
+            contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview_land, null);
+        } else {
+            contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview, null);
+        }
         mPopWindow = new PopupWindow(contentView);
         mPopWindow.setWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
-        mPopWindow.setHeight(ViewGroup.LayoutParams.FILL_PARENT);
+        mPopWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
         mPopWindow.setOutsideTouchable(true);
         mPopWindow.setFocusable(true);
+        mPopWindow.setBackgroundDrawable(new BitmapDrawable());
+//        mPopWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+//            @Override
+//            public void onDismiss() {
+//                backgroundAlpha(1);
+//            }
+//        });
         ListView ListViewPopupWindow = (ListView) contentView.findViewById(R.id.pop_ListView);
         LinearLayout pop_LinearLayout = (LinearLayout) contentView.findViewById(R.id.pop_LinearLayout);
         pop_LinearLayout.setOnClickListener(new View.OnClickListener() {
@@ -387,17 +428,35 @@ public class InsertHumenManagerActivity extends BaseActivity<InserHumenManagerPr
             linearLayoutLinearLayoutEmtpRoles.getLocationOnScreen(location);
             int x = location[0];
             int y = location[1];
+            if (Build.VERSION.SDK_INT == 25) {
+                WindowManager wm = (WindowManager) mPopWindow.getContentView().getContext().getSystemService(Context.WINDOW_SERVICE);
+                int screenHeight = wm.getDefaultDisplay().getHeight();
+                mPopWindow.setHeight(screenHeight - location[1] - linearLayoutLinearLayoutEmtpRoles.getHeight());
+            }
             mPopWindow.showAtLocation(linearLayoutLinearLayoutEmtpRoles, Gravity.NO_GRAVITY, x, y + linearLayoutLinearLayoutEmtpRoles.getHeight());
         }
 
     }
     private void showPopupWindow() {
-        View contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview, null);
+//        backgroundAlpha(0.5f);
+        View contentView;
+        if (mScreenOrientation) {
+            contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview_land, null);
+        } else {
+            contentView = LayoutInflater.from(InsertHumenManagerActivity.this).inflate(R.layout.view_popupwindow_listview, null);
+        }
         mPopWindow = new PopupWindow(contentView);
         mPopWindow.setWidth(ViewGroup.LayoutParams.WRAP_CONTENT);
-        mPopWindow.setHeight(ViewGroup.LayoutParams.FILL_PARENT);
+        mPopWindow.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
         mPopWindow.setOutsideTouchable(true);
         mPopWindow.setFocusable(true);
+        mPopWindow.setBackgroundDrawable(new BitmapDrawable());
+//        mPopWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+//            @Override
+//            public void onDismiss() {
+//                backgroundAlpha(1);
+//            }
+//        });
         LinearLayout pop_LinearLayout = (LinearLayout) contentView.findViewById(R.id.pop_LinearLayout);
         pop_LinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -425,15 +484,25 @@ public class InsertHumenManagerActivity extends BaseActivity<InserHumenManagerPr
        if (Build.VERSION.SDK_INT < 24) {
             mPopWindow.showAsDropDown(linearLayoutEmtp);
         } else {
-            int[] a = new int[2];
-            linearLayoutEmtp.getLocationInWindow(a);
-          // Log.e(" a[0]",a[0]+"");
-            mPopWindow.showAtLocation(linearLayoutEmtp, Gravity.NO_GRAVITY, a[0], linearLayoutEmtp.getHeight() + a[1]);
-            mPopWindow.update();
+           int[] location = new int[2];
+           linearLayoutEmtp.getLocationOnScreen(location);
+           int x = location[0];
+           int y = location[1];
+           if (Build.VERSION.SDK_INT == 25) {
+               WindowManager wm = (WindowManager) mPopWindow.getContentView().getContext().getSystemService(Context.WINDOW_SERVICE);
+               int screenHeight = wm.getDefaultDisplay().getHeight();
+               mPopWindow.setHeight(screenHeight - location[1] - linearLayoutEmtp.getHeight());
+           }
+            mPopWindow.showAtLocation(linearLayoutEmtp, Gravity.NO_GRAVITY, x, linearLayoutEmtp.getHeight() + y);
         }
 
     }
-
+//    public void backgroundAlpha(float bgAlpha) {
+//        WindowManager.LayoutParams lp = getWindow().getAttributes();
+//        lp.alpha = bgAlpha; //0.0-1.0
+//        getWindow().setAttributes(lp);
+//        getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+//    }
     @Override
     public void getTeamSuccess(TeamListBean teamBeanList) {
 

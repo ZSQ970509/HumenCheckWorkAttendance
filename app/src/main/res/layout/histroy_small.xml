@@ -13,7 +13,9 @@
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
-            android:layout_width="@dimen/x702"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
             android:layout_height="@dimen/y240"
             android:background="#ffffff"
             android:layout_centerVertical="true"

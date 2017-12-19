@@ -19,8 +19,12 @@ import butterknife.BindView;
 
 public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements WelcomeContact.WelcomeView {
     @BindView(R.id.imageView_Welcome_Background)
-    ImageView imageViewWelcomeBackground;
+    ImageView imageViewWelcomeBackgroundPort;
+    @BindView(R.id.imageView_Welcome_Background_land)
+    ImageView imageViewWelcomeBackgroundLand;
+
     Intent intent = new Intent();
+
     @Override
     protected WelcomePresenter loadPresenter() {
         return new WelcomePresenter();
@@ -39,8 +43,8 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
     @Override
     protected void initView() {
         String moblie = android.os.Build.MODEL;
-       // Log.e("moblie",moblie);
-        if(!moblie.equals("KOB-L09")){
+        // Log.e("moblie",moblie);
+        if (moblie.equals("KOB-L09")) {
             AlertDialog.Builder builder = new AlertDialog.Builder(WelcomeActivity.this);
             // 设置提示框的标题
             builder.setTitle("警告：").
@@ -61,12 +65,12 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
             alertDialog.setCanceledOnTouchOutside(false);
             // 显示对话框
             alertDialog.show();
-            alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88,190,252));
+            alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88, 190, 252));
             alertDialog.setCancelable(false);
 
-        }else {
-            imageViewWelcomeBackground.setImageResource(R.drawable.welcomebackground);
-            mPresenter.getVersion(AppUpdateUtils.getVersionCode(this)+"" );
+        } else {
+            imageViewWelcomeBackgroundPort.setImageResource(R.drawable.welcomebackground);
+            mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
         }
 
 
@@ -78,16 +82,29 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
     }
 
     @Override
+    protected void changeScreen() {
+        if (mScreenOrientation) {
+            imageViewWelcomeBackgroundLand.setVisibility(View.VISIBLE);
+            imageViewWelcomeBackgroundPort.setVisibility(View.GONE);
+        }
+        else {
+            imageViewWelcomeBackgroundLand.setVisibility(View.GONE);
+            imageViewWelcomeBackgroundPort.setVisibility(View.VISIBLE);
+        }
+    }
+
+    @Override
     protected void otherViewClick(View view) {
 
     }
+
     @Override
     public void getVersionSuccess(UpdateBean updateBean) {
 
         try {
-            intent.setClass(this,LoginActivity.class);
-            intent.putExtra("isUpdate",true);
-            intent.putExtra("updateBean",updateBean);
+            intent.setClass(this, LoginActivity.class);
+            intent.putExtra("isUpdate", true);
+            intent.putExtra("updateBean", updateBean);
             Thread.sleep(2000);
             startActivity(intent);
             finish();
@@ -100,16 +117,15 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
     @Override
     public void getVersionFail(String failMsg) {
         try {
-        intent.setClass(this,LoginActivity.class);
-        intent.putExtra("isUpdate",false);
+            intent.setClass(this, LoginActivity.class);
+            intent.putExtra("isUpdate", false);
             Thread.sleep(2000);
-        startActivity(intent);
+            startActivity(intent);
             finish();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
-
 
 
 }

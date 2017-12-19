@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/home_page_port"
+    android:background="@drawable/singbackground"
+    tools:context="com.example.humencheckworkattendance.ui.activity.HomePageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y128"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/textView_UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="郑书强"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y48"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView_Histroy"
+                android:layout_width="@dimen/y48"
+                android:layout_height="@dimen/y48"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x40"
+                app:srcCompat="@drawable/homepagedialog" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_ViewHolder"
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_marginTop="@dimen/y40"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_Insert_Humen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y40"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageView_Insert_Humen"
+                    android:layout_width="@dimen/x48"
+                    android:layout_height="@dimen/y48"
+                    android:layout_marginLeft="@dimen/x40"
+                    app:srcCompat="@drawable/signaddhumen" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y200"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y28"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_page_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/signheader" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Map"
+            android:layout_width="@dimen/x502"
+            android:layout_height="@dimen/y40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/signaddress" />
+
+            <TextView
+                android:id="@+id/home_page_addresss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:text="暂无地区信息"
+                android:textColor="#808080"
+                android:textSize="@dimen/y30"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/singright" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/x280"
+            android:layout_height="@dimen/y280"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y157"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_page_camera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/signcamera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y70"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_page_sign"
+                android:layout_width="@dimen/x600"
+                android:layout_height="@dimen/y100"
+                app:srcCompat="@drawable/signsign" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/y20"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="@dimen/x600"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="版本：V1.0.171212（Beta）"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y30"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

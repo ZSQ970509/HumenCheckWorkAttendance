@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.humencheckworkattendance.R;
@@ -57,37 +57,37 @@ public class SubmitHumenMessageAdapter extends BaseAdapter{
             viewHolder.submitHumenSubmit = (ImageView) convertView.findViewById(R.id.submit_humen_submit);
             viewHolder.submitHumenRollback = (ImageView) convertView.findViewById(R.id.submit_humen_rollback);
             viewHolder.submitHumenError  = (ImageView) convertView.findViewById(R.id.submit_humen_error);
-            viewHolder.relativelayoutNotAudited = (RelativeLayout) convertView.findViewById(R.id.relativelayout_not_audited);
-            viewHolder.relativelayoutAudited = (RelativeLayout) convertView.findViewById(R.id.relativelayout_audited);
+            viewHolder.linearLayoutNotAudited = (LinearLayout) convertView.findViewById(R.id.relativelayout_not_audited);
+            viewHolder.linearLayoutAudited = (LinearLayout) convertView.findViewById(R.id.relativelayout_audited);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         viewHolder.submitHumenSamllName.setText(dataList.get(position).getStreamName());
         if(dataList.get(position).getStatus()==0){
-            viewHolder.relativelayoutAudited.setVisibility(View.GONE);
-            viewHolder.relativelayoutNotAudited.setVisibility(View.VISIBLE);
+            viewHolder.linearLayoutAudited.setVisibility(View.GONE);
+            viewHolder.linearLayoutNotAudited.setVisibility(View.VISIBLE);
             viewHolder.submitHumenSubmit.setVisibility(View.VISIBLE);
             viewHolder.submitHumenError.setVisibility(View.GONE);
             viewHolder.submitHumenSamllStatus.setText("未审核");
             viewHolder.submitHumenSamllStatus.setTextColor(Color.rgb(191,189,189));
         }else if(dataList.get(position).getStatus()==1){
-            viewHolder.relativelayoutNotAudited.setVisibility(View.GONE);
-            viewHolder.relativelayoutAudited.setVisibility(View.VISIBLE);
+            viewHolder.linearLayoutNotAudited.setVisibility(View.GONE);
+            viewHolder.linearLayoutAudited.setVisibility(View.VISIBLE);
             viewHolder.submitHumenSubmit.setVisibility(View.GONE);
             viewHolder.submitHumenError.setVisibility(View.GONE);
             viewHolder.submitHumenSamllStatus.setText("审核中");
             viewHolder.submitHumenSamllStatus.setTextColor(Color.rgb(235,191,59));
         }else if(dataList.get(position).getStatus()==3){
-            viewHolder.relativelayoutAudited.setVisibility(View.GONE);
-            viewHolder.relativelayoutNotAudited.setVisibility(View.GONE);
+            viewHolder.linearLayoutAudited.setVisibility(View.GONE);
+            viewHolder.linearLayoutNotAudited.setVisibility(View.GONE);
             viewHolder.submitHumenSubmit.setVisibility(View.GONE);
             viewHolder.submitHumenError.setVisibility(View.GONE);
             viewHolder.submitHumenSamllStatus.setText("审核通过");
             viewHolder.submitHumenSamllStatus.setTextColor(Color.rgb(33,161,93));
         }else if(dataList.get(position).getStatus()==2){
-            viewHolder.relativelayoutAudited.setVisibility(View.GONE);
-            viewHolder.relativelayoutNotAudited.setVisibility(View.VISIBLE);
+            viewHolder.linearLayoutAudited.setVisibility(View.GONE);
+            viewHolder.linearLayoutNotAudited.setVisibility(View.VISIBLE);
             viewHolder.submitHumenSamllStatus.setText("审核失败");
             viewHolder.submitHumenSubmit.setVisibility(View.GONE);
             viewHolder.submitHumenError.setVisibility(View.VISIBLE);
@@ -154,8 +154,8 @@ public class SubmitHumenMessageAdapter extends BaseAdapter{
         @BindView(R.id.submit_humen_error)
         ImageView submitHumenError;
         @BindView(R.id.relativelayout_not_audited)
-        RelativeLayout relativelayoutNotAudited;
+        LinearLayout linearLayoutNotAudited;
         @BindView(R.id.relativelayout_audited)
-        RelativeLayout relativelayoutAudited;
+        LinearLayout linearLayoutAudited;
     }
 }

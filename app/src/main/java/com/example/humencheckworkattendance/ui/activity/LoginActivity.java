@@ -24,7 +24,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.humencheckworkattendance.R;
@@ -53,14 +53,30 @@ import cn.cloudwalk.libproject.util.FileUtil;
 
 
 public class LoginActivity extends BaseActivity<LoginPresenter> implements LoginContact.LoginView{
-    @BindView(R.id.editText_UserName)
     EditText editTextUserName;
-    @BindView(R.id.editText_PassWord)
     EditText editTextPassWord;
-    @BindView(R.id.checkBox_SavePassWord)
     CheckBox checkBoxSavePassWord;
-    @BindView(R.id.imageView_Login)
-    ImageView imageViewLogin;
+
+    @BindView(R.id.editText_UserName)
+    EditText editTextUserNamePort;
+    @BindView(R.id.editText_PassWord)
+    EditText editTextPassWordPort;
+    @BindView(R.id.checkBox_SavePassWord)
+    CheckBox checkBoxSavePassWordPort;
+
+    @BindView(R.id.editText_UserName_land)
+    EditText editTextUserNameLand;
+    @BindView(R.id.editText_PassWord_land)
+    EditText editTextPassWordLand;
+    @BindView(R.id.checkBox_SavePassWord_land)
+    CheckBox checkBoxSavePassWordLand;
+
+
+    @BindView(R.id.login_port)
+    LinearLayout mLoginPort;
+    @BindView(R.id.login_land)
+    LinearLayout mLoginLand;
+
     LoginBean loginBean;
     File pictureFile;
     Intent updateIntent;
@@ -150,6 +166,15 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
             alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88,190,252));
         }
     }
+
+    @Override
+    protected void changeScreen() {
+        editTextUserName = getShowWidgetsOnScreen(editTextUserNameLand,editTextUserNamePort);
+        editTextPassWord = getShowWidgetsOnScreen(editTextPassWordLand,editTextPassWordPort);
+        checkBoxSavePassWord = getShowWidgetsOnScreen(checkBoxSavePassWordLand,checkBoxSavePassWordPort);
+        setShowView(mLoginLand,mLoginPort);
+    }
+
     private void loadNewVersionProgress() {
         final   String uri=updateBean.getApk_file_url();
        // final   String uri="http://120.35.11.49:26969/UpdatePackage/201709251618239026.apk";
@@ -260,9 +285,10 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
     protected void otherViewClick(View view) {
 
     }
-    @OnClick({R.id.imageView_Login})
+    @OnClick({R.id.imageView_Login,R.id.imageView_Login_land})
     public void onViewClicked(View view) {
         switch (view.getId()){
+            case R.id.imageView_Login_land:
             case R.id.imageView_Login:
                 if(editTextUserName.getText().toString().isEmpty()){
                     ToastUtil.setToast("用户名不能为空");

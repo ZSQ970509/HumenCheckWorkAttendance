@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.humencheckworkattendance.R;
 import com.example.humencheckworkattendance.base.BaseActivity;
@@ -21,18 +22,32 @@ import butterknife.OnClick;
 
 
 public class TakeIdNumBackCameraActivity extends BaseActivity<TakeIdNumBackCameraPresenter> implements TakeIdNumBackCameraContact.TakeIdNumBackCameraView {
-    @BindView(R.id.frameLayout_Camera_IdNum)
-    FrameLayout frameLayoutCameraIdNum;
+//    @BindView(R.id.frameLayout_Camera_IdNum)
+//    FrameLayout frameLayoutCameraIdNum;
+//    @BindView(R.id.imageView_CameraBold)
+//    ImageView imageViewCameraBold;
+//    @BindView(R.id.imageView_TakePhote)
+//    ImageView imageViewTakePhoto;
+
+//    @BindView(R.id.imageView_Back)
+//    ImageView  imageViewBack;
+
+
+
     @BindView(R.id.imageView_CameraBold)
     ImageView imageViewCameraBold;
-    @BindView(R.id.imageView_TakePhote)
-    ImageView imageViewTakePhoto;
+
+    @BindView(R.id.imageView_TakePhote_land)
+    ImageView imageViewTakePhotoLand;
+    @BindView(R.id.imageView_TakePhote_port)
+    ImageView imageViewTakePhotoPort;
+
     @BindView(R.id.cameraSurfaceView)
     CameraSurfaceIdBackView mySurfaceView;
-    @BindView(R.id.imageView_Back)
-    ImageView  imageViewBack;
+
     private int mScreenWidth;
     private int mScreenHeight;
+
     @Override
     protected TakeIdNumBackCameraPresenter loadPresenter() {
         return new TakeIdNumBackCameraPresenter();
@@ -49,6 +64,17 @@ public class TakeIdNumBackCameraActivity extends BaseActivity<TakeIdNumBackCamer
     }
 
     @Override
+    protected void changeScreen() {
+       if(mScreenOrientation){
+           imageViewTakePhotoLand.setVisibility(View.VISIBLE);
+           imageViewTakePhotoPort.setVisibility(View.GONE);
+       }else {
+           imageViewTakePhotoLand.setVisibility(View.GONE);
+           imageViewTakePhotoPort.setVisibility(View.VISIBLE);
+       }
+    }
+
+    @Override
     protected void initView() {
         getScreenMetrix(this);
         /*LinearLayout.LayoutParams flParams = (LinearLayout.LayoutParams) frameLayoutCameraIdNum.getLayoutParams();
@@ -62,10 +88,12 @@ public class TakeIdNumBackCameraActivity extends BaseActivity<TakeIdNumBackCamer
     protected int getLayoutId() {
         return R.layout.activity_take_id_num_back_camera;
     }
-    @OnClick({R.id.imageView_TakePhote,R.id.imageView_Back})
+
+    @OnClick({R.id.imageView_TakePhote_land, R.id.imageView_TakePhote_port,R.id.imageView_Back})
     public void onViewClicked(View view) {
-        switch (view.getId()){
-            case R.id.imageView_TakePhote:
+        switch (view.getId()) {
+            case R.id.imageView_TakePhote_port:
+            case R.id.imageView_TakePhote_land:
                 try {
 
                     mySurfaceView.takePicture();
@@ -81,16 +109,17 @@ public class TakeIdNumBackCameraActivity extends BaseActivity<TakeIdNumBackCamer
                 break;
 
 
-
-
         }
     }
+
     @Override
     protected void otherViewClick(View view) {
 
     }
+
     /**
      * 获取当前手机屏幕的宽高
+     *
      * @param context
      */
     private void getScreenMetrix(Context context) {
@@ -100,14 +129,15 @@ public class TakeIdNumBackCameraActivity extends BaseActivity<TakeIdNumBackCamer
         mScreenWidth = outMetrics.widthPixels;
         mScreenHeight = outMetrics.heightPixels;
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.e("requestCode",resultCode+"11111");
+        Log.e("requestCode", resultCode + "11111");
         switch (resultCode) {
             case 1:
                 Intent mIntent = getIntent();
                 //mIntent.putExtra("change01", "1000");
-               // mIntent.putExtra("change02", "2000");
+                // mIntent.putExtra("change02", "2000");
                 // 设置结果，并进行传送
                 this.setResult(4, data);
                 this.finish();

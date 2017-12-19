@@ -17,6 +17,7 @@ import com.example.humencheckworkattendance.contact.TakeIdNumCameraContact;
 
 import com.example.humencheckworkattendance.presenter.TakeHeadCameraPresenter;
 import com.example.humencheckworkattendance.widget.CamearSurfaceChangeView;
+import com.example.humencheckworkattendance.widget.CameraSurfaceChangNewView;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -25,14 +26,18 @@ import butterknife.OnClick;
 public class TakeHeadCameraActivity extends BaseActivity<TakeHeadCameraPresenter> implements TakeIdNumCameraContact.TakeIdNumCameraView {
     @BindView(R.id.fl_photo)
     FrameLayout frameLayoutCameraIdNum;
-    @BindView(R.id.imageView_TakeHeadPhoto)
-    ImageView imageViewTakeHeadPhoto;
     @BindView(R.id.cameraSurfaceView)
-    CamearSurfaceChangeView mySurfaceView;
-    @BindView(R.id.imageView_Camera_Change)
-    ImageView imageViewCameraChange;
-    @BindView(R.id.imageView_Back)
-    ImageView  imageViewBack;
+    CameraSurfaceChangNewView mySurfaceView;
+
+    @BindView(R.id.imageView_TakeHeadPhoto_port)
+    ImageView imageViewTakeHeadPhotoPort;
+    @BindView(R.id.imageView_TakeHeadPhoto_land)
+    ImageView imageViewTakeHeadPhotoLand;
+    @BindView(R.id.imageView_port)
+    ImageView imageViewPort;
+    @BindView(R.id.imageView_land)
+    ImageView imageViewLand;
+
     LinearLayout.LayoutParams flParams;
     int cameraPosition = 1;
     private int mScreenWidth;
@@ -55,20 +60,42 @@ public class TakeHeadCameraActivity extends BaseActivity<TakeHeadCameraPresenter
     @Override
     protected void initView() {
         getScreenMetrix(this);
-        flParams = (LinearLayout.LayoutParams) frameLayoutCameraIdNum.getLayoutParams();
-        flParams.height = (int) (mScreenWidth * 1.33334F);
-        flParams.width = mScreenWidth;
-        frameLayoutCameraIdNum.setLayoutParams(flParams);
+
+    }
+
+    @Override
+    protected void changeScreen() {
+        if(mScreenOrientation){
+//            flParams = (LinearLayout.LayoutParams) frameLayoutCameraIdNum.getLayoutParams();
+//            flParams.height =mScreenHeight;
+//            flParams.width = (int) (mScreenHeight * 1.33334F);
+//            frameLayoutCameraIdNum.setLayoutParams(flParams);
+            imageViewTakeHeadPhotoPort.setVisibility(View.GONE);
+            imageViewTakeHeadPhotoLand.setVisibility(View.VISIBLE);
+            imageViewPort.setVisibility(View.GONE);
+            imageViewLand.setVisibility(View.VISIBLE);
+        }else {
+//            flParams = (LinearLayout.LayoutParams) frameLayoutCameraIdNum.getLayoutParams();
+//            flParams.height = (int) (mScreenWidth * 1.33334F);
+//            flParams.width = mScreenWidth;
+//            frameLayoutCameraIdNum.setLayoutParams(flParams);
+            imageViewTakeHeadPhotoPort.setVisibility(View.VISIBLE);
+            imageViewTakeHeadPhotoLand.setVisibility(View.GONE);
+            imageViewPort.setVisibility(View.VISIBLE);
+            imageViewLand.setVisibility(View.GONE);
+        }
+
     }
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_take_head_camera;
+        return R.layout.activity_take_head_camera_new;
     }
-    @OnClick({R.id.imageView_TakeHeadPhoto,R.id.imageView_Camera_Change,R.id.imageView_Back})
+    @OnClick({R.id.imageView_TakeHeadPhoto_port,R.id.imageView_TakeHeadPhoto_land,R.id.imageView_Camera_Change,R.id.imageView_Back})
     public void onViewClicked(View view) {
         switch (view.getId()){
-            case R.id.imageView_TakeHeadPhoto:
+            case R.id.imageView_TakeHeadPhoto_port:
+            case R.id.imageView_TakeHeadPhoto_land:
                 try {
 
                     mySurfaceView.takePicture();

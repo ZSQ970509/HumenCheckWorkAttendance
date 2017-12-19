@@ -47,10 +47,7 @@ public class PopListViewAdapter extends BaseAdapter{
             viewHolder = new ViewHolder();
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.view_popupwindow_listview_samll, null);
-
             viewHolder.textViewPopupWindowListView = (TextView) convertView.findViewById(R.id.textView_PopupWindow_ListView);
-
-
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -60,9 +57,9 @@ public class PopListViewAdapter extends BaseAdapter{
 
         return convertView;
     }
+
     public class ViewHolder {
         @BindView(R.id.textView_PopupWindow_ListView)
         TextView textViewPopupWindowListView;
-
     }
 }

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y914">
+
+                <com.example.humencheckworkattendance.widget.CameraSurfaceChangNewView
+                    android:id="@+id/cameraSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/uploadheadbold" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_land"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:srcCompat="@drawable/uploadheadbold_land" />
+
+        <ImageView
+            android:id="@+id/imageView_Back"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y48"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginTop="@dimen/y76"
+            app:srcCompat="@drawable/historyback" />
+
+        <ImageView
+            android:id="@+id/imageView_Camera_Change"
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y48"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="@dimen/y76"
+            app:srcCompat="@drawable/uploadheadchange" />
+
+        <ImageView
+            android:id="@+id/imageView_TakeHeadPhoto_port"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y40"
+            app:srcCompat="@drawable/inserthumencameraphoto" />
+
+        <ImageView
+            android:id="@+id/imageView_TakeHeadPhoto_land"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            android:visibility="gone"
+            app:srcCompat="@drawable/inserthumencameraphoto" />
+    </RelativeLayout>
+</FrameLayout>

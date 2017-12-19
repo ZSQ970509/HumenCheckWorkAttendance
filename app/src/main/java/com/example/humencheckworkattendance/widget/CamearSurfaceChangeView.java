@@ -131,7 +131,15 @@ public class CamearSurfaceChangeView extends SurfaceView
         setAutoFocus(true);
 
     }
-
+    public void refreshSurface(){
+        if(mCamera==null)
+            return;
+        setCameraDisplayOrientation(getContext(), FindBackCamera(), mCamera);
+        // ���ò�������ʼԤ��
+        setCameraParams(mCamera, mScreenWidth, mScreenHeight);
+        mCamera.startPreview();
+        setAutoFocus(true);
+    }
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
         Log.i(TAG, "surfaceDestroyed");
@@ -218,12 +226,10 @@ public class CamearSurfaceChangeView extends SurfaceView
                     Log.d("TAG", android.os.Build.MODEL);
                     m.setRotate(90, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
                 } else {
-                    Log.e("isBack", isBack+"");
                     if(isBack) {
-
-                        m.setRotate(90, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
+                        m.setRotate(90,  bm.getWidth() / 2, (float) bm.getHeight() / 2);
                     }else{
-                        m.setRotate(270, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
+                        m.setRotate(270,  bm.getWidth() / 2, (float) bm.getHeight() / 2);
                         isBack = true;
                     }
 

@@ -7,26 +7,42 @@
     android:layout_height="match_parent"
     tools:context="com.example.humencheckworkattendance.ui.activity.TakeIdNumCameraActivity">
 
-
-    <com.example.humencheckworkattendance.widget.CamearSurfaceChangeView
-        android:id="@+id/cameraSurfaceView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView_TakePhote"
-        android:layout_width="@dimen/x180"
-        android:layout_height="@dimen/y180"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="@dimen/y70"
-        app:srcCompat="@drawable/inserthumencameraphoto" />
+        <com.example.humencheckworkattendance.widget.CameraSurfaceChangNewView
+            android:id="@+id/cameraSurfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-    <ImageView
-        android:id="@+id/imageView_Back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/x24"
-        android:layout_marginTop="@dimen/y76"
-        app:srcCompat="@drawable/historyback" />
+        <ImageView
+            android:id="@+id/imageView_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginTop="@dimen/y76"
+            app:srcCompat="@drawable/historyback" />
 
+        <ImageView
+            android:id="@+id/imageView_TakePhote_port"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y40"
+            app:srcCompat="@drawable/inserthumencameraphoto" />
+
+        <ImageView
+            android:id="@+id/imageView_TakePhote_land"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y180"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/y80"
+            android:visibility="gone"
+            app:srcCompat="@drawable/inserthumencameraphoto" />
+
+
+    </RelativeLayout>
 </FrameLayout>

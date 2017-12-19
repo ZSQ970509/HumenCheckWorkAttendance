@@ -10,14 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-
+        <ImageView
+            android:id="@+id/imageView_Welcome_Background_land"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/welcomebackground_land" />
         <ImageView
             android:id="@+id/imageView_Welcome_Background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/welcomebackground" />
+            android:src="@drawable/welcomebackground" />
     </LinearLayout>
 
 </LinearLayout>

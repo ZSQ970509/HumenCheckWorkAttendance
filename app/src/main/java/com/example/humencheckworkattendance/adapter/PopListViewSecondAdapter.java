@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.humencheckworkattendance.R;
+import com.example.humencheckworkattendance.bean.EmtpBean;
 import com.example.humencheckworkattendance.bean.EmtpRolesBean;
 
 import java.util.ArrayList;
@@ -47,15 +48,11 @@ public class PopListViewSecondAdapter extends BaseAdapter{
             viewHolder = new ViewHolder();
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.view_popupwindow_listview_samll, null);
-
             viewHolder.textViewPopupWindowListView = (TextView) convertView.findViewById(R.id.textView_PopupWindow_ListView);
-
-
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-
         viewHolder.textViewPopupWindowListView.setText(EmtpRolesBeanList.get(position).getName());
 
         return convertView;

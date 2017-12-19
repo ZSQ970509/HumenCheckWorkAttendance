@@ -11,6 +11,7 @@ import com.example.humencheckworkattendance.base.BaseActivity;
 import com.example.humencheckworkattendance.contact.TakeCameraContact;
 import com.example.humencheckworkattendance.presenter.TakeCameraPresenter;
 import com.example.humencheckworkattendance.widget.CamearSurfaceChangeView;
+import com.example.humencheckworkattendance.widget.CameraSurfaceChangNewView;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -23,10 +24,11 @@ import butterknife.OnClick;
 public class TakeCameraActivity extends BaseActivity<TakeCameraPresenter> implements TakeCameraContact.TakeCameraView{
 
     @BindView(R.id.cameraSurfaceView)
-    CamearSurfaceChangeView mySurfaceView;
-    @BindView(R.id.imageView_TakePhote)
-    ImageView mTakePhote;
-
+    CameraSurfaceChangNewView mySurfaceView;
+    @BindView(R.id.imageView_TakePhote_land)
+    ImageView mTakePhoteLand;
+    @BindView(R.id.imageView_TakePhote_port)
+    ImageView mTakePhotePort;
     @Override
     protected TakeCameraPresenter loadPresenter() {
         return new TakeCameraPresenter();
@@ -42,18 +44,23 @@ public class TakeCameraActivity extends BaseActivity<TakeCameraPresenter> implem
     protected void initView() {}
 
     @Override
+    protected void changeScreen() {
+        if(mScreenOrientation){
+            mTakePhoteLand.setVisibility(View.VISIBLE);
+            mTakePhotePort.setVisibility(View.GONE);
+        }else {
+            mTakePhoteLand.setVisibility(View.GONE);
+            mTakePhotePort.setVisibility(View.VISIBLE);
+        }
+    }
+
+    @Override
     protected int getLayoutId() {
         return R.layout.activity_take_camera;
     }
 
     @Override
     protected void otherViewClick(View view) {}
-
-    @Override
-    protected void onResume() {
-        mTakePhote.setClickable(true);
-        super.onResume();
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -76,18 +83,16 @@ public class TakeCameraActivity extends BaseActivity<TakeCameraPresenter> implem
                 break;
         }
     }
-    @OnClick({R.id.imageView_TakePhote,R.id.imageView_Back})
+    @OnClick({R.id.imageView_TakePhote_port,R.id.imageView_TakePhote_land,R.id.imageView_Back})
     public void onViewClicked(View view) {
         switch (view.getId()){
-            case R.id.imageView_TakePhote:
+            case R.id.imageView_TakePhote_port:
+            case R.id.imageView_TakePhote_land:
                 try {
                     mySurfaceView.setPhotoSize(1440,1080);
                     mySurfaceView.takePicture();
-                    mTakePhote.setClickable(false);
-//                    LogUtil.logE("点击了照相按钮");
                 } catch (Exception e) {
                     toast("拍照失败");
-                    mTakePhote.setClickable(true);
                 }
                 break;
             case R.id.imageView_Back:

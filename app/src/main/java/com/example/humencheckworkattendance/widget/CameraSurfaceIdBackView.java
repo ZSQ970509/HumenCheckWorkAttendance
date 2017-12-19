@@ -59,7 +59,8 @@ public class CameraSurfaceIdBackView extends SurfaceView
 	private Sensor mAccelerometer;
 	ImageView imageViewCameraBold;
 
-
+	private int mSurfaceViewWidth;
+	private int mSurfaceViewHeight;
 
 	public void setImg(ImageView imageViewCameraBold){
 		this.imageViewCameraBold = imageViewCameraBold;
@@ -125,7 +126,8 @@ public class CameraSurfaceIdBackView extends SurfaceView
 	public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 		// �����ֻ���Ҫ�ȵ���
 		setCameraDisplayOrientation(getContext(), FindBackCamera(), mCamera);
-
+		mSurfaceViewHeight = this.getHeight();
+		mSurfaceViewWidth = this.getWidth();
 		// ���ò�������ʼԤ��
 		setCameraParams(mCamera, mScreenWidth, mScreenHeight);
 		mCamera.startPreview();
@@ -207,14 +209,47 @@ public class CameraSurfaceIdBackView extends SurfaceView
 				// bm.getWidth(),tempBM.getHeight()*tempHeightScle);
 				//
 				// bm = ImageUtil.toConformBitmap(rotateBitmap(bm, 90), tempBM);
-			
-				
-				bm = rotateBitmap(bm, 90);
+				Camera.CameraInfo info = new Camera.CameraInfo();
+				int rotation = ((Activity) mContext).getWindowManager().getDefaultDisplay().getRotation();
+				int degrees = 0;
 
-				Bitmap bm1 = ImageUtil.TailorBmpForLeftAndTop(bm, mScreenWidth, imageViewCameraBold.getLeft()+ UIUtils.layX2sp(120), imageViewCameraBold.getTop()+UIUtils.layY2sp(285),
-						imageViewCameraBold.getWidth(), imageViewCameraBold.getHeight());
-			
-				
+				switch (rotation) {
+					case Surface.ROTATION_0:
+						degrees = 0;
+						break;
+					case Surface.ROTATION_90:
+						degrees = 90;
+						break;
+					case Surface.ROTATION_180:
+						degrees = 180;
+						break;
+					case Surface.ROTATION_270:
+						degrees = 270;
+						break;
+				}
+				// back-facing
+				int result = (info.orientation - degrees + 360) % 360;
+				Log.e("111", result + "");
+				Bitmap bm1;
+				if (result == 0) {
+					bm = rotateBitmap(bm, 90);
+					bm1 = ImageUtil.TailorBmpForPort(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+				} else if (result == 90) {
+					bm = rotateBitmap(bm, 180);
+					bm1 = ImageUtil.TailorBmpForLand(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+				} else if (result == 180) {
+					bm = rotateBitmap(bm, 270);
+					bm1 = ImageUtil.TailorBmpForPort(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+				} else {
+					bm = rotateBitmap(bm, 0);
+					bm1 = ImageUtil.TailorBmpForLand(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+				}
+//				bm = rotateBitmap(bm, 90);
+//
+//				Bitmap bm1 = ImageUtil.TailorBmpForLeftAndTop(bm, mScreenWidth, imageViewCameraBold.getLeft()+ UIUtils.layX2sp(120), imageViewCameraBold.getTop()+UIUtils.layY2sp(285),
+//						imageViewCameraBold.getWidth(), imageViewCameraBold.getHeight());
+//
+//
 				if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
 					SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmm");
 					String publicFilePath = new StringBuilder(Environment.getExternalStorageDirectory().getAbsolutePath())

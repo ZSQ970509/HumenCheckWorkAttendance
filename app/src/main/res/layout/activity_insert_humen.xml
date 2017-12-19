@@ -38,6 +38,7 @@
     </RelativeLayout>
 
     <ScrollView
+        android:id="@+id/insert_humen_sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -50,73 +51,62 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/y310"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/linearLayout7"
-                    android:layout_width="@dimen/x220"
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/y220"
-                    android:layout_centerVertical="true"
-                    android:layout_toEndOf="@+id/linearLayout"
-                    android:layout_toRightOf="@+id/linearLayout"
-                    android:orientation="horizontal">
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/imageView_UpLoadIdNum"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_width="@dimen/x220"
+                        android:layout_height="@dimen/y220"
+                        android:layout_centerInParent="true"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/inserthumenuploadid" />
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
-                    android:id="@+id/linearLayout8"
-                    android:layout_width="@dimen/x220"
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/y220"
-                    android:layout_alignTop="@+id/linearLayout7"
-                    android:layout_marginLeft="@dimen/x21"
-                    android:layout_toEndOf="@+id/linearLayout7"
-                    android:layout_toRightOf="@+id/linearLayout7"
-                    android:orientation="horizontal">
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/imageView_UpLoadIdNumBack"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_width="@dimen/x220"
+                        android:layout_height="@dimen/y220"
+                        android:layout_centerInParent="true"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/inserthumenuploadidback" />
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="@dimen/x220"
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/y220"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/x24"
-                    android:orientation="horizontal">
+                    android:layout_weight="1">
 
                     <ImageView
                         android:id="@+id/imageView_UpLoadHead"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_width="@dimen/x220"
+                        android:layout_height="@dimen/y220"
+                        android:layout_centerInParent="true"
                         android:scaleType="fitXY"
                         app:srcCompat="@drawable/inserthumenuploadhead" />
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/y902"
+                android:layout_height="match_parent"
                 android:background="#fff"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x34"
+                android:paddingRight="@dimen/x34">
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -127,7 +117,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout4"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -159,7 +149,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -170,7 +160,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout2"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:background="#fff"
@@ -197,14 +187,15 @@
                         android:singleLine="true"
                         android:textColor="#595959"
                         android:textColorHint="#c9c9c9"
-                        android:textSize="@dimen/y50" >
+                        android:textSize="@dimen/y50">
+
                         <requestFocus />
                     </EditText>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -215,7 +206,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout5"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -250,6 +241,7 @@
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
                                 android:layout_centerVertical="true"
+                                android:layout_weight="1"
                                 android:hint="请选择部门"
                                 android:overlapAnchor="false"
                                 android:textColor="#595959"
@@ -263,7 +255,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentRight="true"
                                 android:layout_centerVertical="true"
-                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/x34"
                                 app:srcCompat="@drawable/dropdown" />
                         </LinearLayout>
 
@@ -272,7 +264,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -283,7 +275,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout_EmtpRoles"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:orientation="horizontal"
@@ -333,7 +325,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentRight="true"
                                 android:layout_centerVertical="true"
-                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/x34"
                                 app:srcCompat="@drawable/dropdown" />
                         </LinearLayout>
 
@@ -343,7 +335,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout_EmtpRoles_Line"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -355,7 +347,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout9"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -390,6 +382,7 @@
                                 android:layout_alignParentLeft="true"
                                 android:layout_alignParentStart="true"
                                 android:layout_centerVertical="true"
+                                android:layout_weight="1"
                                 android:hint="请选择职称"
                                 android:overlapAnchor="false"
                                 android:textColor="#595959"
@@ -403,7 +396,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentRight="true"
                                 android:layout_centerVertical="true"
-                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/x34"
                                 app:srcCompat="@drawable/dropdown" />
                         </LinearLayout>
 
@@ -412,7 +405,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -423,7 +416,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout10"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -472,7 +465,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -483,7 +476,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout3"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -528,7 +521,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -540,7 +533,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout6"
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y110"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
@@ -571,7 +564,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="@dimen/x726"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/y2"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
@@ -582,27 +575,37 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/y38"
                 android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/y38"
+                android:layout_marginTop="@dimen/y38"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView_Insert_Save"
-                    android:layout_width="@dimen/x320"
-                    android:layout_height="@dimen/y100"
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
 
-                    app:srcCompat="@drawable/inserthumensave" />
+                    <ImageView
+                        android:id="@+id/imageView_Insert_Save"
+                        android:layout_width="@dimen/x320"
+                        android:layout_height="@dimen/y100"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/inserthumensave" />
+                </FrameLayout>
 
-                <ImageView
-                    android:id="@+id/imageView_Insert_Submit"
-                    android:layout_width="@dimen/x320"
-                    android:layout_height="@dimen/y100"
-                    android:layout_marginLeft="@dimen/x50"
-                    app:srcCompat="@drawable/inserthumensubmitsave" />
-
-
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/imageView_Insert_Submit"
+                        android:layout_width="@dimen/x320"
+                        android:layout_height="@dimen/y100"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/inserthumensubmitsave" />
+                </FrameLayout>
             </LinearLayout>
 
         </LinearLayout>

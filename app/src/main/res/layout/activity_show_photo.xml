@@ -40,10 +40,9 @@
             android:id="@+id/imageView_Upload"
             android:layout_width="@dimen/x120"
             android:layout_height="@dimen/y60"
+            android:layout_marginRight="@dimen/x24"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/x135"
-            android:layout_toEndOf="@+id/textview"
-            android:layout_toRightOf="@+id/textview"
+            android:layout_alignParentRight="true"
             app:srcCompat="@drawable/uploadimagebutton" />
     </RelativeLayout>
 

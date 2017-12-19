@@ -4,17 +4,25 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +47,7 @@ import butterknife.Unbinder;
  */
 
 public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements
-        IView, View.OnClickListener ,NetworkStateView.OnRefreshListener {
+        IView, View.OnClickListener, NetworkStateView.OnRefreshListener {
     protected View view;
 
     protected P mPresenter;
@@ -52,7 +60,11 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
 
     private static PermissionListener mPermissionListener;
     private static final int CODE_REQUEST_PERMISSION = 1;
-
+    /**
+     * 屏幕的方向：横屏(true)   竖屏(false)
+     */
+    protected boolean mScreenOrientation = false;
+    protected int getRequestedOrientation = 90;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +72,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(getLayoutId());
         unbinder = ButterKnife.bind(this);
+        initScreenOrientation();
 
         ImmersionBar.with(this)
                 .statusBarColor(R.color.colorPrimary)
@@ -91,8 +104,10 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
         //加载子类Activity的布局
         initDefaultView(layoutResID);
     }
+
     /**
      * 初始化默认布局的View
+     *
      * @param layoutResId 子View的布局id
      */
     private void initDefaultView(int layoutResId) {
@@ -181,6 +196,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
         title.setText(titleString);
 
     }
+
     public void setCommonBackToolBarRun(Toolbar toolbarCommon, TextView title) {
         toolbarCommon.setTitle("");
         setSupportActionBar(toolbarCommon);
@@ -277,7 +293,6 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
      * ProgressDialog默认消失时间为1秒(1000毫秒)
      *
      * @param message 加载成功需要显示的文字
-     *
      */
     public void showProgressSuccess(String message) {
         progressDialog.showProgressSuccess(message);
@@ -298,7 +313,6 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
      * ProgressDialog默认消失时间为1秒(1000毫秒)
      *
      * @param message 加载成功需要显示的文字
-     *
      */
     public void showProgressFail(String message) {
         progressDialog.showProgressFail(message);
@@ -310,7 +324,6 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
     public void dismissProgressDialog() {
         progressDialog.dismissProgressDialog();
     }
-
 
 
     public void startActivity(Intent intent, boolean isNeedLogin) {
@@ -341,7 +354,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
 
             User user = ProApplication.getInstance().getUser();
             if (user != null) {
-                super.startActivityForResult(intent,requestCode);
+                super.startActivityForResult(intent, requestCode);
             } else {
 
 //                ProApplication.getInstance().putIntent(intent);
@@ -351,12 +364,10 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
             }
 
         } else {
-            super.startActivityForResult(intent,requestCode);
+            super.startActivityForResult(intent, requestCode);
         }
 
     }
-
-
 
 
     @Override
@@ -372,9 +383,6 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
     }
 
 
-
-
-
     @TargetApi(19)
     private void setTranslucentStatus(Activity activity, boolean on) {
         Window win = activity.getWindow();
@@ -388,6 +396,132 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
         win.setAttributes(winParams);
     }
 
+    /**
+     * 初始化横屏/竖屏的标识
+     */
+    private void initScreenOrientation() {
+        Configuration mConfiguration = this.getResources().getConfiguration(); //获取设置的配置信息
+        int ori = mConfiguration.orientation; //获取屏幕方向
+        if (ori == mConfiguration.ORIENTATION_LANDSCAPE) {
+            mScreenOrientation = true;//横屏
+            Log.e("1111", getRequestedOrientation+"");
 
+
+        } else if (ori == mConfiguration.ORIENTATION_PORTRAIT) {
+            mScreenOrientation = false;//竖屏
+            Log.e("1111", getRequestedOrientation+"");
+
+
+        }
+
+        changeScreen();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            Log.e("1111", "onConfigurationChanged横屏");
+            mScreenOrientation = true;
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            Log.e("1111", "onConfigurationChanged竖屏");
+            mScreenOrientation = false;
+        }else if (newConfig.orientation == Configuration.ORIENTATION_UNDEFINED) {
+            Log.e("1111", "onConfigurationChanged竖屏");
+            mScreenOrientation = false;
+        }
+
+        changeScreen();
+    }
+
+    /**
+     * 转屏和onCreate时 设置显示 横屏/竖屏的布局
+     */
+    protected void changeScreen() {
+    }
+
+    /**
+     * 获取当前应显示的控件
+     * @param landEdt   横屏的EditText
+     * @param portEdt   竖屏的EditText
+     * @return
+     */
+    protected EditText getShowWidgetsOnScreen(EditText landEdt, EditText portEdt) {
+        if (mScreenOrientation) {//横屏
+            landEdt.setText(portEdt.getText() + "");
+            return landEdt;
+        } else {//竖屏
+            portEdt.setText(landEdt.getText() + "");
+            return portEdt;
+        }
+
+    }
+
+    protected CheckBox getShowWidgetsOnScreen(CheckBox landCb, CheckBox portCb) {
+        if (mScreenOrientation) {//横屏
+            landCb.setChecked(portCb.isChecked());
+            return landCb;
+        } else {//竖屏
+            portCb.setChecked(landCb.isChecked());
+            return portCb;
+        }
+    }
+    protected RelativeLayout getShowWidgetsOnScreen(RelativeLayout landRl, RelativeLayout portRl) {
+        if (mScreenOrientation) {//横屏
+            landRl.setVisibility(portRl.getVisibility());
+            return landRl;
+        } else {//竖屏
+            portRl.setVisibility(landRl.getVisibility());
+            return portRl;
+        }
+    }
+    protected LinearLayout getShowWidgetsOnScreen(LinearLayout landLl, LinearLayout portLl) {
+        if (mScreenOrientation) {//横屏
+            landLl.setVisibility(portLl.getVisibility());
+            return landLl;
+        } else {//竖屏
+            portLl.setVisibility(landLl.getVisibility());
+            return portLl;
+        }
+    }
+    protected TextView getShowWidgetsOnScreen(TextView landTv, TextView portTv) {
+        if (mScreenOrientation) {//横屏
+            landTv.setText(portTv.getText());
+            landTv.setVisibility(portTv.getVisibility());
+            return landTv;
+        } else {//竖屏
+            portTv.setText(landTv.getText());
+            portTv.setVisibility(landTv.getVisibility());
+            return portTv;
+        }
+    }
+    protected ImageView getShowWidgetsOnScreen(ImageView landTvImg, ImageView portImg) {
+        if (mScreenOrientation) {//横屏
+            landTvImg.setImageDrawable(portImg.getDrawable());//前景(对应src属性)
+            landTvImg.setBackgroundDrawable(portImg.getBackground());//背景(对应background属性)
+            landTvImg.setVisibility(portImg.getVisibility());
+            return landTvImg;
+        } else {//竖屏
+            portImg.setImageDrawable(landTvImg.getDrawable());
+            portImg.setBackgroundDrawable(landTvImg.getBackground());
+            portImg.setVisibility(landTvImg.getVisibility());
+            return portImg;
+        }
+    }
+
+    /**
+     * 设置 当前应显示的视图
+     * @param landLL    横屏视图
+     * @param portLL    竖屏视图
+     */
+    protected void setShowView(LinearLayout landLL, LinearLayout portLL) {
+        if (mScreenOrientation) {//横屏
+            landLL.setVisibility(View.VISIBLE);
+            portLL.setVisibility(View.GONE);
+        } else {//竖屏
+            landLL.setVisibility(View.GONE);
+            portLL.setVisibility(View.VISIBLE);
+        }
+    }
 }
 

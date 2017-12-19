@@ -36,555 +36,596 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
+import static com.baidu.location.f.mC;
 
 
 public class CameraSurfaceView extends SurfaceView
-		implements SurfaceHolder.Callback, Camera.PreviewCallback, Camera.AutoFocusCallback, SensorEventListener {
+        implements SurfaceHolder.Callback, Camera.PreviewCallback, Camera.AutoFocusCallback, SensorEventListener {
 
-	private static final String TAG = "CameraSurfaceView";
-	// public static final String PICTURE_FILE = "tempface.jpg";
+    private static final String TAG = "CameraSurfaceView";
+    // public static final String PICTURE_FILE = "tempface.jpg";
 
-	private Context mContext;
-	private SurfaceHolder holder;
-	private Camera mCamera;
+    private Context mContext;
+    private SurfaceHolder holder;
+    private Camera mCamera;
 
-	private int mScreenWidth;
-	private int mScreenHeight;
+    private int mScreenWidth;
+    private int mScreenHeight;
 
-	private Handler mAutoFocusHandler;
+    private Handler mAutoFocusHandler;
 
-	private boolean mPreviewing = true;
-	private boolean mAutoFocus = true;
-	private boolean mSurfaceCreated = false;
-	private SensorManager mSensorManager;
-	private Sensor mAccelerometer;
-	ImageView imageViewCameraBold;
+    private boolean mPreviewing = true;
+    private boolean mAutoFocus = true;
+    private boolean mSurfaceCreated = false;
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    ImageView imageViewCameraBold;
+//	private int getRequestedOrientation;
 
-	
-	
-	public void setImg(ImageView imageViewCameraBold){
-		this.imageViewCameraBold = imageViewCameraBold;
-	}
-	public CameraSurfaceView(Context context) {
-		this(context, null);
-	}
+    private int mSurfaceViewWidth;
+    private int mSurfaceViewHeight;
+    public void setImg(ImageView imageViewCameraBold) {
+        this.imageViewCameraBold = imageViewCameraBold;
+    }
 
-	public CameraSurfaceView(Context context, AttributeSet attrs) {
-		this(context, attrs, 0);
-	}
+    public CameraSurfaceView(Context context) {
+        this(context, null);
+    }
 
-	public CameraSurfaceView(Context context, AttributeSet attrs, int defStyleAttr) {
-		super(context, attrs, defStyleAttr);
-		mContext = context;
-		getScreenMetrix(context);
-		initView();
-	}
+    public CameraSurfaceView(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
 
-	private void getScreenMetrix(Context context) {
-		WindowManager WM = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-		DisplayMetrics outMetrics = new DisplayMetrics();
-		WM.getDefaultDisplay().getMetrics(outMetrics);
-		mScreenWidth = outMetrics.widthPixels;
-		mScreenHeight = outMetrics.heightPixels;
-	}
+    public CameraSurfaceView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        mContext = context;
+        getScreenMetrix(context);
+        initView();
+    }
 
-	private void initView() {
-		holder = getHolder();// ���surfaceHolder����
-		holder.addCallback(this);
-		holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);// ��������
+    private void getScreenMetrix(Context context) {
+        WindowManager WM = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        DisplayMetrics outMetrics = new DisplayMetrics();
+        WM.getDefaultDisplay().getMetrics(outMetrics);
+        mScreenWidth = outMetrics.widthPixels;
+        mScreenHeight = outMetrics.heightPixels;
+    }
 
-		mAutoFocusHandler = new Handler();
-		mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
-		mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+    private void initView() {
+        holder = getHolder();// ���surfaceHolder����
+        holder.addCallback(this);
+        holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);// ��������
 
-	}
+        mAutoFocusHandler = new Handler();
+        mSensorManager = (SensorManager) mContext.getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
-	@Override
-	public void surfaceCreated(SurfaceHolder holder) {
+    }
 
-		boolean sensor = mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
 
-		if (mCamera == null) {
-			mSurfaceCreated = true;
-			int CammeraIndex = FindBackCamera(); // Ĭ�ϵ��ú�������ͷ
-			if (CammeraIndex == -1) {
-				CammeraIndex = FindFrontCamera();
-			}
+        boolean sensor = mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
 
-			mCamera = Camera.open(CammeraIndex); // �������
+        if (mCamera == null) {
+            mSurfaceCreated = true;
+            int CammeraIndex = FindBackCamera(); // Ĭ�ϵ��ú�������ͷ
+            if (CammeraIndex == -1) {
+                CammeraIndex = FindFrontCamera();
+            }
 
-			try {
-				mCamera.setPreviewDisplay(holder);// ����ͷ������ʾ��Surface��
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
+            mCamera = Camera.open(CammeraIndex); // �������
 
-	}
+            try {
+                mCamera.setPreviewDisplay(holder);// ����ͷ������ʾ��Surface��
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
-	@Override
-	public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-		// �����ֻ���Ҫ�ȵ���
-		setCameraDisplayOrientation(getContext(), FindBackCamera(), mCamera);
+    }
 
-		// ���ò�������ʼԤ��
+    @Override
+    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
+        // �����ֻ���Ҫ�ȵ���
+        setCameraDisplayOrientation(getContext(), FindBackCamera(), mCamera);
+        mSurfaceViewHeight = this.getHeight();
+        mSurfaceViewWidth = this.getWidth();
+        // ���ò�������ʼԤ��
 		setCameraParams(mCamera, mScreenWidth, mScreenHeight);
-		mCamera.startPreview();
-		setAutoFocus(true);
-		
-	}
+        mCamera.startPreview();
+        setAutoFocus(true);
+    }
 
-	@Override
-	public void surfaceDestroyed(SurfaceHolder holder) {
-		mCamera.stopPreview();// ֹͣԤ��
-		mCamera.release();// �ͷ������Դ
-		mCamera = null;
-		holder = null;
-		mSurfaceCreated = false;
-		mSensorManager.unregisterListener(this);
-	}
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
+        mCamera.stopPreview();// ֹͣԤ��
+        mCamera.release();// �ͷ������Դ
+        mCamera = null;
+        holder = null;
+        mSurfaceCreated = false;
+        mSensorManager.unregisterListener(this);
+    }
 
-	@Override
-	public void onAutoFocus(boolean success, Camera Camera) {
-		if (success) {
-		}
-	}
+    @Override
+    public void onAutoFocus(boolean success, Camera Camera) {
+        if (success) {
+        }
+    }
 
-	// ����˲�����
-	private Camera.ShutterCallback shutter = new Camera.ShutterCallback() {
-		@Override
-		public void onShutter() {
-		}
-	};
+    // ����˲�����
+    private Camera.ShutterCallback shutter = new Camera.ShutterCallback() {
+        @Override
+        public void onShutter() {
+        }
+    };
 
-	// ���û��ѹ������ͼƬ����
-	private Camera.PictureCallback raw = new Camera.PictureCallback() {
+    // ���û��ѹ������ͼƬ����
+    private Camera.PictureCallback raw = new Camera.PictureCallback() {
 
-		@Override
-		public void onPictureTaken(byte[] data, Camera Camera) {
+        @Override
+        public void onPictureTaken(byte[] data, Camera Camera) {
 
-		}
-	};
-	public static Bitmap zoomImg(Bitmap bm, int newWidth ,int newHeight){    
-	    // ���ͼƬ�Ŀ��    
-	    int width = bm.getWidth();    
-	    int height = bm.getHeight();    
-	    // �������ű���    
-	    float scaleWidth = ((float) newWidth) / width;    
-	    float scaleHeight = ((float) newHeight) / height;    
-	    // ȡ����Ҫ���ŵ�matrix����    
-	    Matrix matrix = new Matrix();    
-	    matrix.postScale(scaleWidth, scaleHeight);    
-	    // �õ��µ�ͼƬ    
-	    Bitmap newbm = Bitmap.createBitmap(bm, 0, 0, width, height, matrix, true);    
-	    return newbm;    
-	}   
-	// ����jpegͼƬ�ص����ݶ���
-	private Camera.PictureCallback jpeg = new Camera.PictureCallback() {
+        }
+    };
 
-		@Override
-		public void onPictureTaken(byte[] data, Camera Camera) {
-			BufferedOutputStream bos = null;
-			File file = null;
-			Bitmap bm = null;
-			try {
-				// ���ͼƬ
-				bm = BitmapFactory.decodeByteArray(data, 0, data.length);
-				// Matrix m = new Matrix();
-				// m.setRotate(-90, (float) bm.getWidth() / 2, (float)
-				// bm.getHeight() / 2);
-				/// bm = rotateBitmap(Bitmap.createBitmap(bm, 0, 0,
-				// bm.getWidth(), bm.getHeight(), m, true), 180);
+    public static Bitmap zoomImg(Bitmap bm, int newWidth, int newHeight) {
+        // ���ͼƬ�Ŀ��
+        int width = bm.getWidth();
+        int height = bm.getHeight();
+        // �������ű���
+        float scaleWidth = ((float) newWidth) / width;
+        float scaleHeight = ((float) newHeight) / height;
+        // ȡ����Ҫ���ŵ�matrix����
+        Matrix matrix = new Matrix();
+        matrix.postScale(scaleWidth, scaleHeight);
+        // �õ��µ�ͼƬ
+        Bitmap newbm = Bitmap.createBitmap(bm, 0, 0, width, height, matrix, true);
+        return newbm;
+    }
 
-				// int tempheight =mScreenHeight/bm.getHeight();
+    // ����jpegͼƬ�ص����ݶ���
+    private Camera.PictureCallback jpeg = new Camera.PictureCallback() {
 
-				// Bitmap tempBM =ImageUtil.getRawResource(mContext,
-				// R.drawable.degree_scale);
-				// ImageUtil.zoomImage(tempBM, mScreenHeight, mScreenWidth);
-				// int tempHeightScle=tempBM.getHeight()/bm.getHeight();
-				//
-				//
-				// tempBM=ImageUtil.zoomImage(tempBM,
-				// bm.getWidth(),tempBM.getHeight()*tempHeightScle);
-				//
-				// bm = ImageUtil.toConformBitmap(rotateBitmap(bm, 90), tempBM);
-			
-				
-				bm = rotateBitmap(bm, 90);
+        @Override
+        public void onPictureTaken(byte[] data, Camera Camera) {
+            BufferedOutputStream bos = null;
+            File file = null;
+            Bitmap bm = null;
+            try {
+                // ���ͼƬ
+                bm = BitmapFactory.decodeByteArray(data, 0, data.length);
+                // Matrix m = new Matrix();
+                // m.setRotate(-90, (float) bm.getWidth() / 2, (float)
+                // bm.getHeight() / 2);
+                /// bm = rotateBitmap(Bitmap.createBitmap(bm, 0, 0,
+                // bm.getWidth(), bm.getHeight(), m, true), 180);
 
-				Bitmap bm1 = ImageUtil.TailorBmpForLeftAndTop(bm, mScreenWidth, imageViewCameraBold.getLeft()+ UIUtils.layX2sp(120), imageViewCameraBold.getTop()+UIUtils.layY2sp(285),
-						imageViewCameraBold.getWidth(), imageViewCameraBold.getHeight());
+                // int tempheight =mScreenHeight/bm.getHeight();
 
-				
-				if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-					SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmm");
-					String publicFilePath = new StringBuilder(Environment.getExternalStorageDirectory().getAbsolutePath())
-							.append(File.separator).append("ivm").append(File.separator).append(sdf.format(new Date()))
-							.toString();
+                // Bitmap tempBM =ImageUtil.getRawResource(mContext,
+                // R.drawable.degree_scale);
+                // ImageUtil.zoomImage(tempBM, mScreenHeight, mScreenWidth);
+                // int tempHeightScle=tempBM.getHeight()/bm.getHeight();
+                //
+                //
+                // tempBM=ImageUtil.zoomImage(tempBM,
+                // bm.getWidth(),tempBM.getHeight()*tempHeightScle);
+                //
+                // bm = ImageUtil.toConformBitmap(rotateBitmap(bm, 90), tempBM);
 
-					file = new File(Environment.getExternalStorageDirectory() + "/surfingscene/shotDir/idnum.jpg");
-					//File file = new File(((Activity) mContext).getIntent().getStringExtra("IMGFileUrl"));
-					
-					boolean isSuss=false;
-			
-					
-					File rootDirectory = new File(ImageUtil.shotScreenDir);
-					if (rootDirectory.exists()){
-						Log.e("111111","11111111");
-					    if (rootDirectory.isDirectory())
-							Log.e("111111",rootDirectory.delete()+"");
-					        rootDirectory.delete();
-					}
-					rootDirectory.mkdirs();
+                Camera.CameraInfo info = new Camera.CameraInfo();
+                int rotation = ((Activity) mContext).getWindowManager().getDefaultDisplay().getRotation();
+                int degrees = 0;
 
-					if (!file.exists()) {
-				        isSuss=file.createNewFile();
-					}
-					//��Ҫ��ͼƬѹ����800*600
-					bm1 = zoomImg(bm1,640,480);
-					bos = new BufferedOutputStream(new FileOutputStream(file));
-					bm1.compress(Bitmap.CompressFormat.JPEG, 100, bos);// ��ͼƬѹ������
-					
-				} else {
-					Toast.makeText(mContext, "û�м�⵽�ڴ濨", Toast.LENGTH_SHORT).show();
-				}
-				Intent intent = ((Activity) mContext).getIntent();
+                switch (rotation) {
+                    case Surface.ROTATION_0:
+                        degrees = 0;
+                        break;
+                    case Surface.ROTATION_90:
+                        degrees = 90;
+                        break;
+                    case Surface.ROTATION_180:
+                        degrees = 180;
+                        break;
+                    case Surface.ROTATION_270:
+                        degrees = 270;
+                        break;
+                }
+                // back-facing
+                int result = (info.orientation - degrees + 360) % 360;
+                Log.e("111", result + "");
+                Bitmap bm1;
+                if (result == 0) {
+                    bm = rotateBitmap(bm, 90);
+                    bm1 = ImageUtil.TailorBmpForPort(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+                } else if (result == 90) {
+                    bm = rotateBitmap(bm, 180);
+                    bm1 = ImageUtil.TailorBmpForLand(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+                } else if (result == 180) {
+                    bm = rotateBitmap(bm, 270);
+                    bm1 = ImageUtil.TailorBmpForPort(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+                } else {
+                    bm = rotateBitmap(bm, 0);
+                    bm1 = ImageUtil.TailorBmpForLand(bm, mSurfaceViewWidth, mSurfaceViewHeight, imageViewCameraBold);
+                }
 
-				intent.setClass(mContext, ShowPhotoActivity.class);
-				intent.putExtra("imgSrc",Environment.getExternalStorageDirectory() + "/surfingscene/shotDir/idnum.jpg");
-				intent.putExtra("isIdCard",true);
-				((Activity) mContext).startActivityForResult(intent,0X111);
-				//((Activity) mContext).finish();
-				// ((Activity) mContext).finish(); // ������ǰ��activity����������
 
-			} catch (Exception e) {
-				e.printStackTrace();
-			} finally {
-				try {
-					if (bos != null) {
-						bos.flush();// ���
-						bos.close();// �ر�
-					}
-					if (bm != null) {
-						bm.recycle();// ����bitmap�ռ�
-					}
+//				Bitmap bm1 = ImageUtil.TailorBmpForLeftAndTop(bm, mScreenWidth, imageViewCameraBold.getLeft()+ UIUtils.layX2sp(120), imageViewCameraBold.getTop()+UIUtils.layY2sp(285),
+//						imageViewCameraBold.getWidth(), imageViewCameraBold.getHeight());
 
-					mCamera.stopPreview();// �ر�Ԥ��
-					// mCamera.startPreview();// ����Ԥ��
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
 
-		}
-	};
+                if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmm");
+                    String publicFilePath = new StringBuilder(Environment.getExternalStorageDirectory().getAbsolutePath())
+                            .append(File.separator).append("ivm").append(File.separator).append(sdf.format(new Date()))
+                            .toString();
 
-	public Camera getCamera() {
-		return mCamera;
-	}
+                    file = new File(Environment.getExternalStorageDirectory() + "/surfingscene/shotDir/idnum.jpg");
+                    //File file = new File(((Activity) mContext).getIntent().getStringExtra("IMGFileUrl"));
 
-	public void takePicture() {
-		// ���ò���,������
+                    boolean isSuss = false;
+
+
+                    File rootDirectory = new File(ImageUtil.shotScreenDir);
+                    if (rootDirectory.exists()) {
+                        Log.e("111111", "11111111");
+                        if (rootDirectory.isDirectory())
+                            Log.e("111111", rootDirectory.delete() + "");
+                        rootDirectory.delete();
+                    }
+                    rootDirectory.mkdirs();
+
+                    if (!file.exists()) {
+                        isSuss = file.createNewFile();
+                    }
+                    //��Ҫ��ͼƬѹ����800*600
+                    bm1 = zoomImg(bm1, 640, 480);
+                    bos = new BufferedOutputStream(new FileOutputStream(file));
+                    bm1.compress(Bitmap.CompressFormat.JPEG, 100, bos);// ��ͼƬѹ������
+
+                } else {
+                    Toast.makeText(mContext, "û�м�⵽�ڴ濨", Toast.LENGTH_SHORT).show();
+                }
+                Intent intent = ((Activity) mContext).getIntent();
+
+                intent.setClass(mContext, ShowPhotoActivity.class);
+                intent.putExtra("imgSrc", Environment.getExternalStorageDirectory() + "/surfingscene/shotDir/idnum.jpg");
+                intent.putExtra("isIdCard", true);
+                Log.e("Activity", "照相完成跳转到预览页面");
+                ((Activity) mContext).startActivityForResult(intent, 0X111);
+                //((Activity) mContext).finish();
+                // ((Activity) mContext).finish(); // ������ǰ��activity����������
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    if (bos != null) {
+                        bos.flush();// ���
+                        bos.close();// �ر�
+                    }
+                    if (bm != null) {
+                        bm.recycle();// ����bitmap�ռ�
+                    }
+
+                    mCamera.stopPreview();// �ر�Ԥ��
+                    // mCamera.startPreview();// ����Ԥ��
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+    };
+
+    public Camera getCamera() {
+        return mCamera;
+    }
+
+    public void takePicture() {
+        // ���ò���,������\
+//		this.getRequestedOrientation = getRequestedOrientation;
 		setCameraParams(mCamera, mScreenWidth, mScreenHeight);
-		// ������camera.takePiture������camera�ر���Ԥ������ʱ��Ҫ����startPreview()�����¿���Ԥ��
-		mCamera.takePicture(null, null, jpeg);
-	}
+        // ������camera.takePiture������camera�ر���Ԥ������ʱ��Ҫ����startPreview()�����¿���Ԥ��
+        mSurfaceViewHeight = this.getHeight();
+        mSurfaceViewWidth = this.getWidth();
+        mCamera.takePicture(null, null, jpeg);
+    }
 
-	private void setCameraParams(Camera camera, int width, int height) {
-		try {
-			mPreviewing = true;
+    private void setCameraParams(Camera camera, int width, int height) {
+        try {
+            mPreviewing = true;
 
-			int PreviewWidth = 0;
-			int PreviewHeight = 0;
-			Log.i(TAG, "setCameraParams  width=" + width + "  height=" + height);
-			Camera.Parameters parameters = mCamera.getParameters();
+            int PreviewWidth = 0;
+            int PreviewHeight = 0;
+            Log.i(TAG, "setCameraParams  width=" + width + "  height=" + height);
+            Camera.Parameters parameters = mCamera.getParameters();
 
-			// ��ȡ����ͷ֧�ֵ�PictureSize�б�
-			List<Camera.Size> pictureSizeList = parameters.getSupportedPictureSizes();
-			for (Camera.Size size : pictureSizeList) {
-				Log.i(TAG, "pictureSizeList size.width=" + size.width + "  size.height=" + size.height);
-			}
-			// ��ȡ����ͷ֧�ֵ�PreviewSize�б�
-			List<Camera.Size> previewSizeList = parameters.getSupportedPreviewSizes();
-			for (Camera.Size size : previewSizeList) {
-				Log.i(TAG, "previewSizeList size.width=" + size.width + "  size.height=" + size.height);
-			}
+            // ��ȡ����ͷ֧�ֵ�PictureSize�б�
+            List<Camera.Size> pictureSizeList = parameters.getSupportedPictureSizes();
+            for (Camera.Size size : pictureSizeList) {
+                Log.i(TAG, "pictureSizeList size.width=" + size.width + "  size.height=" + size.height);
+            }
+            // ��ȡ����ͷ֧�ֵ�PreviewSize�б�
+            List<Camera.Size> previewSizeList = parameters.getSupportedPreviewSizes();
+            for (Camera.Size size : previewSizeList) {
+                Log.i(TAG, "previewSizeList size.width=" + size.width + "  size.height=" + size.height);
+            }
 
-			Camera.Size preSize = MyCamPara.getInstance().getPreviewSize(previewSizeList, 2500);
-			Camera.Size picSize = MyCamPara.getInstance().getPictureSize(pictureSizeList, 3100);
-			Log.i(TAG, "previewSize and pictureSize" + picSize.width + "   " + picSize.height);
+            Camera.Size preSize = MyCamPara.getInstance().getPreviewSize(previewSizeList, 2500);
+            Camera.Size picSize = MyCamPara.getInstance().getPictureSize(pictureSizeList, 3100);
+            Log.i(TAG, "previewSize and pictureSize" + picSize.width + "   " + picSize.height);
 
-			// if (null == picSize) {
-			// Log.i(TAG, "null == picSize");
-			// picSize = parameters.getPictureSize();
-			// }
+            // if (null == picSize) {
+            // Log.i(TAG, "null == picSize");
+            // picSize = parameters.getPictureSize();
+            // }
 
-			PreviewWidth = preSize.width;
-			PreviewHeight = preSize.height;
-			parameters.setPreviewSize(preSize.width, preSize.height); // �����������Ĵ�С
-			parameters.setPictureSize(picSize.width, picSize.height);// �����ĳ�������Ļ��С
-			//parameters.setPictureSize(1500, 1500);// �����ĳ�������Ļ��С
-			Log.e(TAG, "pre width=" + preSize.width + "  height=" + preSize.height);
-			Log.e(TAG, "pic width=" + picSize.width + "  height=" + picSize.height);
+            PreviewWidth = preSize.width;
+            PreviewHeight = preSize.height;
+            parameters.setPreviewSize(preSize.width, preSize.height); // �����������Ĵ�С
+            parameters.setPictureSize(picSize.width, picSize.height);// �����ĳ�������Ļ��С
+            //parameters.setPictureSize(1500, 1500);// �����ĳ�������Ļ��С
+            Log.e(TAG, "pre width=" + preSize.width + "  height=" + preSize.height);
+            Log.e(TAG, "pic width=" + picSize.width + "  height=" + picSize.height);
 
-			// parameters.setPictureFormat(PixelFormat.JPEG);// ������Ƭ����ĸ�ʽ
-			//
-			mCamera.setParameters(parameters);// ����������� ��������ͷ
+            // parameters.setPictureFormat(PixelFormat.JPEG);// ������Ƭ����ĸ�ʽ
+            //
+            mCamera.setParameters(parameters);// ����������� ��������ͷ
 
-			parameters.setJpegQuality(100); // ������Ƭ����
-			if (parameters.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_AUTO)) {
-				parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
-			} else if (parameters.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE)) {
-				parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE); // �����Խ�ģʽ
-			}
-			int CammeraIndex = FindBackCamera(); // Ĭ�ϵ��ú�������ͷ
-			if (CammeraIndex == -1) {
-				CammeraIndex = FindFrontCamera();
-			}
+            parameters.setJpegQuality(100); // ������Ƭ����
+            if (parameters.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_AUTO)) {
+                parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
+            } else if (parameters.getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE)) {
+                parameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE); // �����Խ�ģʽ
+            }
+            int CammeraIndex = FindBackCamera(); // Ĭ�ϵ��ú�������ͷ
+            if (CammeraIndex == -1) {
+                CammeraIndex = FindFrontCamera();
+            }
 
-			mCamera.setParameters(parameters);
+            mCamera.setParameters(parameters);
 
-		} catch (Exception e) {
-           e.printStackTrace();
-		}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-	}
+    }
 
-	private int FindFrontCamera() {
-		int cameraCount = 0;
-		Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
-		cameraCount = Camera.getNumberOfCameras(); // get cameras number
+    private int FindFrontCamera() {
+        int cameraCount = 0;
+        Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
+        cameraCount = Camera.getNumberOfCameras(); // get cameras number
 
-		for (int camIdx = 0; camIdx < cameraCount; camIdx++) {
-			Camera.getCameraInfo(camIdx, cameraInfo); // get camerainfo
-			if (cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
-				// ��������ͷ�ķ�λ��Ŀǰ�ж���ֵ�����ֱ�ΪCAMERA_FACING_FRONTǰ�ú�CAMERA_FACING_BACK����
-				return camIdx;
-			}
-		}
-		return -1;
-	}
+        for (int camIdx = 0; camIdx < cameraCount; camIdx++) {
+            Camera.getCameraInfo(camIdx, cameraInfo); // get camerainfo
+            if (cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
+                // ��������ͷ�ķ�λ��Ŀǰ�ж���ֵ�����ֱ�ΪCAMERA_FACING_FRONTǰ�ú�CAMERA_FACING_BACK����
+                return camIdx;
+            }
+        }
+        return -1;
+    }
 
-	private int FindBackCamera() {
-		int cameraCount = 0;
-		Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
-		cameraCount = Camera.getNumberOfCameras(); // get cameras number
+    private int FindBackCamera() {
+        int cameraCount = 0;
+        Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
+        cameraCount = Camera.getNumberOfCameras(); // get cameras number
 
-		for (int camIdx = 0; camIdx < cameraCount; camIdx++) {
-			Camera.getCameraInfo(camIdx, cameraInfo); // get camerainfo
-			if (cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_BACK) {
-				// ��������ͷ�ķ�λ��Ŀǰ�ж���ֵ�����ֱ�ΪCAMERA_FACING_FRONTǰ�ú�CAMERA_FACING_BACK����
-				return camIdx;
-			}
-		}
-		return -1;
-	}
+        for (int camIdx = 0; camIdx < cameraCount; camIdx++) {
+            Camera.getCameraInfo(camIdx, cameraInfo); // get camerainfo
+            if (cameraInfo.facing == Camera.CameraInfo.CAMERA_FACING_BACK) {
+                // ��������ͷ�ķ�λ��Ŀǰ�ж���ֵ�����ֱ�ΪCAMERA_FACING_FRONTǰ�ú�CAMERA_FACING_BACK����
+                return camIdx;
+            }
+        }
+        return -1;
+    }
 
-	@Override
-	public void onPreviewFrame(byte[] data, Camera camera) {
-		// TODO Auto-generated method stub
+    @Override
+    public void onPreviewFrame(byte[] data, Camera camera) {
+        // TODO Auto-generated method stub
 
-	}
+    }
 
-	/**
-	 * @param bmp
-	 *            Ҫ��ת��ͼƬ
-	 * @param degree
-	 *            ͼƬ��ת�ĽǶȣ���ֵΪ��ʱ����ת����ֵΪ˳ʱ����ת
-	 * @return ��ת�õ�ͼƬ
-	 */
-	public static Bitmap rotateBitmap(Bitmap bmp, float degree) {
-		Matrix matrix = new Matrix();
-		matrix.postRotate(degree);
-		// �˴�bitmapĬ��ΪRGBA_8888
-		return Bitmap.createBitmap(bmp, 0, 0, bmp.getWidth(), bmp.getHeight(), matrix, true);
-	}
+    /**
+     * @param bmp    Ҫ��ת��ͼƬ
+     * @param degree ͼƬ��ת�ĽǶȣ���ֵΪ��ʱ����ת����ֵΪ˳ʱ����ת
+     * @return ��ת�õ�ͼƬ
+     */
+    public static Bitmap rotateBitmap(Bitmap bmp, float degree) {
+        Matrix matrix = new Matrix();
+        matrix.postRotate(degree);
+        // �˴�bitmapĬ��ΪRGBA_8888
+        return Bitmap.createBitmap(bmp, 0, 0, bmp.getWidth(), bmp.getHeight(), matrix, true);
+    }
 
-	public static void setCameraDisplayOrientation(Context content, int cameraId, Camera camera) {
-		Camera.CameraInfo info = new Camera.CameraInfo();
-		Camera.getCameraInfo(cameraId, info);
-		int rotation = ((Activity) content).getWindowManager().getDefaultDisplay().getRotation();
-		int degrees = 0;
+    public static void setCameraDisplayOrientation(Context content, int cameraId, Camera camera) {
+        Camera.CameraInfo info = new Camera.CameraInfo();
+        Camera.getCameraInfo(cameraId, info);
+        int rotation = ((Activity) content).getWindowManager().getDefaultDisplay().getRotation();
+        int degrees = 0;
 
-		switch (rotation) {
-		case Surface.ROTATION_0:
-			degrees = 0;
-			break;
-		case Surface.ROTATION_90:
-			degrees = 90;
-			break;
-		case Surface.ROTATION_180:
-			degrees = 180;
-			break;
-		case Surface.ROTATION_270:
-			degrees = 270;
-			break;
-		}
-		int result;
-		if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
-			result = (info.orientation + degrees) % 360;
-			result = (360 - result) % 360; // compensate the mirror
-		} else {
-			// back-facing
-			result = (info.orientation - degrees + 360) % 360;
-		}
+        switch (rotation) {
+            case Surface.ROTATION_0:
+                degrees = 0;
+                break;
+            case Surface.ROTATION_90:
+                degrees = 90;
+                break;
+            case Surface.ROTATION_180:
+                degrees = 180;
+                break;
+            case Surface.ROTATION_270:
+                degrees = 270;
+                break;
+        }
+        int result;
+        if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT) {
+            result = (info.orientation + degrees) % 360;
+            result = (360 - result) % 360; // compensate the mirror
+        } else {
+            // back-facing
+            result = (info.orientation - degrees + 360) % 360;
+        }
 
-		camera.setDisplayOrientation(result);
-	}
+        camera.setDisplayOrientation(result);
+    }
 
-	public void setTorch(boolean newSetting) {
-		Camera.Parameters parameters = mCamera.getParameters();
-		doSetTorch(parameters, newSetting, false);
-		mCamera.setParameters(parameters);
-		// boolean currentSetting =
-		// prefs.getBoolean(PreferencesActivity.KEY_FRONT_LIGHT, false);
-		boolean currentSetting = false;
-		if (currentSetting != newSetting) {
-			// SharedPreferences.Editor editor = prefs.edit();
-			// editor.putBoolean(PreferencesActivity.KEY_FRONT_LIGHT,
-			// newSetting);
-			// editor.commit();
-		}
-	}
+    public void setTorch(boolean newSetting) {
+        Camera.Parameters parameters = mCamera.getParameters();
+        doSetTorch(parameters, newSetting, false);
+        mCamera.setParameters(parameters);
+        // boolean currentSetting =
+        // prefs.getBoolean(PreferencesActivity.KEY_FRONT_LIGHT, false);
+        boolean currentSetting = false;
+        if (currentSetting != newSetting) {
+            // SharedPreferences.Editor editor = prefs.edit();
+            // editor.putBoolean(PreferencesActivity.KEY_FRONT_LIGHT,
+            // newSetting);
+            // editor.commit();
+        }
+    }
 
-	private void doSetTorch(Camera.Parameters parameters, boolean newSetting, boolean safeMode) {
-		String flashMode;
-		if (newSetting) {
-			flashMode = findSettableValue(parameters.getSupportedFlashModes(), Camera.Parameters.FLASH_MODE_TORCH,
-					Camera.Parameters.FLASH_MODE_ON);
-		} else {
-			flashMode = findSettableValue(parameters.getSupportedFlashModes(), Camera.Parameters.FLASH_MODE_OFF);
-		}
-		if (flashMode != null) {
-			parameters.setFlashMode(flashMode);
-		}
+    private void doSetTorch(Camera.Parameters parameters, boolean newSetting, boolean safeMode) {
+        String flashMode;
+        if (newSetting) {
+            flashMode = findSettableValue(parameters.getSupportedFlashModes(), Camera.Parameters.FLASH_MODE_TORCH,
+                    Camera.Parameters.FLASH_MODE_ON);
+        } else {
+            flashMode = findSettableValue(parameters.getSupportedFlashModes(), Camera.Parameters.FLASH_MODE_OFF);
+        }
+        if (flashMode != null) {
+            parameters.setFlashMode(flashMode);
+        }
 
 		/*
-		 * SharedPreferences prefs =
+         * SharedPreferences prefs =
 		 * PreferenceManager.getDefaultSharedPreferences(context); if
 		 * (!prefs.getBoolean(PreferencesActivity.KEY_DISABLE_EXPOSURE, false))
 		 * { if (!safeMode) { ExposureInterface exposure = new
 		 * ExposureManager().build(); exposure.setExposure(parameters,
 		 * newSetting); } }
 		 */
-	}
+    }
 
-	private static String findSettableValue(Collection<String> supportedValues, String... desiredValues) {
-		String result = null;
-		if (supportedValues != null) {
-			for (String desiredValue : desiredValues) {
-				if (supportedValues.contains(desiredValue)) {
-					result = desiredValue;
-					break;
-				}
-			}
-		}
-		return result;
-	}
+    private static String findSettableValue(Collection<String> supportedValues, String... desiredValues) {
+        String result = null;
+        if (supportedValues != null) {
+            for (String desiredValue : desiredValues) {
+                if (supportedValues.contains(desiredValue)) {
+                    result = desiredValue;
+                    break;
+                }
+            }
+        }
+        return result;
+    }
 
-	public void safeAutoFocus() {
-		try {
-			mCamera.autoFocus(autoFocusCB);
+    public void safeAutoFocus() {
+        try {
+            mCamera.autoFocus(autoFocusCB);
 
-		} catch (RuntimeException re) {
-			// Horrible hack to deal with autofocus errors on Sony devices
-			// See https://github.com/dm77/barcodescanner/issues/7 for example
-			scheduleAutoFocus(); // wait 1 sec and then do check again
+        } catch (RuntimeException re) {
+            // Horrible hack to deal with autofocus errors on Sony devices
+            // See https://github.com/dm77/barcodescanner/issues/7 for example
+            scheduleAutoFocus(); // wait 1 sec and then do check again
 
-		}
-	}
+        }
+    }
 
-	private void scheduleAutoFocus() {
-		mAutoFocusHandler.postDelayed(doAutoFocus, 1000);
+    private void scheduleAutoFocus() {
+        mAutoFocusHandler.postDelayed(doAutoFocus, 1000);
 
-	}
+    }
 
-	private Runnable doAutoFocus = new Runnable() {
-		public void run() {
+    private Runnable doAutoFocus = new Runnable() {
+        public void run() {
 
-			if (mPreviewing && mAutoFocus && mSurfaceCreated) {
-				safeAutoFocus();
-			}
-		}
-	};
+            if (mPreviewing && mAutoFocus && mSurfaceCreated) {
+                safeAutoFocus();
+            }
+        }
+    };
 
-	// Mimic continuous auto-focusing
-	Camera.AutoFocusCallback autoFocusCB = new Camera.AutoFocusCallback() {
-		public void onAutoFocus(boolean success, Camera camera) {
+    // Mimic continuous auto-focusing
+    Camera.AutoFocusCallback autoFocusCB = new Camera.AutoFocusCallback() {
+        public void onAutoFocus(boolean success, Camera camera) {
 
-			// scheduleAutoFocus();
-		}
-	};
+            // scheduleAutoFocus();
+        }
+    };
 
-	public void setAutoFocus(boolean state) {
-		if (mPreviewing) {
-			if (state == mAutoFocus) {
-				return;
-			}
-			mAutoFocus = state;
-			if (mAutoFocus) {
-				if (mSurfaceCreated) { // check if surface created before using
-										// autofocus
-					
-					safeAutoFocus();
-				} else {
-					scheduleAutoFocus(); // wait 1 sec and then do check again
-				}
-			} else {
-				mCamera.cancelAutoFocus();
-			}
-		}
-	}
+    public void setAutoFocus(boolean state) {
+        if (mPreviewing) {
+            if (state == mAutoFocus) {
+                return;
+            }
+            mAutoFocus = state;
+            if (mAutoFocus) {
+                if (mSurfaceCreated) { // check if surface created before using
+                    // autofocus
 
-	@Override
-	public void onAccuracyChanged(Sensor sensor, int accuracy) {
-		// TODO Auto-generated method stub
+                    safeAutoFocus();
+                } else {
+                    scheduleAutoFocus(); // wait 1 sec and then do check again
+                }
+            } else {
+                mCamera.cancelAutoFocus();
+            }
+        }
+    }
 
-	}
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+        // TODO Auto-generated method stub
 
-	private boolean mIsAuto = false;
+    }
 
-	private boolean mInitialized = false;
-	private float mLastX = 0;
-	private float mLastY = 0;
-	private float mLastZ = 0;
+    private boolean mIsAuto = false;
 
-	@Override
-	public void onSensorChanged(SensorEvent event) {
-		// TODO Auto-generated method stub
-		mAutoFocus = true;
+    private boolean mInitialized = false;
+    private float mLastX = 0;
+    private float mLastY = 0;
+    private float mLastZ = 0;
 
-		float x = event.values[0];
-		float y = event.values[1];
-		float z = event.values[2];
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        // TODO Auto-generated method stub
+        mAutoFocus = true;
 
-		if (!mInitialized) {
-			mLastX = x;
-			mLastY = y;
-			mLastZ = z;
-			mInitialized = true;
-		}
+        float x = event.values[0];
+        float y = event.values[1];
+        float z = event.values[2];
 
-		float deltaX = Math.abs(mLastX - x);
-		float deltaY = Math.abs(mLastY - y);
-		float deltaZ = Math.abs(mLastZ - z);
+        if (!mInitialized) {
+            mLastX = x;
+            mLastY = y;
+            mLastZ = z;
+            mInitialized = true;
+        }
 
-		if (mAutoFocus && (deltaX > .5 || deltaY > .5 || deltaZ > .5)) {
-			mAutoFocus = false;
-			mIsAuto = true;
-		} else {
-			mAutoFocus = true;
+        float deltaX = Math.abs(mLastX - x);
+        float deltaY = Math.abs(mLastY - y);
+        float deltaZ = Math.abs(mLastZ - z);
 
-			if (mIsAuto) {
-				scheduleAutoFocus();
-			}
-			mIsAuto = false;
+        if (mAutoFocus && (deltaX > .5 || deltaY > .5 || deltaZ > .5)) {
+            mAutoFocus = false;
+            mIsAuto = true;
+        } else {
+            mAutoFocus = true;
 
-		}
-		mLastX = x;
-		mLastY = y;
-		mLastZ = z;
-	}
-	
+            if (mIsAuto) {
+                scheduleAutoFocus();
+            }
+            mIsAuto = false;
+
+        }
+        mLastX = x;
+        mLastY = y;
+        mLastZ = z;
+    }
+
 
 }

@@ -84,7 +84,7 @@
         android:id="@+id/imageView_Update_Btn"
         android:layout_width="@dimen/x600"
         android:layout_height="@dimen/y100"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="@dimen/y48"
         app:srcCompat="@drawable/updateneedbtn"
         android:layout_below="@+id/textview_NewVersion"
         android:layout_centerHorizontal="true" />

@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.example.humencheckworkattendance.R;
 import com.example.humencheckworkattendance.base.BaseActivity;
@@ -16,20 +17,34 @@ import com.example.humencheckworkattendance.presenter.ChangePassWordPresenter;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class ChangePassWordActivity extends BaseActivity<ChangePassWordPresenter> implements ChangePassWordContact.ChangePassWordView{
+public class ChangePassWordActivity extends BaseActivity<ChangePassWordPresenter> implements ChangePassWordContact.ChangePassWordView {
+
+
+    @BindView(R.id.change_password_land_ll)
+    LinearLayout mChangePasswordLandLl;
+    @BindView(R.id.change_password_port_ll)
+    LinearLayout mChangePasswordPortLl;
+
+    EditText editTextChangeOldPassWord;
+    EditText editTextChangeNewPassWord;
+    EditText editTextChangeNewPassWordAgain;
 
     @BindView(R.id.editText_Change_OldPassWord)
-    EditText editTextChangeOldPassWord;
+    EditText editTextChangeOldPassWordPort;
     @BindView(R.id.editText_Change_NewPassWord)
-    EditText editTextChangeNewPassWord;
+    EditText editTextChangeNewPassWordPort;
     @BindView(R.id.editText_Change_NewPassWord_Again)
-    EditText editTextChangeNewPassWordAgain;
-    @BindView(R.id.imageView_Change_Submit)
-    ImageView imageViewChangeSubmit;
-    @BindView(R.id.imageView_Back)
-    ImageView imageViewBack;
+    EditText editTextChangeNewPassWordAgainPort;
+
+    @BindView(R.id.editText_Change_OldPassWord_land)
+    EditText editTextChangeOldPassWordLand;
+    @BindView(R.id.editText_Change_NewPassWord_land)
+    EditText editTextChangeNewPassWordLand;
+    @BindView(R.id.editText_Change_NewPassWord_Again_land)
+    EditText editTextChangeNewPassWordAgainLand;
     Intent intent;
     LoginBean loginBean;
+
     @Override
     protected ChangePassWordPresenter loadPresenter() {
         return new ChangePassWordPresenter();
@@ -38,7 +53,15 @@ public class ChangePassWordActivity extends BaseActivity<ChangePassWordPresenter
     @Override
     protected void initData(Bundle savedInstanceState) {
         intent = getIntent();
-        loginBean = (LoginBean)intent.getSerializableExtra("userMessage");
+        loginBean = (LoginBean) intent.getSerializableExtra("userMessage");
+    }
+
+    @Override
+    protected void changeScreen() {
+        setShowView(mChangePasswordLandLl, mChangePasswordPortLl);
+        editTextChangeOldPassWord = getShowWidgetsOnScreen(editTextChangeOldPassWordLand, editTextChangeOldPassWordPort);
+        editTextChangeNewPassWord = getShowWidgetsOnScreen(editTextChangeNewPassWordLand, editTextChangeNewPassWordPort);
+        editTextChangeNewPassWordAgain = getShowWidgetsOnScreen(editTextChangeNewPassWordAgainLand, editTextChangeNewPassWordAgainPort);
     }
 
     @Override
@@ -55,33 +78,36 @@ public class ChangePassWordActivity extends BaseActivity<ChangePassWordPresenter
     protected int getLayoutId() {
         return R.layout.activity_change_pass_word;
     }
-    @OnClick({R.id.imageView_Change_Submit,R.id.imageView_Back})
+
+    @OnClick({R.id.imageView_Change_Submit, R.id.imageView_Change_Submit_land,R.id.imageView_Back,R.id.imageView_Back_land})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.imageView_Change_Submit_land:
             case R.id.imageView_Change_Submit:
-                if(TextUtils.isEmpty(editTextChangeOldPassWord.getText().toString())){
+                if (TextUtils.isEmpty(editTextChangeOldPassWord.getText().toString())) {
                     toast("未填写旧密码，请先填写旧密码！");
                     return;
                 }
-                if(TextUtils.isEmpty(editTextChangeNewPassWord.getText().toString())){
+                if (TextUtils.isEmpty(editTextChangeNewPassWord.getText().toString())) {
                     toast("未填写新密码，请先填写新密码！");
                     return;
                 }
-                if(TextUtils.isEmpty(editTextChangeNewPassWordAgain.getText().toString())){
+                if (TextUtils.isEmpty(editTextChangeNewPassWordAgain.getText().toString())) {
                     toast("未填写确认密码，请先填写确认密码！");
                     return;
                 }
-                if(!editTextChangeNewPassWord.getText().toString().equals(editTextChangeNewPassWordAgain.getText().toString())){
+                if (!editTextChangeNewPassWord.getText().toString().equals(editTextChangeNewPassWordAgain.getText().toString())) {
                     toast("新密码两次输入的不同，请检查重试！");
                     return;
                 }
-                if(editTextChangeOldPassWord.getText().toString().equals(editTextChangeNewPassWord.getText().toString())){
+                if (editTextChangeOldPassWord.getText().toString().equals(editTextChangeNewPassWord.getText().toString())) {
                     toast("新密码与旧密码相同，请检查重试！");
                     return;
                 }
                 showProgressDialogWithText("正在修改中，请稍候...");
-                mPresenter.ChangePassWord(editTextChangeOldPassWord.getText().toString(),editTextChangeNewPassWord.getText().toString(),loginBean.getUserAccount());
+                mPresenter.ChangePassWord(editTextChangeOldPassWord.getText().toString(), editTextChangeNewPassWord.getText().toString(), loginBean.getUserAccount());
                 break;
+            case R.id.imageView_Back_land:
             case R.id.imageView_Back:
                 finish();
                 break;
@@ -90,6 +116,7 @@ public class ChangePassWordActivity extends BaseActivity<ChangePassWordPresenter
                 break;
         }
     }
+
     @Override
     protected void otherViewClick(View view) {
 

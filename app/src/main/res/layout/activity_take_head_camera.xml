@@ -30,9 +30,8 @@
             android:layout_width="@dimen/x48"
             android:layout_height="@dimen/y48"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/x554"
-            android:layout_toEndOf="@+id/imageView_Back"
-            android:layout_toRightOf="@+id/imageView_Back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x24"
             app:srcCompat="@drawable/uploadheadchange" />
 
     </RelativeLayout>
@@ -49,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.example.humencheckworkattendance.widget.CamearSurfaceChangeView
+            <com.example.humencheckworkattendance.widget.CameraSurfaceChangNewView
                 android:id="@+id/cameraSurfaceView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
