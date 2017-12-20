@@ -22,6 +22,7 @@ import com.example.humencheckworkattendance.base.BaseActivity;
 import com.example.humencheckworkattendance.bean.LoginBean;
 import com.example.humencheckworkattendance.contact.HomePageManageContact;
 import com.example.humencheckworkattendance.presenter.HomePageManagePresenter;
+import com.example.humencheckworkattendance.utils.VersionUtils;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -47,6 +48,8 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
     ImageView homepageplaycardtodayPort;
     @BindView(R.id.home_page_month_social_security)
     ImageView mHomepageSocialSecurityPort;
+    @BindView(R.id.textView)
+    TextView mAppVersionPort;
 
     @BindView(R.id.imageView_Histroy_Manage_land)
     ImageView imageViewHistroyManageLand;
@@ -58,7 +61,9 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
     ImageView homepageplaycardtodayLand;
     @BindView(R.id.home_page_month_social_security_land)
     ImageView mHomepageSocialSecurityLand;
-
+    @BindView(R.id.textView_land)
+    TextView mAppVersionLand;
+    
     @BindView(R.id.home_page_manage_land)
     LinearLayout mHomepageManageLand;
     @BindView(R.id.home_page_manage_port)
@@ -103,6 +108,11 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
 
     @Override
     protected void changeScreen() {
+        if(mScreenOrientation){
+            mAppVersionLand.setText(VersionUtils.getPackageName());
+        }else {
+            mAppVersionPort.setText(VersionUtils.getPackageName());
+        }
         imageViewHistroyManage = getShowWidgetsOnScreen(imageViewHistroyManageLand, imageViewHistroyManagePort);
         textViewUserNameManage = getShowWidgetsOnScreen(textViewUserNameManageLand, textViewUserNameManagePort);
         homepageexamineshort = getShowWidgetsOnScreen(homepageexamineshortLand, homepageexamineshortPort);

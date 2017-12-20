@@ -38,6 +38,7 @@ import com.example.humencheckworkattendance.bean.UploadBean;
 import com.example.humencheckworkattendance.contact.HomePageContact;
 import com.example.humencheckworkattendance.presenter.HomePagePresenter;
 import com.example.humencheckworkattendance.server.LocationService;
+import com.example.humencheckworkattendance.utils.VersionUtils;
 import com.example.humencheckworkattendance.widget.CircleImageTransform;
 import com.google.gson.Gson;
 import com.zhy.http.okhttp.callback.StringCallback;
@@ -97,6 +98,8 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
     TextView homePageAddressPort;
     @BindView(R.id.linearLayout_Map)
     LinearLayout linearLayoutMapPort;
+    @BindView(R.id.textView)
+    TextView mAppVersionPort;
 
     @BindView(R.id.relativeLayout_Insert_Humen_land)
     RelativeLayout relativeLayoutInsertHumenLand;
@@ -116,6 +119,8 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
     TextView homePageAddressLand;
     @BindView(R.id.linearLayout_Map_land)
     LinearLayout linearLayoutMapLand;
+    @BindView(R.id.textView_land)
+    TextView mAppVersionLand;
 
     @BindView(R.id.home_page_land)
     LinearLayout mHomePageLand;
@@ -194,6 +199,11 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
         if (mPopWindow != null && mPopWindow.isShowing()) {
             mPopWindow.dismiss();
             isShowPopWindow = true;
+        }
+        if(mScreenOrientation){
+            mAppVersionLand.setText(VersionUtils.getPackageName());
+        }else {
+            mAppVersionPort.setText(VersionUtils.getPackageName());
         }
         relativeLayoutInsertHumen = getShowWidgetsOnScreen(relativeLayoutInsertHumenLand, relativeLayoutInsertHumenPort);
         relativeLayoutViewHolder = getShowWidgetsOnScreen(relativeLayoutViewHolderLand, relativeLayoutViewHolderPort);

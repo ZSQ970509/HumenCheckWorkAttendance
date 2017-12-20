@@ -7,8 +7,8 @@ android {
         applicationId "com.example.humencheckworkattendance"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 8
-        versionName "1.0.171212"
+        versionCode 9
+        versionName "1.0.171220"
         multiDexEnabled true;
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

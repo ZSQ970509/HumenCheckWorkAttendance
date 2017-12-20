@@ -44,7 +44,7 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
     protected void initView() {
         String moblie = android.os.Build.MODEL;
         // Log.e("moblie",moblie);
-        if (moblie.equals("KOB-L09")) {
+        if (!moblie.equals("KOB-L09")) {
             AlertDialog.Builder builder = new AlertDialog.Builder(WelcomeActivity.this);
             // 设置提示框的标题
             builder.setTitle("警告：").
