@@ -270,7 +270,6 @@ public class CameraSurfaceChangNewView extends SurfaceView
                 }
                 if(!isBack)//初始化 默认为后置摄像头
                     isBack = true;
-
 //				Bitmap bm1 = ImageUtil.TailorBmpForLeftAndTop(bm, mScreenWidth, imageViewCameraBold.getLeft()+ UIUtils.layX2sp(120), imageViewCameraBold.getTop()+UIUtils.layY2sp(285),
 //						imageViewCameraBold.getWidth(), imageViewCameraBold.getHeight());
 
