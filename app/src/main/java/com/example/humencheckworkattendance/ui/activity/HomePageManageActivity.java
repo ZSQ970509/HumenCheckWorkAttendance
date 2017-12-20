@@ -63,7 +63,7 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
     ImageView mHomepageSocialSecurityLand;
     @BindView(R.id.textView_land)
     TextView mAppVersionLand;
-    
+
     @BindView(R.id.home_page_manage_land)
     LinearLayout mHomepageManageLand;
     @BindView(R.id.home_page_manage_port)
@@ -109,9 +109,9 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
     @Override
     protected void changeScreen() {
         if(mScreenOrientation){
-            mAppVersionLand.setText(VersionUtils.getPackageName());
+            mAppVersionLand.setText("版本：V"+VersionUtils.getVersionName()+"（Beta）");
         }else {
-            mAppVersionPort.setText(VersionUtils.getPackageName());
+            mAppVersionPort.setText("版本：V"+VersionUtils.getVersionName()+"（Beta）");
         }
         imageViewHistroyManage = getShowWidgetsOnScreen(imageViewHistroyManageLand, imageViewHistroyManagePort);
         textViewUserNameManage = getShowWidgetsOnScreen(textViewUserNameManageLand, textViewUserNameManagePort);

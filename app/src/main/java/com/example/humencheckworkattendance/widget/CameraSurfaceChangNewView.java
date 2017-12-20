@@ -65,6 +65,7 @@ public class CameraSurfaceChangNewView extends SurfaceView
     private int mSurfaceViewWidth;
     private int mSurfaceViewHeight;
     boolean isBack = true;
+    protected boolean mScreenOrientation = false;//屏幕的方向 横屏true 竖屏false
     public void setImg(ImageView imageViewCameraBold) {
         this.imageViewCameraBold = imageViewCameraBold;
     }
@@ -235,33 +236,40 @@ public class CameraSurfaceChangNewView extends SurfaceView
                         degrees = 270;
                         break;
                 }
-                Matrix m = new Matrix();
-                if (android.os.Build.MODEL.equals("C68")) {
-                    Log.d("TAG", android.os.Build.MODEL);
-                    m.setRotate(90, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
-                } else {
-                    Log.e("isBack", isBack+"");
-                    if(isBack) {
-
-                        m.setRotate(90, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
-                    }else{
-                        m.setRotate(270, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
-                        isBack = true;
-                    }
-
-                }
+//                Matrix m = new Matrix();
+//                if (android.os.Build.MODEL.equals("C68")) {
+//                    Log.d("TAG", android.os.Build.MODEL);
+//                    m.setRotate(90, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
+//                } else {
+//                    Log.e("isBack", isBack+"");
+//                    if(isBack) {
+//                        m.setRotate(90, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
+//                    }else{
+//                        m.setRotate(270, (float) bm.getWidth() / 2, (float) bm.getHeight() / 2);
+//                        isBack = true;
+//                    }
+//                }
                 // back-facing
                 int result = (info.orientation - degrees + 360) % 360;
                 if (result == 0) {
-                    bm = rotateBitmap(bm, 90);
+                    if(!isBack&&!mScreenOrientation){//竖屏且使用前置摄像头
+                        bm = rotateBitmap(bm, 270);
+                    }else {
+                        bm = rotateBitmap(bm, 90);
+                    }
                 } else if (result == 90) {
                     bm = rotateBitmap(bm, 180);
                 } else if (result == 180) {
-                    bm = rotateBitmap(bm, 270);
+                    if(!isBack&&!mScreenOrientation){//竖屏且使用前置摄像头
+                        bm = rotateBitmap(bm, 90);
+                    }else {
+                        bm = rotateBitmap(bm, 270);
+                    }
                 } else {
                     bm = rotateBitmap(bm, 0);
                 }
-
+                if(!isBack)//初始化 默认为后置摄像头
+                    isBack = true;
 
 //				Bitmap bm1 = ImageUtil.TailorBmpForLeftAndTop(bm, mScreenWidth, imageViewCameraBold.getLeft()+ UIUtils.layX2sp(120), imageViewCameraBold.getTop()+UIUtils.layY2sp(285),
 //						imageViewCameraBold.getWidth(), imageViewCameraBold.getHeight());
@@ -334,7 +342,13 @@ public class CameraSurfaceChangNewView extends SurfaceView
         mSurfaceViewWidth = this.getWidth();
         mCamera.takePicture(null, null, jpeg);
     }
-
+    public void takePicture(boolean screenOrientation) {
+        mScreenOrientation = screenOrientation;
+        setCameraParams(mCamera, mScreenWidth, mScreenHeight);
+        mSurfaceViewHeight = this.getHeight();
+        mSurfaceViewWidth = this.getWidth();
+        mCamera.takePicture(null, null, jpeg);
+    }
     private void setCameraParams(Camera camera, int width, int height) {
         try {
             mPreviewing = true;
