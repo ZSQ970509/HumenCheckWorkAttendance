@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout_PopupWindow"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y364"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/x21"
+        android:background="@drawable/homepagedialogbackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_PopupWindow_ChangePassWord"
+            android:layout_width="@dimen/x364"
+            android:layout_height="@dimen/y162"
+            android:layout_marginTop="@dimen/y34"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                app:srcCompat="@drawable/homepagedialogpassword" />
+
+            <TextView
+                android:id="@+id/pop_Change_PassWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView6"
+                android:text="更改密码"
+                android:textSize="@dimen/y48" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="#bfbfbf"/>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_PopupWindow_More"
+            android:layout_width="@dimen/x364"
+            android:layout_height="@dimen/y162"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="@dimen/x48"
+                android:layout_height="@dimen/y48"
+                android:layout_marginLeft="25dp"
+                app:srcCompat="@drawable/homepagedialogforme"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp" />
+
+            <TextView
+                android:id="@+id/pop_More"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/y48"
+                android:text="关于我们"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_toRightOf="@+id/imageView8"
+                android:layout_toEndOf="@+id/imageView8" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y2"
+            android:background="#bfbfbf"/>
+
+    </LinearLayout>
+</RelativeLayout>
