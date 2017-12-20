@@ -8,19 +8,34 @@
     android:background="@drawable/homepagebackground_land"
     android:orientation="vertical">
 
-
-    <TextView
-        android:id="@+id/textView_UserName_Manage_land"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="@dimen/y58"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/y10"
-        android:gravity="center"
-        android:singleLine="true"
-        android:text="郑书强"
-        android:textColor="#ffffff"
-        android:textSize="@dimen/y48"
-        android:textStyle="bold" />
+        android:layout_marginTop="@dimen/y10">
+
+        <TextView
+            android:id="@+id/textView_UserName_Manage_land"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="郑书强"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/y48"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView_Histroy_Manage_land"
+            android:layout_width="@dimen/y48"
+            android:layout_height="@dimen/y48"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x40"
+            app:srcCompat="@drawable/homepagedialog" />
+
+
+    </RelativeLayout>
+
 
     <LinearLayout
         android:layout_width="@dimen/x166"

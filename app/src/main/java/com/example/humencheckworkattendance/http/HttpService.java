@@ -88,7 +88,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.changePassWord)
-    Observable<BaseHttpResult> changePassWord(@Field("oldPassword") String oldPassword,@Field("newPassword") String newPassword,@Field("account") String account);
+    Observable<BaseHttpResult> changePassWord(@Field("oldPassword") String oldPassword,@Field("newPassword") String newPassword,@Field("account") String account,@Field("userType") String userType);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getVersion)

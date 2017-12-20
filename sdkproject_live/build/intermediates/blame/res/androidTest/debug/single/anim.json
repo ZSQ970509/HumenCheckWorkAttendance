@@ -4,8 +4,28 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
@@ -20,16 +40,32 @@
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\anim\\cloudwalk_cycle_anim.xml"
     },
     {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\cloudwalk_cycle_anim.xml",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\anim\\cloudwalk_cycle_anim.xml"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
@@ -40,7 +76,15 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\anim\\abc_slide_in_bottom.xml"
     }
 ]

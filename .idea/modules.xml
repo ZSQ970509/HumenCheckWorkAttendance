@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HumenCheckWorkAttendance.iml" filepath="$PROJECT_DIR$/HumenCheckWorkAttendance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HumenCheckWorkAttendance.iml" filepath="$PROJECT_DIR$/HumenCheckWorkAttendance.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdkproject_live/sdkproject_live.iml" filepath="$PROJECT_DIR$/sdkproject_live/sdkproject_live.iml" />
       <module fileurl="file://$PROJECT_DIR$/sdkproject_live/sdkproject_live.iml" filepath="$PROJECT_DIR$/sdkproject_live/sdkproject_live.iml" />
     </modules>
   </component>

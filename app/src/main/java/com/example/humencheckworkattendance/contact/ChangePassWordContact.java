@@ -13,6 +13,6 @@ public class ChangePassWordContact {
     }
 
     public interface ChangePassWordPresenter {
-        void ChangePassWord(String oldPassword,String newPassword,String account);
+        void ChangePassWord(String oldPassword,String newPassword,String account, String userType);
     }
 }

@@ -424,7 +424,7 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
             case R.id.imageView_Histroy_land:
             case R.id.imageView_Histroy:
                 showPopupWindow();
-                break;
+            break;
             case R.id.relativeLayout_Insert_Humen:
             case R.id.relativeLayout_Insert_Humen_land:
                 intent.setClass(HomePageActivity.this, InsertHumenActivity.class);

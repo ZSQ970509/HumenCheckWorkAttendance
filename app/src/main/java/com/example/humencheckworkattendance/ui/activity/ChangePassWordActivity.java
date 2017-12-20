@@ -105,7 +105,7 @@ public class ChangePassWordActivity extends BaseActivity<ChangePassWordPresenter
                     return;
                 }
                 showProgressDialogWithText("正在修改中，请稍候...");
-                mPresenter.ChangePassWord(editTextChangeOldPassWord.getText().toString(), editTextChangeNewPassWord.getText().toString(), loginBean.getUserAccount());
+                mPresenter.ChangePassWord(editTextChangeOldPassWord.getText().toString(), editTextChangeNewPassWord.getText().toString(), loginBean.getUserAccount(),loginBean.getUserType());
                 break;
             case R.id.imageView_Back_land:
             case R.id.imageView_Back:

@@ -1,7 +1,23 @@
 [
     {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_eye.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_eye.png"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\live_start.png",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\live_start.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_right.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_right.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\live_start.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\live_start.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_up.png",
@@ -20,6 +36,10 @@
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_right.png"
     },
     {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_up.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_up.png"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_down.png",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_down.png"
     },
@@ -30,5 +50,17 @@
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_eye.png",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_eye.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_mouth.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_mouth.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_down.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_down.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\head_left.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\head_left.png"
     }
 ]
