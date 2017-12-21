@@ -201,9 +201,9 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
             isShowPopWindow = true;
         }
         if(mScreenOrientation){
-            mAppVersionLand.setText("版本：V"+VersionUtils.getVersionName()+"（Beta）");
+            mAppVersionLand.setText(VersionUtils.getVersionName());
         }else {
-            mAppVersionPort.setText("版本：V"+VersionUtils.getVersionName()+"（Beta）");
+            mAppVersionPort.setText(VersionUtils.getVersionName());
         }
         relativeLayoutInsertHumen = getShowWidgetsOnScreen(relativeLayoutInsertHumenLand, relativeLayoutInsertHumenPort);
         relativeLayoutViewHolder = getShowWidgetsOnScreen(relativeLayoutViewHolderLand, relativeLayoutViewHolderPort);

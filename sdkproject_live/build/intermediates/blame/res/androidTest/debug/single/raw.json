@@ -1,15 +1,107 @@
 [
     {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_main.mp3",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_main.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_top.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_top.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_right.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_right.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_success.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_success.mp3"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_timeout.mp3",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_timeout.mp3"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_top.mp3",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_top.mp3"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_noface.mp3",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_noface.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_timeout.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_timeout.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_mouth.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_mouth.mp3"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_verfy_fail.mp3",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_verfy_fail.mp3"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_good.mp3",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_good.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_verfy_fail.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_verfy_fail.mp3"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_top.mp3",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_top.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_down.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_down.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_main.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_main.mp3"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_success.mp3",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_success.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_actionblend.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_actionblend.mp3"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_success.mp3",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_success.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_good.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_good.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed.mp3"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_eye.mp3",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_eye.mp3"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_timeout.mp3",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_timeout.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_verfy_suc.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_verfy_suc.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_left.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_left.mp3"
+    },
+    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed.mp3",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed.mp3"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_mouth.mp3",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_mouth.mp3"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_main.mp3",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_main.mp3"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_good.mp3",
@@ -40,44 +132,28 @@
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_down.mp3"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_timeout.mp3",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_timeout.mp3"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_top.mp3",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_top.mp3"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_noface.mp3",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_noface.mp3"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_net_fail.mp3",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_net_fail.mp3"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_verfy_fail.mp3",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_verfy_fail.mp3"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_good.mp3",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_good.mp3"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_actionblend.mp3",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_actionblend.mp3"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_verfy_suc.mp3",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_verfy_suc.mp3"
     },
     {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_actionblend.mp3",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_actionblend.mp3"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_eye.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_eye.mp3"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_main.mp3",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_main.mp3"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_top.mp3",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_top.mp3"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_net_fail.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_net_fail.mp3"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_left.mp3",
@@ -88,10 +164,6 @@
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_right.mp3"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_success.mp3",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_success.mp3"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_mouth.mp3",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_mouth.mp3"
     },
@@ -100,24 +172,16 @@
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_right.mp3"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_noface.mp3",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_noface.mp3"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed.mp3",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed.mp3"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_success.mp3",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_success.mp3"
-    },
-    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_verfy_suc.mp3",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_verfy_suc.mp3"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_live_eye.mp3",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_live_eye.mp3"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_failed_timeout.mp3",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\raw\\cloudwalk_failed_timeout.mp3"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\cloudwalk_verfy_fail.mp3",

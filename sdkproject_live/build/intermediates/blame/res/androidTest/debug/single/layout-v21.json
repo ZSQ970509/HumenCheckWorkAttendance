@@ -8,8 +8,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\layout-v21\\notification_action.xml"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",
@@ -26,6 +38,10 @@
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\notification_action.xml",

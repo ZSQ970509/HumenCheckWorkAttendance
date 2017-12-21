@@ -39,7 +39,7 @@
     <string name="cloudwalk_live_headright">向右缓慢转头</string>
     <string name="cloudwalk_live_headup">缓慢抬头</string>
     <string name="cloudwalk_live_mouth">张嘴</string>
-    <string name="cloudwalk_live_title">活体检测</string>
+    <string name="cloudwalk_live_title">人脸检测</string>
     <string name="cloudwalk_start_dect">开始检测</string>
     <string name="cloudwalk_tip_himself">请确保是账户本人操作</string>
     <string name="cloudwalk_tip_light">请正对手机,确保光线充足</string>
@@ -88,30 +88,26 @@
     <string name="hello_world">Hello world!</string>
     <string name="restart">重新验证</string>
     <style name="AppBaseTheme">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
     <style name="CircularProgress" parent="Theme.AppCompat.Light">
         <item name="colorAccent">#229be5</item>
     </style>
     <style name="Progress">
-        <!-- Dialog的windowFrame 无边框 -->
+        
         <item name="android:windowFrame">@null</item>
-        <!-- 浮动与Activity窗口之上 -->
+        
         <item name="android:windowIsFloating">true</item>
-        <!-- 是否半透明 -->
+        
         <item name="android:windowIsTranslucent">false</item>
-        <!-- 没有title -->
+        
         <item name="android:windowNoTitle">true</item>
-        <!-- 背景色 -->
+        
         <item name="android:windowBackground">@android:color/transparent</item>
-        <!-- 背景模糊显示 -->
+        
         <item name="android:backgroundDimEnabled">true</item>
     </style>
     <style name="bigText">

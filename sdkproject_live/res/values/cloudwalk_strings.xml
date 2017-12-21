@@ -23,7 +23,7 @@
     <string name="cloudwalk_live_eye">眨眼</string>
 
     
-     <string name="cloudwalk_live_title">活体检测</string>
+     <string name="cloudwalk_live_title">人脸检测</string>
      <string name="cloudwalk_bestface_title">最佳人脸</string>
     <!-- 结果提示页面提示语句 -->
 

@@ -6,6 +6,7 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 
 public class ScreenUtils {
@@ -127,4 +128,18 @@ public class ScreenUtils {
 	        return bp;
 
 	    }
+	/**
+	 * 是否使屏幕常亮
+	 * @param activity
+	 * @param isOpenLight
+	 */
+	public static void keepScreenLongLight(Activity activity,boolean isOpenLight) {
+		Window window = activity.getWindow();
+		if (isOpenLight) {
+			window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		} else {
+			window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		}
+
+	}
 }

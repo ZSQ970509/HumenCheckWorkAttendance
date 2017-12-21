@@ -51,6 +51,7 @@ import cn.cloudwalk.libproject.util.CameraUtil;
 import cn.cloudwalk.libproject.util.DisplayUtil;
 import cn.cloudwalk.libproject.util.LogUtils;
 import cn.cloudwalk.libproject.util.NullUtils;
+import cn.cloudwalk.libproject.util.ScreenUtils;
 import cn.cloudwalk.libproject.util.UIUtils;
 import cn.cloudwalk.libproject.util.Util;
 import cn.cloudwalk.libproject.view.CustomViewPager;
@@ -212,7 +213,7 @@ public class LiveActivity extends TemplatedActivity implements LivessCallBack, F
                     .setAnimationSpeed(2)
                     .setDimAmount(0.5f);
         }
-
+        ScreenUtils.keepScreenLongLight(this,true);
     }
 
     private void playMain() {
@@ -675,6 +676,7 @@ public class LiveActivity extends TemplatedActivity implements LivessCallBack, F
             } else {
                 localBroadcastManager.unregisterReceiver(liveServerBroadcastReceiver);
             }
+        ScreenUtils.keepScreenLongLight(this,false);
     }
 
     @Override

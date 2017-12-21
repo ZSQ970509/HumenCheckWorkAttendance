@@ -109,9 +109,9 @@ public class HomePageManageActivity extends BaseActivity<HomePageManagePresenter
     @Override
     protected void changeScreen() {
         if(mScreenOrientation){
-            mAppVersionLand.setText("版本：V"+VersionUtils.getVersionName()+"（Beta）");
+            mAppVersionLand.setText(VersionUtils.getVersionName());
         }else {
-            mAppVersionPort.setText("版本：V"+VersionUtils.getVersionName()+"（Beta）");
+            mAppVersionPort.setText(VersionUtils.getVersionName());
         }
         imageViewHistroyManage = getShowWidgetsOnScreen(imageViewHistroyManageLand, imageViewHistroyManagePort);
         textViewUserNameManage = getShowWidgetsOnScreen(textViewUserNameManageLand, textViewUserNameManagePort);

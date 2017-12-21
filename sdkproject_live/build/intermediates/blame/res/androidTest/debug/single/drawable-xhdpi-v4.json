@@ -4,60 +4,48 @@
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_left.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_up.png",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_up.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_right.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_right.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\focused.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\focused.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\live_start.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\live_start.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_right.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_right.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_right.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_right.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
@@ -68,12 +56,12 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ico_tick.png",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ico_tick.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
@@ -84,56 +72,72 @@
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_result_failded.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_result_success.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_result_success.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_eye.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_eye.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_gou.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_gou.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\focused.png",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\focused.png"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
@@ -144,48 +148,20 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\beimian1.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\beimian1.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\beimian1.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\beimian1.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_up.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_up.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
@@ -196,20 +172,8 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\zhengmian1.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\zhengmian1.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
@@ -220,40 +184,24 @@
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ico_error.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_switch.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btn_switch.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ico_tick.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ico_tick.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_mouth.png",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_mouth.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
@@ -280,12 +228,8 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask_hor.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask_hor.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\back.png",
@@ -300,8 +244,420 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head.png",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ico_tick.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ico_tick.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\back.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\back.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\live_start.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\live_start.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_down.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_down.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_left.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_left.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_circle.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_circle.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_circle.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_circle.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_right.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_right.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ico_error.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ico_error.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_down.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_down.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\zhengmian1.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\zhengmian1.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\beimian1.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\beimian1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_guide.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_guide.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_fail.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_fail.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_guide.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_guide.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\focus.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\focus.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\zhengmian1.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\zhengmian1.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_result_failded.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_result_failded.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_guide.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_guide.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_right.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_right.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\focus.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\focus.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_result_success.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_result_success.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_mouth.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_mouth.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_camera_mask.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\beimian1.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\beimian1.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_up.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_up.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head.png",
+        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_result_success.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_result_success.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\zhengmian1.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\zhengmian1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_switch.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btn_switch.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_up.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_up.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ico_tick.png",
+        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ico_tick.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
@@ -316,12 +672,16 @@
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_circle.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_fail.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_fail.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
@@ -332,8 +692,8 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\back.png",
@@ -348,16 +708,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
@@ -368,8 +728,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_eye.png",
@@ -384,12 +756,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_switch.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btn_switch.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\live_start.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\live_start.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
@@ -416,24 +788,8 @@
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_eye.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_down.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_down.png"
-    },
-    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_fail.png",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_fail.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_left.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_left.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_main_circle.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_main_circle.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\focus.png",
@@ -444,20 +800,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_gou.png",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_gou.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png",
@@ -468,44 +820,40 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_down.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_down.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\zhengmian1.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\zhengmian1.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_result_failded.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_result_failded.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ico_error.png",
@@ -524,36 +872,16 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\beimian1.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\beimian1.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_progresshud_spinner.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_guide.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_guide.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_fail.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_fail.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
@@ -564,24 +892,12 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_guide.png",
-        "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_guide.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\focus.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\focus.png"
-    },
-    {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_left.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_left.png"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
@@ -592,6 +908,10 @@
         "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\36ec93a36c3da48ee21c2d1f7428b9baa870fc36\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\live_start.png",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\live_start.png"
     },
@@ -600,8 +920,8 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\cloudwalk_face_result_failded.png",
-        "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\cloudwalk_face_result_failded.png"
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\head_down.png",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\head_down.png"
     },
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png",
@@ -612,15 +932,7 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "C:\\Users\\administration\\.android\\build-cache\\351488925267982f8c339be050f2dec6b1bb1669\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\btn_switch.png",
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\btn_switch.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\64e0aa4a212a49b7c690c885f1f6bd581712902a\\output\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     }
 ]

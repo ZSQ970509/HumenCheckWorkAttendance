@@ -12,8 +12,20 @@
         "source": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\res\\layout-land\\cloudwalk_activity_facedect_result.xml"
     },
     {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\debug\\layout-land\\cloudwalk_activity_bestface.xml",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\res\\layout-land\\cloudwalk_activity_bestface.xml"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\debug\\layout-land\\cloudwalk_activity_facedect2.xml",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\res\\layout-land\\cloudwalk_activity_facedect2.xml"
+    },
+    {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\debug\\layout-land\\cloudwalk_activity_facedect2.xml",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\res\\layout-land\\cloudwalk_activity_facedect2.xml"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\debug\\layout-land\\cloudwalk_activity_facedect_result.xml",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\res\\layout-land\\cloudwalk_activity_facedect_result.xml"
     },
     {
         "merged": "D:\\AndroidStudioCode\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\debug\\layout-land\\cloudwalk_activity_bestface.xml",
@@ -30,5 +42,9 @@
     {
         "merged": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\debug\\layout-land\\cloudwalk_activity_facedect_result.xml",
         "source": "C:\\Users\\administration\\Desktop\\HumenCheckWorkAttendance\\sdkproject_live\\res\\layout-land\\cloudwalk_activity_facedect_result.xml"
+    },
+    {
+        "merged": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\build\\intermediates\\res\\merged\\debug\\layout-land\\cloudwalk_activity_facedect.xml",
+        "source": "D:\\workSpace\\studioGithubPro\\HumenCheckWorkAttendance\\sdkproject_live\\res\\layout-land\\cloudwalk_activity_facedect.xml"
     }
 ]
