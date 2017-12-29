@@ -78,7 +78,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.Base">
+        android:theme="@style/AppTheme">
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.humencheckworkattendance"
@@ -105,7 +105,7 @@
 
         <activity
             android:name=".ui.activity.WelcomeActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize">
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -114,61 +114,61 @@
         </activity>
         <activity
             android:name=".ui.activity.LoginActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.HomePageActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.MoreActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.SignInDetailsActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.ChangePassWordActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.HomePageManageActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.SubmitHumenMessageActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:label="@string/title_activity_submit_humen_message"
-            android:theme="@style/AppTheme.Base" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.activity.PlayCardTodayActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.MonthSocialSecurityActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.SelectProjectActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.InsertHumenManagerActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.InsertHumenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.TakeIdNumCameraActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.TakeIdNumBackCameraActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.ShowPhotoActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
 
         <activity android:name=".ui.activity.TakeHeadCameraActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.TakeCameraActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
         <activity
             android:name=".ui.activity.MapActivity"
             android:label="@string/title_activity_map"
-            android:theme="@style/AppTheme.Base" />
+            android:theme="@style/AppTheme" />
 
 
         <activity

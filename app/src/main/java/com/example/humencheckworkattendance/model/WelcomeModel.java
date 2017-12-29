@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.example.humencheckworkattendance.ProApplication;
 import com.example.humencheckworkattendance.base.BaseModel;
+import com.example.humencheckworkattendance.bean.ModelBean;
 import com.example.humencheckworkattendance.bean.UpdateBean;
 import com.example.humencheckworkattendance.exception.ApiException;
 import com.example.humencheckworkattendance.subscriber.CommonSubscriber;
@@ -27,6 +28,29 @@ public class WelcomeModel extends BaseModel{
                     @Override
                     public void onNext(UpdateBean data) {
                         //LogUtils.d("sss",data.toString());
+                        infoHint.successInfo(data);
+                    }
+
+                    @Override
+                    protected void onError(ApiException e) {
+                        super.onError(e);
+                        LogUtils.d("sss",e.getMessage().toString());
+                        infoHint.failInfo(e.message);
+                    }
+                });
+    }
+
+    //获取设备是否被允许使用App
+    public void getIsExistIMEI(@NonNull String updateVersionCode, @NonNull final WelcomeModel.getIsExistIMEIInfoHint infoHint){
+        if (infoHint == null) {
+            throw new RuntimeException("InfoHint不能为空");
+        }
+        httpService.getIsExistIMEI(updateVersionCode)
+                //.compose(view.<BaseHttpResult<LoginBean>>bind())
+                .compose(new CommonTransformer())
+                .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {
+                    @Override
+                    public void onNext(String data) {
                         infoHint.successInfo(data);
                     }
 
@@ -68,5 +92,10 @@ public class WelcomeModel extends BaseModel{
 
         void failInfo(String str);
 
+    }
+    //通过接口产生信息回调
+    public interface getIsExistIMEIInfoHint {
+        void successInfo(String modelBean);
+        void failInfo(String str);
     }
 }

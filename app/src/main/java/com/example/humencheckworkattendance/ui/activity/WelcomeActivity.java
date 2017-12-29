@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import com.example.humencheckworkattendance.R;
 import com.example.humencheckworkattendance.base.BaseActivity;
+import com.example.humencheckworkattendance.bean.ModelBean;
 import com.example.humencheckworkattendance.bean.UpdateBean;
 import com.example.humencheckworkattendance.contact.WelcomeContact;
 import com.example.humencheckworkattendance.presenter.WelcomePresenter;
@@ -39,41 +40,11 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
     protected void initListener() {
 
     }
-
+//
     @Override
     protected void initView() {
-        String moblie = android.os.Build.MODEL;
-        // Log.e("moblie",moblie);
-        if (!moblie.equals("KOB-L09")) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(WelcomeActivity.this);
-            // 设置提示框的标题
-            builder.setTitle("警告：").
-                    // 设置提示框的图标
-                    // setIcon(R.drawable.icon).
-                    // 设置要显示的信息
-                            setMessage("此手机无法使用该软件!").
-                    // 设置确定按钮
-                            setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            finish();
-                        }
-                    });
-
-            // 生产对话框
-            AlertDialog alertDialog = builder.create();
-            alertDialog.setCanceledOnTouchOutside(false);
-            // 显示对话框
-            alertDialog.show();
-            alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88, 190, 252));
-            alertDialog.setCancelable(false);
-
-        } else {
-            imageViewWelcomeBackgroundPort.setImageResource(R.drawable.welcomebackground);
-            mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
-        }
-
-
+//        mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
+        mPresenter.getIsExistModel(android.os.Build.MODEL + "");
     }
 
     @Override
@@ -86,8 +57,7 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
         if (mScreenOrientation) {
             imageViewWelcomeBackgroundLand.setVisibility(View.VISIBLE);
             imageViewWelcomeBackgroundPort.setVisibility(View.GONE);
-        }
-        else {
+        } else {
             imageViewWelcomeBackgroundLand.setVisibility(View.GONE);
             imageViewWelcomeBackgroundPort.setVisibility(View.VISIBLE);
         }
@@ -127,5 +97,30 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
         }
     }
 
+    @Override
+    public void getModelSuccess(String msg) {
+//        imageViewWelcomeBackgroundPort.setImageResource(R.drawable.welcomebackground);
+        mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
+    }
 
+    @Override
+    public void getModelFail(String failMsg) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(WelcomeActivity.this);
+        // 设置提示框的标题
+        builder.setTitle("警告：").
+                setIcon(R.drawable.icon).
+                setMessage(failMsg).
+                setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.setCanceledOnTouchOutside(false);
+        // 显示对话框
+        alertDialog.show();
+        alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88, 190, 252));
+        alertDialog.setCancelable(false);
+    }
 }

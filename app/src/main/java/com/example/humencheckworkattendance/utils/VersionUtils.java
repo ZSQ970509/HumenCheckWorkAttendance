@@ -38,7 +38,7 @@ public class VersionUtils {
      * @return 版本名
      */
     public static String getVersionName() {
-        return "版本：V"+getPackageInfo().versionName+"（Beta-11:50）";
+        return getPackageInfo().versionName;
     }
 
     /**
