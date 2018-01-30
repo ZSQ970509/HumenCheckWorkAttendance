@@ -5,12 +5,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.example.humencheckworkattendance.R;
 import com.example.humencheckworkattendance.base.BaseActivity;
-import com.example.humencheckworkattendance.bean.ModelBean;
 import com.example.humencheckworkattendance.bean.UpdateBean;
 import com.example.humencheckworkattendance.contact.WelcomeContact;
 import com.example.humencheckworkattendance.presenter.WelcomePresenter;
@@ -43,8 +43,8 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
 //
     @Override
     protected void initView() {
-//        mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
-        mPresenter.getIsExistModel(android.os.Build.MODEL + "");
+        mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
+//        mPresenter.getIsExistModel(android.os.Build.MODEL + "");
     }
 
     @Override
@@ -69,32 +69,50 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
     }
 
     @Override
-    public void getVersionSuccess(UpdateBean updateBean) {
-
-        try {
-            intent.setClass(this, LoginActivity.class);
-            intent.putExtra("isUpdate", true);
-            intent.putExtra("updateBean", updateBean);
-            Thread.sleep(2000);
-            startActivity(intent);
-            finish();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    public void getVersionSuccess(final UpdateBean updateBean) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                intent.setClass(WelcomeActivity.this, LoginActivity.class);
+                intent.putExtra("isUpdate", true);
+                intent.putExtra("updateBean", updateBean);
+                startActivity(intent);
+                finish();
+            }
+        },2000);
+//        try {
+//            intent.setClass(this, LoginActivity.class);
+//            intent.putExtra("isUpdate", true);
+//            intent.putExtra("updateBean", updateBean);
+//            Thread.sleep(2000);
+//            startActivity(intent);
+//            finish();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
     }
 
     @Override
     public void getVersionFail(String failMsg) {
-        try {
-            intent.setClass(this, LoginActivity.class);
-            intent.putExtra("isUpdate", false);
-            Thread.sleep(2000);
-            startActivity(intent);
-            finish();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            intent.setClass(this, LoginActivity.class);
+//            intent.putExtra("isUpdate", false);
+//            Thread.sleep(2000);
+//            startActivity(intent);
+//            finish();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                intent.setClass(WelcomeActivity.this, LoginActivity.class);
+                intent.putExtra("isUpdate", false);
+                startActivity(intent);
+                finish();
+            }
+        },2000);
     }
 
     @Override

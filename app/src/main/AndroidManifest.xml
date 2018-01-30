@@ -70,7 +70,7 @@
     <uses-feature android:name="android.hardware.camera.flash" />
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <application
         android:name=".ProApplication"
         android:allowBackup="true"
