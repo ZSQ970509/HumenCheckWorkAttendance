@@ -42,8 +42,8 @@ public class HomePagePresenter extends BasePresenter<HomePageActivity> implement
         });
     }
     @Override
-    public void playCard(String time, String memberId, String address,String type,String projId,String emtpId,String emtpRolesId, String lng, String lat,String attendanceUrl) {
-        ((HomePageModel) getiModelMap().get("HomePage")).playCard(time, memberId, address,type,projId,emtpId,emtpRolesId,lng,lat,attendanceUrl,new HomePageModel.playCardInfoHint() {
+    public void playCard(String time, String memberId, String address,String type,String projId,String emtpId,String emtpRolesId, String lng, String lat,String attendanceUrl,String admUserId,String admUserName) {
+        ((HomePageModel) getiModelMap().get("HomePage")).playCard(time, memberId, address,type,projId,emtpId,emtpRolesId,lng,lat,attendanceUrl,admUserId,admUserName,new HomePageModel.playCardInfoHint() {
             @Override
             public void successInfo(String s) {
                 getIView().playCardSuccess(s);

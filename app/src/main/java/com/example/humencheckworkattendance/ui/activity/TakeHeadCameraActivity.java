@@ -2,9 +2,12 @@ package com.example.humencheckworkattendance.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Point;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
@@ -56,7 +59,6 @@ public class TakeHeadCameraActivity extends BaseActivity<TakeHeadCameraPresenter
     protected void initListener() {
 
     }
-
     @Override
     protected void initView() {
         getScreenMetrix(this);

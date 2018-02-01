@@ -149,7 +149,7 @@ public class MonthSocialSecurityActivity extends BaseActivity<MonthSocialSecurit
                 String imgUrl = data.getStringExtra("url");
 //                LogUtil.logE("本月社保上传页面，上传的图片Url" + imgUrl);
                 showProgressDialogWithText("上传数据中，请稍候...");
-                mPresenter.addSocialSecurity(mLoginBean.getProjId(),mDataList.get(mPosition).getStreamId(),imgUrl);
+                mPresenter.addSocialSecurity(mLoginBean.getProjId(),mDataList.get(mPosition).getStreamId(),imgUrl,mLoginBean.getMemberId()+"",mLoginBean.getUserName());
                 break;
             case 2:
                 break;

@@ -54,7 +54,7 @@ public class LoginModel extends BaseModel{
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.login(passWord,userName,imei)
+        httpService.login(passWord,userName,"864004030677345")
                 //.compose(view.<BaseHttpResult<LoginBean>>bind())
                 .compose(new CommonTransformer<LoginBean>())
                 .subscribe(new CommonSubscriber<LoginBean>(ProApplication.getmContext()) {

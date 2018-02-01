@@ -21,7 +21,7 @@ public class ShowPhotoModel extends BaseModel{
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.upLoadImage64IdCard(img64)
+        httpService.upLoadImage64IdCard(img64,idcard)
                 // .compose(view.<BaseHttpResult<UploadBean>>bind())
                 .compose(new CommonTransformer<IdCardBean>())
                 .subscribe(new CommonSubscriber<IdCardBean>(ProApplication.getmContext()) {

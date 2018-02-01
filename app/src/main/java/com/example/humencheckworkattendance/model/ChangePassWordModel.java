@@ -15,11 +15,11 @@ import com.example.humencheckworkattendance.utils.LogUtils;
 
 public class ChangePassWordModel extends BaseModel{
     //保存班组
-    public void changePassWord(@NonNull String oldPassword, @NonNull String newPassword, @NonNull String account ,@NonNull String userType , @NonNull final ChangePassWordModel.ChangePassWordInfoHint infoHint){
+    public void changePassWord(@NonNull String oldPassword, @NonNull String newPassword, @NonNull String account ,@NonNull String userType , @NonNull String admUserId ,@NonNull String admUserName,@NonNull final ChangePassWordModel.ChangePassWordInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.changePassWord(oldPassword,newPassword,account,userType)
+        httpService.changePassWord(oldPassword,newPassword,account,userType,admUserId,admUserName)
                 //.compose(view.<BaseHttpResult>bind())
                 .compose(new CommonTransformer())
                 .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {

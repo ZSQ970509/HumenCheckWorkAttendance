@@ -39,11 +39,11 @@ public class HomePageModel extends BaseModel{
                 });
     }
     //打卡
-    public void playCard(@NonNull String time, @NonNull String memberId, @NonNull String address, @NonNull String  type, @NonNull String  projId, @NonNull String emtpId, @NonNull String emtpRolesId,@NonNull String lng,@NonNull  String lat,@NonNull String attendanceUrl,@NonNull final HomePageModel.playCardInfoHint infoHint){
+    public void playCard(@NonNull String time, @NonNull String memberId, @NonNull String address, @NonNull String  type, @NonNull String  projId, @NonNull String emtpId, @NonNull String emtpRolesId,@NonNull String lng,@NonNull  String lat,@NonNull String attendanceUrl,@NonNull String admUserId,@NonNull String admUserName,@NonNull final HomePageModel.playCardInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.playCard("1",time,memberId,address,type,projId,emtpId,emtpRolesId,lng,lat,attendanceUrl)
+        httpService.playCard("1",time,memberId,address,type,projId,emtpId,emtpRolesId,lng,lat,attendanceUrl,admUserId,admUserName)
                 //.compose(view.<BaseHttpResult>bind())
                 .compose(new CommonTransformer())
                 .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {

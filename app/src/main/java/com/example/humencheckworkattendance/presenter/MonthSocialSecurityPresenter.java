@@ -34,8 +34,8 @@ public class MonthSocialSecurityPresenter extends BasePresenter<MonthSocialSecur
     }
 
     @Override
-    public void addSocialSecurity(String proId, String userId ,String imgUrl) {
-        ((MonthSocialSecurityModel) getiModelMap().get("MonthSocialSecurity")).addSocialSecurity(proId, userId,imgUrl,new MonthSocialSecurityModel.addSocialSecurityInfoHint(){
+    public void addSocialSecurity(String proId, String userId ,String imgUrl, String admUserId , String admUserName) {
+        ((MonthSocialSecurityModel) getiModelMap().get("MonthSocialSecurity")).addSocialSecurity(proId, userId,imgUrl,admUserId,admUserName,new MonthSocialSecurityModel.addSocialSecurityInfoHint(){
             @Override
             public void successInfo(String empty) {
                 getIView().addSocialSecuritySuccess(empty);

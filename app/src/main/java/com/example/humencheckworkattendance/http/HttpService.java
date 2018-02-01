@@ -48,7 +48,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.playCard)
-    Observable<BaseHttpResult> playCard(@Field("inOutType") String inOutType, @Field("time") String time, @Field("memberId") String memberId, @Field("address") String address, @Field("type") String type, @Field("projId") String projId, @Field("emtpId") String emtpId, @Field("emtpRolesId") String emtpRolesId, @Field("lng") String lng, @Field("lat") String lat, @Field("attendanceUrl") String attendanceUrl);
+    Observable<BaseHttpResult> playCard(@Field("inOutType") String inOutType, @Field("time") String time, @Field("memberId") String memberId, @Field("address") String address, @Field("type") String type, @Field("projId") String projId, @Field("emtpId") String emtpId, @Field("emtpRolesId") String emtpRolesId, @Field("lng") String lng, @Field("lat") String lat, @Field("attendanceUrl") String attendanceUrl,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getHistroy)
@@ -62,7 +62,7 @@ public interface HttpService {
     Observable<BaseHttpResult<UploadBean>> upLoadImage64(@Body String img64);
 
     @POST(UrlHelper.API.API+UrlHelper.API.upLoadImage64)
-    Observable<BaseHttpResult<IdCardBean>> upLoadImage64IdCard(@Body String img64);
+    Observable<BaseHttpResult<IdCardBean>> upLoadImage64IdCard(@Body String img64,@Field("idcard")String idcard);
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.insertHumen)
     Observable<BaseHttpResult> insertHumen(@Field("userId") String userId,@Field("idCard") String idCard,@Field("streamName") String streamName,@Field("mobile") String mobile,@Field("headImage") String headImage,@Field("iDCardPathImage") String iDCardPathImage,@Field("iDCardBackPathImage") String  iDCardBackPathImage,@Field("password") String password,@Field("emtpId") String emtpId,@Field("emtpRolesId") String rolesId,@Field("gender") String gender,@Field("projId") String projId,@Field("validateCode") String validateCode,@Field("streamTitle") String streamTitle,@Field("statusType") String statusType,@Field("userTypeId") String userTypeId,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);
@@ -89,7 +89,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.changePassWord)
-    Observable<BaseHttpResult> changePassWord(@Field("oldPassword") String oldPassword,@Field("newPassword") String newPassword,@Field("account") String account,@Field("userType") String userType);
+    Observable<BaseHttpResult> changePassWord(@Field("oldPassword") String oldPassword,@Field("newPassword") String newPassword,@Field("account") String account,@Field("userType") String userType,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getVersion)
@@ -121,11 +121,11 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.subitStreamMember)
-    Observable<BaseHttpResult> subitStreamMember(@Field("id") String id);
+    Observable<BaseHttpResult> subitStreamMember(@Field("id") String id,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.rollBackMember)
-    Observable<BaseHttpResult> rollBackMember(@Field("id") String id);
+    Observable<BaseHttpResult> rollBackMember(@Field("id") String id,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.checkDeleteStreamMember)
@@ -133,7 +133,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.deleteStreamMember)
-    Observable<BaseHttpResult> deleteStreamMember(@Field("id") String id);
+    Observable<BaseHttpResult> deleteStreamMember(@Field("id") String id,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getErrorStreamMember)
@@ -154,7 +154,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.addSocialSecurity)
-    Observable<BaseHttpResult>addSocialSecurity(@Field("projId") String projId, @Field("userId") String userId, @Field("imgUrl") String imgUrl);
+    Observable<BaseHttpResult>addSocialSecurity(@Field("projId") String projId, @Field("userId") String userId, @Field("imgUrl") String imgUrl,@Field("admUserId") String admUserId , @Field("admUserName") String admUserName);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getIsExistIMEI)

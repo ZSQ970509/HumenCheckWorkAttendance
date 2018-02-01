@@ -20,6 +20,6 @@ public class MonthSocialSecurityContact {
 
     public interface MonthSocialSecurityPresenter {
         void getMonthSocialSecurityList(String project, String page);
-        void addSocialSecurity(String proId, String userId, String imgUrl);
+        void addSocialSecurity(String proId, String userId, String imgUrl, String admUserId , String admUserName);
     }
 }

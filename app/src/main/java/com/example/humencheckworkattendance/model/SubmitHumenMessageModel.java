@@ -39,11 +39,11 @@ public class SubmitHumenMessageModel extends BaseModel{
                 });
     }
     //提交审核
-    public void subitStreamMember(@NonNull String id, @NonNull final SubmitHumenMessageModel.subitStreamMemberInfoHint infoHint){
+    public void subitStreamMember(@NonNull String id,String admUserId, String admUserName ,@NonNull final SubmitHumenMessageModel.subitStreamMemberInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.subitStreamMember(id)
+        httpService.subitStreamMember(id,admUserId,admUserName)
                 //  .compose(view.<BaseHttpResult<HistroyBean>>bind())
                 .compose(new CommonTransformer())
                 .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {
@@ -61,11 +61,11 @@ public class SubmitHumenMessageModel extends BaseModel{
                 });
     }
     //撤销审核
-    public void rollBackMember(@NonNull String id, @NonNull final SubmitHumenMessageModel.rollBackMemberInfoHint infoHint){
+    public void rollBackMember(@NonNull String id,String admUserId, String admUserName, @NonNull final SubmitHumenMessageModel.rollBackMemberInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.rollBackMember(id)
+        httpService.rollBackMember(id,admUserId,admUserName)
                 //  .compose(view.<BaseHttpResult<HistroyBean>>bind())
                 .compose(new CommonTransformer())
                 .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {
@@ -105,11 +105,11 @@ public class SubmitHumenMessageModel extends BaseModel{
                 });
     }
     //删除人员信息
-    public void deleteStreamMember(@NonNull String id, @NonNull final SubmitHumenMessageModel.deleteStreamMemberInfoHint infoHint){
+    public void deleteStreamMember(@NonNull String id,String admUserId, String admUserName, @NonNull final SubmitHumenMessageModel.deleteStreamMemberInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.deleteStreamMember(id)
+        httpService.deleteStreamMember(id,admUserId,admUserName)
                 //  .compose(view.<BaseHttpResult<HistroyBean>>bind())
                 .compose(new CommonTransformer())
                 .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {

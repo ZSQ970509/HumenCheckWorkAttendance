@@ -17,7 +17,7 @@ public class HomePageContact {
     }
 
     public interface HomePagePresenter {
-        void playCard(String time, String memberId, String address,String type,String projId,String emtpId,String emtpRolesId, String lng, String lat,String attendanceUrl);
+        void playCard(String time, String memberId, String address,String type,String projId,String emtpId,String emtpRolesId, String lng, String lat,String attendanceUrl,String admUserId,String admUserName);
         void uploadImage64(String imageBase64);
         void checkIsFrozen(String memberId,String projId);
     }

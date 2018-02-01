@@ -36,12 +36,12 @@ public class MonthSocialSecurityModel extends BaseModel {
                     }
                 });
     }
-    //获取当日打卡情况
-    public void addSocialSecurity(@NonNull String proId,@NonNull String userId, @NonNull String imgUrl, @NonNull final addSocialSecurityInfoHint infoHint){
+    //上传社保
+    public void addSocialSecurity(@NonNull String proId,@NonNull String userId, @NonNull String imgUrl,@NonNull String admUserId , @NonNull String admUserName, @NonNull final addSocialSecurityInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.addSocialSecurity(proId,userId,imgUrl)
+        httpService.addSocialSecurity(proId,userId,imgUrl,admUserId,admUserName)
                 .compose(new CommonTransformer())
                 .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {
                     @Override

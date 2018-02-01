@@ -92,7 +92,7 @@ public class SubmitHumenMessageActivity  extends BaseActivity<SubmitHumenMessage
             public void onSubmitClick(int i) {
                 showProgressDialogWithText("提交审核中，请稍候...");
                 dqPosition = i;
-                mPresenter.subitStreamMember(dataList.get(i).getStreamId()+"");
+                mPresenter.subitStreamMember(dataList.get(i).getStreamId()+"",loginBean.getMemberId()+"",loginBean.getUserName());
                 //Toast.makeText(SubmitHumenMessageActivity.this, "提交的item" + i, Toast.LENGTH_SHORT).show();
             }
 
@@ -110,7 +110,7 @@ public class SubmitHumenMessageActivity  extends BaseActivity<SubmitHumenMessage
             public void onRollbackClick(int i) {
                 showProgressDialogWithText("撤销审核中，请稍候...");
                 dqPosition = i;
-                mPresenter.rollBackMember(dataList.get(i).getStreamId()+"");
+                mPresenter.rollBackMember(dataList.get(i).getStreamId()+"",loginBean.getMemberId()+"",loginBean.getUserName());
                 //Toast.makeText(SubmitHumenMessageActivity.this, "撤销的item" + i, Toast.LENGTH_SHORT).show();
             }
 
@@ -223,7 +223,7 @@ public class SubmitHumenMessageActivity  extends BaseActivity<SubmitHumenMessage
 
     @Override
     public void checkDeleteStreamMemberSuccess(String s) {
-        mPresenter.deleteStreamMember(dataList.get(dqPosition).getStreamId()+"");
+        mPresenter.deleteStreamMember(dataList.get(dqPosition).getStreamId()+"",loginBean.getMemberId()+"",loginBean.getUserName());
     }
 
     @Override

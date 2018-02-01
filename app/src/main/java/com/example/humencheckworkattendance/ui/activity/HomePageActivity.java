@@ -69,7 +69,6 @@ import okhttp3.Call;
 
 
 public class HomePageActivity extends BaseActivity<HomePagePresenter> implements HomePageContact.HomePageView {
-
     RelativeLayout relativeLayoutInsertHumen;
     RelativeLayout relativeLayoutViewHolder;
     TextView textViewUserName;
@@ -807,7 +806,7 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
         Date curDate = new Date(System.currentTimeMillis());
         String time = formatter.format(curDate);
         //Log.e("11111111111111","111111111111111");
-        mPresenter.playCard(time, loginBean.getMemberId() + "", homePageAddress.getText().toString(), type, loginBean.getProjId(), loginBean.getEmtpId(), loginBean.getEmtpRolesId(), Longitude + "", latitude + "", uploadBean.getPicUrl());
+        mPresenter.playCard(time, loginBean.getMemberId() + "", homePageAddress.getText().toString(), type, loginBean.getProjId(), loginBean.getEmtpId(), loginBean.getEmtpRolesId(), Longitude + "", latitude + "", uploadBean.getPicUrl(),loginBean.getMemberId() + "", loginBean.getUserName());
     }
 
     @Override

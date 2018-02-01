@@ -24,10 +24,10 @@ public class SubmitHumenMessageContact {
 
     public interface SubmitHumenMessagePresenter {
         void getStreamMemberList(String memberId, String page, String pageSize);
-        void  subitStreamMember(String id);
-        void rollBackMember(String id);
+        void  subitStreamMember(String id,String admUserId, String admUserName);
+        void rollBackMember(String id,String admUserId, String admUserName);
         void checkDeleteStreamMember(String id);
-        void deleteStreamMember(String id);
+        void deleteStreamMember(String id,String admUserId, String admUserName);
         void getErrorStreamMember(String id);
     }
 }

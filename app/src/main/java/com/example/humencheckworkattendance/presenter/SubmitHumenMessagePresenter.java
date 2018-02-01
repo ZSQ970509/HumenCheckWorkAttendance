@@ -42,8 +42,8 @@ public class SubmitHumenMessagePresenter extends BasePresenter<SubmitHumenMessag
         });
     }
     @Override
-    public void subitStreamMember(String id) {
-        ((SubmitHumenMessageModel) getiModelMap().get("submitHumenMessage")).subitStreamMember(id,new SubmitHumenMessageModel.subitStreamMemberInfoHint(){
+    public void subitStreamMember(String id ,String admUserId, String admUserName) {
+        ((SubmitHumenMessageModel) getiModelMap().get("submitHumenMessage")).subitStreamMember(id,admUserId,admUserName,new SubmitHumenMessageModel.subitStreamMemberInfoHint(){
 
 
             @Override
@@ -58,8 +58,8 @@ public class SubmitHumenMessagePresenter extends BasePresenter<SubmitHumenMessag
         });
     }
     @Override
-    public void rollBackMember(String id){
-        ((SubmitHumenMessageModel) getiModelMap().get("submitHumenMessage")).rollBackMember(id,new SubmitHumenMessageModel.rollBackMemberInfoHint(){
+    public void rollBackMember(String id,String admUserId, String admUserName){
+        ((SubmitHumenMessageModel) getiModelMap().get("submitHumenMessage")).rollBackMember(id,admUserId,admUserName,new SubmitHumenMessageModel.rollBackMemberInfoHint(){
 
 
             @Override
@@ -90,8 +90,8 @@ public class SubmitHumenMessagePresenter extends BasePresenter<SubmitHumenMessag
         });
     }
     @Override
-    public void deleteStreamMember(String id){
-        ((SubmitHumenMessageModel) getiModelMap().get("submitHumenMessage")).deleteStreamMember(id,new SubmitHumenMessageModel.deleteStreamMemberInfoHint(){
+    public void deleteStreamMember(String id,String admUserId, String admUserName){
+        ((SubmitHumenMessageModel) getiModelMap().get("submitHumenMessage")).deleteStreamMember(id,admUserId,admUserName,new SubmitHumenMessageModel.deleteStreamMemberInfoHint(){
 
 
             @Override

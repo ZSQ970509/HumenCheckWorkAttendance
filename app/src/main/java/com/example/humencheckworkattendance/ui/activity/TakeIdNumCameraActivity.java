@@ -73,7 +73,8 @@ public class TakeIdNumCameraActivity extends BaseActivity<TakeIdNumCameraPresent
     protected void initView() {
         getScreenMetrix(this);
         /*LinearLayout.LayoutParams flParams = (LinearLayout.LayoutParams) frameLayoutCameraIdNum.getLayoutParams();
-        flParams.height = (int) (mScreenWidth * 1.33334F);
+        flParams.height = (int) (mScreenWidth * 1.3333
+        4F);
         flParams.width = mScreenWidth;
         frameLayoutCameraIdNum.setLayoutParams(flParams);*/
         mySurfaceView.setImg(imageViewCameraBold);

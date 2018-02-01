@@ -28,8 +28,8 @@ public class ChangePassWordPresenter extends BasePresenter<ChangePassWordActivit
 
 
     @Override
-    public void ChangePassWord(String oldPassword, String newPassword, String account, String userType) {
-        ((ChangePassWordModel) getiModelMap().get("ChangePassWord")).changePassWord(oldPassword,newPassword,account,userType, new ChangePassWordModel.ChangePassWordInfoHint() {
+    public void ChangePassWord(String oldPassword, String newPassword, String account, String userType, String MemberId, String UserName) {
+        ((ChangePassWordModel) getiModelMap().get("ChangePassWord")).changePassWord(oldPassword,newPassword,account,userType,MemberId, UserName,new ChangePassWordModel.ChangePassWordInfoHint() {
 
 
             @Override
