@@ -41,7 +41,7 @@
     </style>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light"></style>
+    <style name="AppTheme" parent="BaseAppTheme"></style>
 
     <!-- 加载中的Progressbar样式 -->
     <style name="CircularProgress" parent="Theme.AppCompat.Light">

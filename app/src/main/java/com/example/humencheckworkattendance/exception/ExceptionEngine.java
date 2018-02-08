@@ -68,7 +68,13 @@ public class ExceptionEngine {
 //            }
 //            return ex;
 //        } else
-        if (e instanceof ServerException) {    //服务器返回的错误
+        if (e instanceof ApiException) {
+            return (ApiException)e;
+        }else if (e instanceof retrofit2.HttpException) {
+            ex = new ApiException(e, ((retrofit2.HttpException) e).code());
+            ex.message = "网络异常！异常码:" + ex.code;
+            return ex;
+        }else if (e instanceof ServerException) {    //服务器返回的错误
             ServerException resultException = (ServerException) e;
             ex = new ApiException(resultException, resultException.code);
             ex.message = resultException.message;
@@ -94,10 +100,8 @@ public class ExceptionEngine {
             return ex;
 
         } else {
-            ex = new ApiException(e, ErrorType.UNKONW);
-            ex.message = "未知错误";          //未知错误
-            ex.message = e.toString();          //未知错误
-
+            ex = new ApiException(e, ErrorType.UNKNOWN);
+            ex.message = "未知错误"+e.toString();          //未知错误
             return ex;
         }
     }

@@ -2,6 +2,7 @@ package com.example.humencheckworkattendance.base;
 
 
 import com.example.humencheckworkattendance.exception.ApiException;
+import com.example.humencheckworkattendance.exception.ExceptionEngine;
 
 import rx.Subscriber;
 
@@ -14,8 +15,7 @@ public abstract class BaseSubscriber<T> extends Subscriber<T> {
 
     @Override
     public void onError(Throwable e) {
-        ApiException apiException = (ApiException) e;
-        onError(apiException);
+        onError(ExceptionEngine.handleException(e));
     }
 
 

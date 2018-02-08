@@ -15,7 +15,7 @@ public interface ErrorType {
     /**
      * 未知错误
      */
-    int UNKONW = 1000;
+    int UNKNOWN = 1000;
 
     /**
      * 解析错误

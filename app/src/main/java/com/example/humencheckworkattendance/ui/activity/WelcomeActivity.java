@@ -95,16 +95,24 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
 
     @Override
     public void getVersionFail(String failMsg) {
-        try {
-            intent.setClass(this, LoginActivity.class);
-           intent.putExtra("isUpdate", false);
-            Thread.sleep(2000);
-           startActivity(intent);
-           finish();
-       } catch (InterruptedException e) {
-            e.printStackTrace();
-       }
-
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                intent.setClass(WelcomeActivity.this, LoginActivity.class);
+                intent.putExtra("isUpdate", false);
+                startActivity(intent);
+                finish();
+            }
+        },2000);
+//        try {
+//            intent.setClass(this, LoginActivity.class);
+//           intent.putExtra("isUpdate", false);
+//            Thread.sleep(2000);
+//           startActivity(intent);
+//           finish();
+//       } catch (InterruptedException e) {
+//            e.printStackTrace();
+//       }
     }
 
     @Override
@@ -115,8 +123,8 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
 
     @Override
     public void getModelFail(String failMsg) {
-        mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
-       /* AlertDialog.Builder builder = new AlertDialog.Builder(WelcomeActivity.this);
+//        mPresenter.getVersion(AppUpdateUtils.getVersionCode(this) + "");
+        AlertDialog.Builder builder = new AlertDialog.Builder(WelcomeActivity.this);
         // 设置提示框的标题
         builder.setTitle("警告：").
                 setIcon(R.drawable.icon).
@@ -132,6 +140,6 @@ public class WelcomeActivity extends BaseActivity<WelcomePresenter> implements W
         // 显示对话框
         alertDialog.show();
         alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88, 190, 252));
-        alertDialog.setCancelable(false);*/
+        alertDialog.setCancelable(false);
     }
 }
