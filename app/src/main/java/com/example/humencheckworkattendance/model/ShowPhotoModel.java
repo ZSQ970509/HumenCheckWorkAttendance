@@ -17,11 +17,11 @@ import com.example.humencheckworkattendance.utils.LogUtils;
 
 public class ShowPhotoModel extends BaseModel{
     //上传身份证图片
-    public void uploadImage64IdCard(@NonNull String img64,@NonNull String idcard, @NonNull final uploadImageIdCardInfoHint infoHint){
+    public void uploadImage64IdCard(@NonNull String img64, @NonNull final uploadImageIdCardInfoHint infoHint){
         if (infoHint == null) {
             throw new RuntimeException("InfoHint不能为空");
         }
-        httpService.upLoadImage64IdCard(img64,idcard)
+        httpService.upLoadImage64IdCard(img64)
                 // .compose(view.<BaseHttpResult<UploadBean>>bind())
                 .compose(new CommonTransformer<IdCardBean>())
                 .subscribe(new CommonSubscriber<IdCardBean>(ProApplication.getmContext()) {

@@ -80,7 +80,7 @@ public class ShowPhotoActivity extends BaseActivity<ShowPhotoPresenter> implemen
 
                 if(intent.getBooleanExtra("isIdCard",false)){
                     param.put("idcard", "true");
-                    mPresenter.uploadImage64IdCard(param.toString(),"true");
+                    mPresenter.uploadImage64IdCard(param.toString());
                 }else{
                     mPresenter.uploadImage64(param.toString());
                 }

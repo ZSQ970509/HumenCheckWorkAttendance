@@ -47,8 +47,8 @@ public class ShowPhotoPresenter extends BasePresenter<ShowPhotoActivity> impleme
 
         }
     @Override
-    public void uploadImage64IdCard(String imageBase64,String idcard) {
-        ((ShowPhotoModel) getiModelMap().get("ShowPhoto")).uploadImage64IdCard(imageBase64,idcard,new ShowPhotoModel.uploadImageIdCardInfoHint() {
+    public void uploadImage64IdCard(String imageBase64) {
+        ((ShowPhotoModel) getiModelMap().get("ShowPhoto")).uploadImage64IdCard(imageBase64,new ShowPhotoModel.uploadImageIdCardInfoHint() {
 
 
             @Override

@@ -62,7 +62,7 @@ public interface HttpService {
     Observable<BaseHttpResult<UploadBean>> upLoadImage64(@Body String img64);
 
     @POST(UrlHelper.API.API+UrlHelper.API.upLoadImage64)
-    Observable<BaseHttpResult<IdCardBean>> upLoadImage64IdCard(@Body String img64,@Field("idcard")String idcard);
+    Observable<BaseHttpResult<IdCardBean>> upLoadImage64IdCard(@Body String img64);
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.insertHumen)
     Observable<BaseHttpResult> insertHumen(@Field("userId") String userId,@Field("idCard") String idCard,@Field("streamName") String streamName,@Field("mobile") String mobile,@Field("headImage") String headImage,@Field("iDCardPathImage") String iDCardPathImage,@Field("iDCardBackPathImage") String  iDCardBackPathImage,@Field("password") String password,@Field("emtpId") String emtpId,@Field("emtpRolesId") String rolesId,@Field("gender") String gender,@Field("projId") String projId,@Field("validateCode") String validateCode,@Field("streamTitle") String streamTitle,@Field("statusType") String statusType,@Field("userTypeId") String userTypeId,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);

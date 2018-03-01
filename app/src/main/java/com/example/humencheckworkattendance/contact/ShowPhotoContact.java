@@ -17,6 +17,6 @@ public class ShowPhotoContact {
 
     public interface ShowPhotoPresenter {
         void uploadImage64(String imageBase64);
-        void uploadImage64IdCard(String imageBase64,String idcard);
+        void uploadImage64IdCard(String imageBase64);
     }
 }
