@@ -141,7 +141,7 @@ public class Http {
                             .Builder()
                             .addInterceptor(addQueryParameterInterceptor())  //参数添加
                             .addInterceptor(addHeaderInterceptor()) // token过滤
-                            .addInterceptor(httpLoggingInterceptor) //日志,所有的请求响应度看到
+                            .addInterceptor(new LogInterceptor()) //日志,所有的请求响应度看到
                             .cache(cache)  //添加缓存
                             .connectTimeout(60l, TimeUnit.SECONDS)
                             .readTimeout(60l, TimeUnit.SECONDS)

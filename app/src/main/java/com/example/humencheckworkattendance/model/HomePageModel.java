@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.example.humencheckworkattendance.ProApplication;
 import com.example.humencheckworkattendance.base.BaseModel;
+import com.example.humencheckworkattendance.bean.PlayCardBean;
 import com.example.humencheckworkattendance.bean.UploadBean;
 import com.example.humencheckworkattendance.exception.ApiException;
 import com.example.humencheckworkattendance.subscriber.CommonSubscriber;
@@ -46,11 +47,11 @@ public class HomePageModel extends BaseModel{
         httpService.playCard("1",time,memberId,address,type,projId,emtpId,emtpRolesId,lng,lat,attendanceUrl,admUserId,admUserName)
                 //.compose(view.<BaseHttpResult>bind())
                 .compose(new CommonTransformer())
-                .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {
+                .subscribe(new CommonSubscriber<PlayCardBean>(ProApplication.getmContext()) {
                     @Override
-                    public void onNext(String s) {
+                    public void onNext(PlayCardBean s) {
                         //LogUtils.e("sss",s.toString());
-                        infoHint.successInfo(s);
+                        infoHint.successInfo(s.getMessage());
                     }
 
                     @Override

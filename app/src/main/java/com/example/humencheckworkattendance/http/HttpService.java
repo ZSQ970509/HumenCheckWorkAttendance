@@ -10,6 +10,7 @@ import com.example.humencheckworkattendance.bean.IdCardBean;
 import com.example.humencheckworkattendance.bean.LoginBean;
 import com.example.humencheckworkattendance.bean.ModelBean;
 import com.example.humencheckworkattendance.bean.MonthSocialSecurityBean;
+import com.example.humencheckworkattendance.bean.PlayCardBean;
 import com.example.humencheckworkattendance.bean.PlayCardTodayBean;
 import com.example.humencheckworkattendance.bean.ProjectBean;
 import com.example.humencheckworkattendance.bean.SubmitHumenBean;
@@ -48,7 +49,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.playCard)
-    Observable<BaseHttpResult> playCard(@Field("inOutType") String inOutType, @Field("time") String time, @Field("memberId") String memberId, @Field("address") String address, @Field("type") String type, @Field("projId") String projId, @Field("emtpId") String emtpId, @Field("emtpRolesId") String emtpRolesId, @Field("lng") String lng, @Field("lat") String lat, @Field("attendanceUrl") String attendanceUrl,@Field("admUserId") String admUserId,@Field("admUserName") String admUserName);
+    Observable<BaseHttpResult<PlayCardBean>> playCard(@Field("inOutType") String inOutType, @Field("time") String time, @Field("memberId") String memberId, @Field("address") String address, @Field("type") String type, @Field("projId") String projId, @Field("emtpId") String emtpId, @Field("emtpRolesId") String emtpRolesId, @Field("lng") String lng, @Field("lat") String lat, @Field("attendanceUrl") String attendanceUrl, @Field("admUserId") String admUserId, @Field("admUserName") String admUserName);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getHistroy)

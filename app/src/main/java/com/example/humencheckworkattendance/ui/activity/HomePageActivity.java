@@ -663,7 +663,7 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
                     // 设置提示框的图标
                     // setIcon(R.drawable.icon).
                     // 设置要显示的信息
-                            setMessage("人脸对比通过，报到成功").
+                            setMessage(s).
                     // 设置确定按钮
                             setPositiveButton("确定", null);
 
@@ -683,7 +683,7 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
                     // 设置提示框的图标
                     // setIcon(R.drawable.icon).
                     // 设置要显示的信息
-                            setMessage("人脸对比不通过，报到失败！").
+                            setMessage(s).
                     // 设置确定按钮
                             setPositiveButton("确定", null);
 
