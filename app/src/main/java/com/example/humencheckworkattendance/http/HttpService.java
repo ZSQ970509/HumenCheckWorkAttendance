@@ -2,6 +2,7 @@ package com.example.humencheckworkattendance.http;
 
 
 import com.example.humencheckworkattendance.base.BaseHttpResult;
+import com.example.humencheckworkattendance.bean.CheckIsFrozenBean;
 import com.example.humencheckworkattendance.bean.EmtpBean;
 import com.example.humencheckworkattendance.bean.EmtpRolesBean;
 import com.example.humencheckworkattendance.bean.GrouperBean;
@@ -142,7 +143,7 @@ public interface HttpService {
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.checkIsFrozen)
-    Observable<BaseHttpResult> checkIsFrozen(@Field("id") String id,@Field("projId") String projId);
+    Observable<BaseHttpResult<CheckIsFrozenBean>> checkIsFrozen(@Field("id") String id, @Field("projId") String projId);
 
     @FormUrlEncoded
     @POST(UrlHelper.API.API+UrlHelper.API.getDayAttendanceList)

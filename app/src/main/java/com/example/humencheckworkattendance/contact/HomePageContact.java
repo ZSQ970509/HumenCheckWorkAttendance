@@ -1,5 +1,6 @@
 package com.example.humencheckworkattendance.contact;
 
+import com.example.humencheckworkattendance.bean.CheckIsFrozenBean;
 import com.example.humencheckworkattendance.bean.UploadBean;
 
 /**
@@ -12,7 +13,7 @@ public class HomePageContact {
         void playCardFail(String s);
         void toUploadImageSuccess(UploadBean uploadBean);
         void toUploadImageFail(String failMsg);
-        void checkIsFrozenSuccess(String s);
+        void checkIsFrozenSuccess(CheckIsFrozenBean checkIsFrozenBean);
         void checkIsFrozenFail(String failMsg);
     }
 

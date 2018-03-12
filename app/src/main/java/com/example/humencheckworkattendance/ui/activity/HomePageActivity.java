@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -33,6 +34,7 @@ import com.example.humencheckworkattendance.Constants;
 import com.example.humencheckworkattendance.ProApplication;
 import com.example.humencheckworkattendance.R;
 import com.example.humencheckworkattendance.base.BaseActivity;
+import com.example.humencheckworkattendance.bean.CheckIsFrozenBean;
 import com.example.humencheckworkattendance.bean.LoginBean;
 import com.example.humencheckworkattendance.bean.UploadBean;
 import com.example.humencheckworkattendance.contact.HomePageContact;
@@ -433,7 +435,7 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
             case R.id.imageView_Histroy_land:
             case R.id.imageView_Histroy:
                 showPopupWindow();
-            break;
+                break;
             case R.id.relativeLayout_Insert_Humen:
             case R.id.relativeLayout_Insert_Humen_land:
                 intent.setClass(HomePageActivity.this, InsertHumenActivity.class);
@@ -832,12 +834,53 @@ public class HomePageActivity extends BaseActivity<HomePagePresenter> implements
     }
 
     @Override
-    public void checkIsFrozenSuccess(String s) {
-        Bundle bundle = new Bundle();
-        bundle.putInt("getMemberId", loginBean.getMemberId());
-        bundle.putString("getProjId", loginBean.getProjId());
-        bundle.putString("getImgUrl", loginBean.getImgUrl());
-        FaceRecognition.getInstance().identifyFaceLiveSDK(Constants.RSA_KEY, Constants.PRIVATE_RSA, HomePageActivity.this, LiveStartActivity.class, liveCount, liveLevel, resultCallBack, getLiveList(), bundle, 5);
+    public void checkIsFrozenSuccess(CheckIsFrozenBean checkIsFrozenBean) {
+        dismissProgressDialog();
+        AlertDialog.Builder builder = new AlertDialog.Builder(HomePageActivity.this);
+        AlertDialog alertDialog;
+        switch (checkIsFrozenBean.getStatus()){
+            case "0":
+                builder.setTitle("提示：").
+
+                        setMessage(checkIsFrozenBean.getMessage()).
+                        setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Bundle bundle = new Bundle();
+                                bundle.putInt("getMemberId", loginBean.getMemberId());
+                                bundle.putString("getProjId", loginBean.getProjId());
+                                bundle.putString("getImgUrl", loginBean.getImgUrl());
+                                FaceRecognition.getInstance().identifyFaceLiveSDK(Constants.RSA_KEY, Constants.PRIVATE_RSA, HomePageActivity.this, LiveStartActivity.class, liveCount, liveLevel, resultCallBack, getLiveList(), bundle, 3);
+                            }
+                        });
+                alertDialog = builder.create();
+                alertDialog.setCanceledOnTouchOutside(false);
+                alertDialog.show();
+                alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88, 190, 252));
+                break;
+            case "1":
+            case "2":
+                builder.setTitle("提示：").
+
+                        setMessage(checkIsFrozenBean.getMessages()).
+                        setPositiveButton("确定", null);
+                alertDialog = builder.create();
+                alertDialog.setCanceledOnTouchOutside(false);
+                alertDialog.show();
+                alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.rgb(88, 190, 252));
+                break;
+            case "3":
+                Bundle bundle = new Bundle();
+                bundle.putInt("getMemberId", loginBean.getMemberId());
+                bundle.putString("getProjId", loginBean.getProjId());
+                bundle.putString("getImgUrl", loginBean.getImgUrl());
+                FaceRecognition.getInstance().identifyFaceLiveSDK(Constants.RSA_KEY, Constants.PRIVATE_RSA, HomePageActivity.this, LiveStartActivity.class, liveCount, liveLevel, resultCallBack, getLiveList(), bundle, 3);
+                break;
+            default:
+                break;
+        }
+
+
     }
 
     @Override

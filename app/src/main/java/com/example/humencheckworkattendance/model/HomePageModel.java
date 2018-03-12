@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.example.humencheckworkattendance.ProApplication;
 import com.example.humencheckworkattendance.base.BaseModel;
+import com.example.humencheckworkattendance.bean.CheckIsFrozenBean;
 import com.example.humencheckworkattendance.bean.PlayCardBean;
 import com.example.humencheckworkattendance.bean.UploadBean;
 import com.example.humencheckworkattendance.exception.ApiException;
@@ -24,11 +25,11 @@ public class HomePageModel extends BaseModel{
         httpService.checkIsFrozen(memberId,projId)
                 //.compose(view.<BaseHttp,Result>bind())
                 .compose(new CommonTransformer())
-                .subscribe(new CommonSubscriber<String>(ProApplication.getmContext()) {
+                .subscribe(new CommonSubscriber<CheckIsFrozenBean>(ProApplication.getmContext()) {
                     @Override
-                    public void onNext(String s) {
+                    public void onNext(CheckIsFrozenBean checkIsFrozenBean) {
                         //LogUtils.e("sss",s.toString());
-                        infoHint.successInfo(s);
+                        infoHint.successInfo(checkIsFrozenBean);
                     }
 
                     @Override
@@ -89,7 +90,7 @@ public class HomePageModel extends BaseModel{
 
     //通过接口产生信息回调
     public interface checkIsFrozenInfoHint {
-        void successInfo(String s);
+        void successInfo(CheckIsFrozenBean checkIsFrozenBean );
 
         void failInfo(String str);
 

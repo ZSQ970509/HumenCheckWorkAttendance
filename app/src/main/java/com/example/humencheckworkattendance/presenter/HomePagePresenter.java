@@ -1,6 +1,7 @@
 package com.example.humencheckworkattendance.presenter;
 
 import com.example.humencheckworkattendance.base.BasePresenter;
+import com.example.humencheckworkattendance.bean.CheckIsFrozenBean;
 import com.example.humencheckworkattendance.bean.UploadBean;
 import com.example.humencheckworkattendance.contact.HomePageContact;
 import com.example.humencheckworkattendance.model.HomePageModel;
@@ -31,8 +32,8 @@ public class HomePagePresenter extends BasePresenter<HomePageActivity> implement
     public void checkIsFrozen(String memberId,String projId) {
         ((HomePageModel) getiModelMap().get("HomePage")).checkIsFrozen(memberId,projId,new HomePageModel.checkIsFrozenInfoHint() {
             @Override
-            public void successInfo(String s) {
-                getIView().checkIsFrozenSuccess(s);
+            public void successInfo(CheckIsFrozenBean checkIsFrozenBean ) {
+                getIView().checkIsFrozenSuccess(checkIsFrozenBean);
             }
 
             @Override

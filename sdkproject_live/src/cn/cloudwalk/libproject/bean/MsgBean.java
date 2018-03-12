@@ -6,18 +6,25 @@ package cn.cloudwalk.libproject.bean;
 
 public class MsgBean {
 
-    /**
-     * result : 1
-     *  msg  : 成功
-     */
-
     private String result;
     private String msg;
+    private DataBean data;
 
-    public MsgBean(String result,String msg) {
+    public MsgBean(String result, String msg, DataBean data) {
+        this.result = result;
+        this.msg = msg;
+        this.data = data;
+    }
+    public MsgBean(String result, String msg) {
         this.result = result;
         this.msg = msg;
     }
+    /**
+     * result : 1
+     * msg : 可报到
+     * data : {"message":"","status":"3","messages":""}
+     */
+
 
     public String getResult() {
         return result;
@@ -33,5 +40,55 @@ public class MsgBean {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    public DataBean getData() {
+        return data;
+    }
+
+    public void setData(DataBean data) {
+        this.data = data;
+    }
+
+    public static class DataBean {
+        public DataBean(String message, String status, String messages) {
+            this.message = message;
+            this.status = status;
+            this.messages = messages;
+        }
+
+        /**
+         * message :
+         * status : 3
+         * messages :
+         */
+
+        private String message;
+        private String status;
+        private String messages;
+
+        public String getMessage() {
+            return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
+        }
+
+        public String getStatus() {
+            return status;
+        }
+
+        public void setStatus(String status) {
+            this.status = status;
+        }
+
+        public String getMessages() {
+            return messages;
+        }
+
+        public void setMessages(String messages) {
+            this.messages = messages;
+        }
     }
 }

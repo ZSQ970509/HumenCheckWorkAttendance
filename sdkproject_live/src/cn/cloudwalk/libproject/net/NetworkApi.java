@@ -11,9 +11,10 @@ import cn.cloudwalk.libproject.util.HttpUtil;
  */
 
 public class NetworkApi {
-//    public static String BASE_URL = "http://120.35.11.49:4545";
-//public static String BASE_URL = "http://192.168.1.186:4545";
-    public static String BASE_URL = "http://ydkq.jsqqy.com";
+    //    public static String BASE_URL = "http://120.35.11.49:4545";
+    public static String BASE_URL = "http://192.168.1.186:4545";
+
+    //public static String BASE_URL = "http://ydkq.jsqqy.com";
     public static final String API ="/Services";
     public static final String upLoadImage64 ="/DataService.ashx?action=upLoadPhoto";
     public static final String saveStreamInVivoDetection ="/DataService.ashx?action=saveStreamInVivoDetection";
@@ -26,7 +27,14 @@ public class NetworkApi {
             JSONObject json = new JSONObject(result);
             String resultData = json.getString("result");
             String msg = json.getString("msg");
-            msgBean = new MsgBean(resultData,msg);
+
+            if(resultData.equals("1")){
+                MsgBean.DataBean dataBean= new MsgBean.DataBean(json.getJSONObject("data").getString("message"),json.getJSONObject("data").getString("status"),json.getJSONObject("data").getString("messages"));
+                msgBean = new MsgBean(resultData,msg,dataBean);
+            }else{
+                msgBean = new MsgBean(resultData,msg);
+            }
+
             return msgBean;
         } catch (JSONException e) {
             // TODO Auto-generated catch block
